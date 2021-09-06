@@ -15,7 +15,7 @@ Embers_Utilities::get_template_parts( array( 'parts/html-header', 'parts/header'
 
 
 	<!-- <script src="< ?php echo get_bloginfo('template_directory');?>/js/angular.js"></script> -->
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
 	<script src="<?php echo get_bloginfo('template_directory');?>/js/bootstrap-datepicker.min.js"></script>
 	<script src="<?php echo get_bloginfo('template_directory');?>/js/wedmatch.js"></script>
 
