@@ -1,9 +1,9 @@
 <div class="dashboard-navigation">
 
     <?php $current_user = wp_get_current_user();?>
-
     <div class="couples-avatar">
-    <p><?php echo $current_user->user_nicename;?></p>
+    <!-- <p>< ?php echo $current_user->user_nicename;?></p> -->
+    <p><?php echo $current_user->display_name;?></p>
         <?php
         acf_form(array(
             'post_id'   => $userPageId,

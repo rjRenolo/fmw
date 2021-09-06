@@ -49,7 +49,9 @@ function register_user_front_end() {
             
             if($_POST['weddingDate']){
                 update_user_meta( $user_id, 'wedmatch_weddingdate', $_POST['weddingDate'] );
-                update_field( 'wedding_date', $_POST['weddingDate'], $userPageId );
+                $exploded = explode("/", $_POST['weddingDate']);
+                $formatedDate = $exploded[2] . $exploded[1] . $exploded[0];
+                update_field( 'wedding_date', $formatedDate, $userPageId );
             }
             
             update_user_meta( $user_id, 'wedmatch_listinglicensetype', $_POST['listingLicenseType'] );

@@ -596,3 +596,217 @@ Array
 --------------------------------------------------------------------------------------
 
 
+/////////////////////////
+// 2021-09-06 12-02-16 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 12-02-16 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 12-02-16 //
+/////////////////////////
+
+Array
+(
+    [action] => register_user_front_end
+    [new_user_name] => test15
+    [new_user_email] => test15@gmail.com
+    [new_user_password] => qwe123qwe123
+    [userType] => couple
+    [name1] => test15
+    [name1status] => Bride
+    [name2] => tester
+    [name2status] => Groom
+    [userdescription] => lastMinute
+    [weddingDate] => 30/09/2021
+    [listingLicenseType] => Licensed ceremony venue e.g hotel
+    [ceremonyGuests] => 51-80
+    [listingVenueType] => Castle/ historic/ manor house
+    [location] => Blaenau Gwent
+    [listingAccommodation] => Array
+        (
+            [0] => Glamping / Camping
+            [1] => Long let available
+        )
+
+    [listingFoodDrink] => Array
+        (
+            [0] => Ability to bring my own catering
+            [1] => Alcohol licence
+        )
+
+    [listingFeature] => Array
+        (
+            [0] => All inclusive wedding packages
+            [1] => Bridal changing facilities
+        )
+
+    [receptionGuests] => 201+
+    [listingStyle] => Romantic – delicate, fairytale & luxuriousv
+    [category] => Array
+        (
+            [0] => Accessories
+            [1] => Bridalwear
+            [2] => Celebrants & Toast Masters
+            [3] => Caterers & Mobile Bar
+            [4] => Destination Weddings
+            [5] => Favours & Gifts
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 12-11-08 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 12-11-08 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 12-11-08 //
+/////////////////////////
+
+Array
+(
+    [action] => register_user_front_end
+    [new_user_name] => test16
+    [new_user_email] => test16@gmail.com
+    [new_user_password] => qwe123qwe123
+    [userType] => couple
+    [name1] => test16
+    [name1status] => Bride
+    [name2] => tester
+    [name2status] => Groom
+    [userdescription] => hopelessRomantic
+    [weddingDate] => 30/09/2021
+    [listingLicenseType] => Registry Office
+    [ceremonyGuests] => 51-80
+    [listingVenueType] => Golf & sports venues
+    [location] => Neath Port Talbot
+    [listingAccommodation] => Array
+        (
+            [0] => Glamping / Camping
+            [1] => Long let available
+        )
+
+    [listingFoodDrink] => Array
+        (
+            [0] => Ability to bring my own catering
+            [1] => Alcohol licence
+        )
+
+    [listingFeature] => Array
+        (
+            [0] => All inclusive wedding packages
+            [1] => Bridal changing facilities
+        )
+
+    [receptionGuests] => 81-120
+    [listingStyle] => Asian wedding – colourful & cultural extravaganza
+    [category] => Array
+        (
+            [0] => Accessories
+            [1] => Bridalwear
+            [2] => Caterers & Mobile Bar
+            [3] => Celebrants & Toast Masters
+            [4] => Favours & Gifts
+            [5] => Destination Weddings
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 12-21-08 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 12-21-08 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 12-21-08 //
+/////////////////////////
+
+Array
+(
+    [action] => register_user_front_end
+    [new_user_name] => test17
+    [new_user_email] => test17@gmail.com
+    [new_user_password] => qwe123qwe123
+    [userType] => couple
+    [name1] => test17
+    [name1status] => Bride
+    [name2] => test17@gmail.com
+    [name2status] => Groom
+    [userdescription] => hopelessRomantic
+    [weddingDate] => 30/09/2021
+    [listingLicenseType] => Church or religious venue
+    [ceremonyGuests] => 51-80
+    [listingVenueType] => Castle/ historic/ manor house
+    [location] => Blaenau Gwent
+    [listingAccommodation] => Array
+        (
+            [0] => Glamping / Camping
+            [1] => Long let available
+        )
+
+    [listingFoodDrink] => Array
+        (
+            [0] => Alcohol licence
+            [1] => Ability to bring my own catering
+        )
+
+    [listingFeature] => Array
+        (
+            [0] => All inclusive wedding packages
+            [1] => Bridal changing facilities
+        )
+
+    [receptionGuests] => 121-200
+    [listingStyle] => DIY – charming, handmade & personalised
+    [category] => Array
+        (
+            [0] => Music & DJs
+            [1] => Occasionwear
+            [2] => Marquees, Tipis & Tents
+            [3] => Jewellery
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
