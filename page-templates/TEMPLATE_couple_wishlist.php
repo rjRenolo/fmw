@@ -6,7 +6,7 @@ Template Name: Couple Wishlist
 <?php acf_form_head(); ?>
 <?php Embers_Utilities::get_template_parts( array( 'parts/html-header', 'parts/header' ) ); ?>
 
-<div class="container row dashboard-container">
+<div class=" row dashboard-container">
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <?php the_content(); ?>
     <?php endwhile; ?>
@@ -20,10 +20,10 @@ Template Name: Couple Wishlist
     <?php if(is_user_logged_in()){ ?>
         <?php if(current_user_can('administrator') || current_user_can('couple')) { ?>
 
-            <div class="g_grid_3">
+            <div class="g_grid_3 has-white-background-color dashboard-sidebar">
                 <?php include THEME_DIR . '/parts/couple-dashboard-navigation.php'; ?>
             </div>
-            <div class="g_grid_9 dashboardSection">
+            <div class="g_grid_9 dashboard-content-wrap">
                 <img src="<?php echo get_bloginfo('template_directory');?>/images/global/idea.png" alt="To do" class="sectionIcon"/>
                 <h2>Shortlist</h2>
 
