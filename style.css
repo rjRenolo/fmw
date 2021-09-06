@@ -748,7 +748,6 @@ p.description { font-size: 12px; color:#666 }
 .subscription-card {
     text-align: center;
     color: white;
-    border-radius: 8px;
     padding: 8px;
 }
 
@@ -1055,7 +1054,8 @@ h2.sectionTitle { margin-top: 0 }
 .subscription-pricing-blocks {margin-top: 30px;}
 .subscription-pricing-blocks .pricing-block { padding-bottom:70px }
 
-
+.listing-final { padding:20px; background:#fff; border:solid 1px #e8e8e8; margin-top: 20px; }
+.listing-final h4 { font-size: 18px; }
 /* ---------------------------------------------------------------------------------------------------------- 
 COUPLES DASHBOARD --------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
