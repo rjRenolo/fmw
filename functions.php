@@ -455,7 +455,8 @@ define('THEME_DIR', get_stylesheet_directory());
 		wp_register_script( 'site', get_template_directory_uri().'/js/site.js', array( 'jquery' ) );
 		wp_enqueue_script( 'site' );
 
-        wp_register_script( 'gmaps', "https://maps.googleapis.com/maps/api/js?key=AIzaSyBqgNZugZ_Uf2MWXGgxosgUeXfeXfeo8K8", array( 'jquery' ));
+        $googleMapApiKey = get_field('google_map_api_key', 'options');
+        wp_register_script( 'gmaps', "https://maps.googleapis.com/maps/api/js?key=$googleMapApiKey", array( 'jquery' ));
         wp_enqueue_script('gmaps');
 
 		wp_register_script( 'card', get_template_directory_uri().'/assets/card/card.js', array( 'jquery' ) );
