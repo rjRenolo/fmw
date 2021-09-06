@@ -1,0 +1,56 @@
+<header class="header">
+
+	<div class="container row" >
+		<!-- <nav class="mainNav">
+			<?php wp_nav_menu(array('theme_location'=>'primary'));?>
+			<?php if(is_user_logged_in()) { ?>
+				<p><a href="<?php  echo wp_logout_url( get_field('business_login_page','option') );?>">Log Out</a></p>
+			<?php } ?>
+		</nav> -->
+
+		
+        <div class="site-identity">
+            <a href="<?php echo get_bloginfo('url');?>" class="mainLogo">
+                Find My Wedding
+            </a>
+        </div> 
+
+        
+        <nav class="site-navigation">
+            <?php
+                $menuLocations = get_nav_menu_locations();
+                $menuID = $menuLocations['primary'];
+                $primaryNav = wp_get_nav_menu_items($menuID);
+            ?>
+            <ul class="nav">
+                <?php 
+                    foreach( $primaryNav as $navItem ) {
+                        echo '<li><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
+                    }
+                ?>
+            </ul>
+        </nav>
+
+        <nav class="user-navigation">
+            <ul>
+                <?php 
+                    $menuLocations = get_nav_menu_locations();
+                    $userSpecificMenu = wp_get_nav_menu_items(14);
+                    
+                    if(is_user_logged_in()){?>
+                        <li><a href="<?=wp_logout_url( get_field('business_login_page','option') )?>" title="">Log Out</a></li>  
+                    <?php }else{
+                        foreach ( $userSpecificMenu as $navItem ) {
+                        
+                            echo '<li><a href="'.$navItem->url.'" title="'.$navItem->title.'">'.$navItem->title.'</a></li>';
+                            
+                        }
+                    }
+
+                    
+                ?>
+            </ul>
+        </nav>
+		
+	</div>
+</header>

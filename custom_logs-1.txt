@@ -1,0 +1,4453 @@
+/////////////////////////
+// 2021-03-26 13-00-15 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-03-26 13-00-25 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-03-26 13-00-36 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-03-26 13-00-36 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 08-54-21 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 08-54-21 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 08-54-21 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [All Things Wales] New User Registration
+    [message] => New user registration on your site All Things Wales:
+
+Username: test123
+
+Email: test123@gmail.com
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 08-54-22 //
+/////////////////////////
+
+Array
+(
+    [to] => test123@gmail.com
+    [subject] => [All Things Wales] Login Details
+    [message] => Username: test123
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/stripetest/wp-login.php?action=rp&key=TNo3j2JtnOft7JGZHUc2&login=test123
+
+https://www.another-demo.com/stripetest/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 08-58-39 //
+/////////////////////////
+
+Stripe\Subscription Object
+(
+    [id] => sub_JDnyX3W1FI5n2e
+    [object] => subscription
+    [application_fee_percent] => 
+    [billing_cycle_anchor] => 1617267517
+    [billing_thresholds] => 
+    [cancel_at] => 
+    [cancel_at_period_end] => 
+    [canceled_at] => 
+    [collection_method] => charge_automatically
+    [created] => 1617267517
+    [current_period_end] => 1617353917
+    [current_period_start] => 1617267517
+    [customer] => cus_JDnybDhAsqmGqH
+    [days_until_due] => 
+    [default_payment_method] => 
+    [default_source] => 
+    [default_tax_rates] => Array
+        (
+        )
+
+    [discount] => 
+    [ended_at] => 
+    [items] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                    [0] => Stripe\SubscriptionItem Object
+                        (
+                            [id] => si_JDnyeLEInnMVQ0
+                            [object] => subscription_item
+                            [billing_thresholds] => 
+                            [created] => 1617267517
+                            [metadata] => Stripe\StripeObject Object
+                                (
+                                )
+
+                            [plan] => Stripe\Plan Object
+                                (
+                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                    [object] => plan
+                                    [active] => 1
+                                    [aggregate_usage] => 
+                                    [amount] => 200
+                                    [amount_decimal] => 200
+                                    [billing_scheme] => per_unit
+                                    [created] => 1617030413
+                                    [currency] => gbp
+                                    [interval] => day
+                                    [interval_count] => 1
+                                    [livemode] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_JCmEXrvhAfdMwF
+                                    [tiers_mode] => 
+                                    [transform_usage] => 
+                                    [trial_period_days] => 
+                                    [usage_type] => licensed
+                                )
+
+                            [price] => Stripe\Price Object
+                                (
+                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                    [object] => price
+                                    [active] => 1
+                                    [billing_scheme] => per_unit
+                                    [created] => 1617030413
+                                    [currency] => gbp
+                                    [livemode] => 
+                                    [lookup_key] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_JCmEXrvhAfdMwF
+                                    [recurring] => Stripe\StripeObject Object
+                                        (
+                                            [aggregate_usage] => 
+                                            [interval] => day
+                                            [interval_count] => 1
+                                            [trial_period_days] => 
+                                            [usage_type] => licensed
+                                        )
+
+                                    [tiers_mode] => 
+                                    [transform_quantity] => 
+                                    [type] => recurring
+                                    [unit_amount] => 200
+                                    [unit_amount_decimal] => 200
+                                )
+
+                            [quantity] => 1
+                            [subscription] => sub_JDnyX3W1FI5n2e
+                            [tax_rates] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [has_more] => 
+            [total_count] => 1
+            [url] => /v1/subscription_items?subscription=sub_JDnyX3W1FI5n2e
+        )
+
+    [latest_invoice] => in_1IbMMLCRN4o1Cr35Cv63jTpx
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+        )
+
+    [next_pending_invoice_item_invoice] => 
+    [pause_collection] => 
+    [pending_invoice_item_interval] => 
+    [pending_setup_intent] => 
+    [pending_update] => 
+    [plan] => Stripe\Plan Object
+        (
+            [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+            [object] => plan
+            [active] => 1
+            [aggregate_usage] => 
+            [amount] => 200
+            [amount_decimal] => 200
+            [billing_scheme] => per_unit
+            [created] => 1617030413
+            [currency] => gbp
+            [interval] => day
+            [interval_count] => 1
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                )
+
+            [nickname] => 
+            [product] => prod_JCmEXrvhAfdMwF
+            [tiers_mode] => 
+            [transform_usage] => 
+            [trial_period_days] => 
+            [usage_type] => licensed
+        )
+
+    [quantity] => 1
+    [schedule] => 
+    [start_date] => 1617267517
+    [status] => active
+    [transfer_data] => 
+    [trial_end] => 
+    [trial_start] => 
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 08-58-39 //
+/////////////////////////
+
+Array
+(
+    [to] => test123@gmail.com
+    [subject] => Thank you
+    [message] => <h2>Subscription Canceled.</h2><p>Hello test123,</p><br><p>Thank you for subscribing on our service, your subscription will end on April 2, 2021</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: All Things Wales <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 08-58-39 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbMMNCRN4o1Cr35Tb7h1Ps7
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617267518
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => in_1IbMMLCRN4o1Cr35Cv63jTpx
+                    [object] => invoice
+                    [account_country] => GB
+                    [account_name] => All Things Wales
+                    [account_tax_ids] => 
+                    [amount_due] => 200
+                    [amount_paid] => 200
+                    [amount_remaining] => 0
+                    [application_fee_amount] => 
+                    [attempt_count] => 1
+                    [attempted] => 1
+                    [auto_advance] => 
+                    [billing_reason] => subscription_create
+                    [charge] => ch_1IbMMLCRN4o1Cr35wk2VHFW6
+                    [collection_method] => charge_automatically
+                    [created] => 1617267517
+                    [currency] => gbp
+                    [custom_fields] => 
+                    [customer] => cus_JDnybDhAsqmGqH
+                    [customer_address] => 
+                    [customer_email] => test123@gmail.com
+                    [customer_name] => test 123
+                    [customer_phone] => 
+                    [customer_shipping] => 
+                    [customer_tax_exempt] => none
+                    [customer_tax_ids] => Array
+                        (
+                        )
+
+                    [default_payment_method] => 
+                    [default_source] => 
+                    [default_tax_rates] => Array
+                        (
+                        )
+
+                    [description] => 
+                    [discount] => 
+                    [discounts] => Array
+                        (
+                        )
+
+                    [due_date] => 
+                    [ending_balance] => 0
+                    [footer] => 
+                    [hosted_invoice_url] => https://invoice.stripe.com/i/acct_1IRcAqCRN4o1Cr35/invst_JDny9K6LFUbmqUlZxAPcoPGrywqYhut
+                    [invoice_pdf] => https://pay.stripe.com/invoice/acct_1IRcAqCRN4o1Cr35/invst_JDny9K6LFUbmqUlZxAPcoPGrywqYhut/pdf
+                    [last_finalization_error] => 
+                    [lines] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => il_1IbMMLCRN4o1Cr35Gs2ylj82
+                                            [object] => line_item
+                                            [amount] => 200
+                                            [currency] => gbp
+                                            [description] => 1 × Just a test (at £2.00 / day)
+                                            [discount_amounts] => Array
+                                                (
+                                                )
+
+                                            [discountable] => 1
+                                            [discounts] => Array
+                                                (
+                                                )
+
+                                            [livemode] => 
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [period] => Array
+                                                (
+                                                    [end] => 1617353917
+                                                    [start] => 1617267517
+                                                )
+
+                                            [plan] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => plan
+                                                    [active] => 1
+                                                    [aggregate_usage] => 
+                                                    [amount] => 200
+                                                    [amount_decimal] => 200
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [interval] => day
+                                                    [interval_count] => 1
+                                                    [livemode] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [tiers_mode] => 
+                                                    [transform_usage] => 
+                                                    [trial_period_days] => 
+                                                    [usage_type] => licensed
+                                                )
+
+                                            [price] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => price
+                                                    [active] => 1
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [livemode] => 
+                                                    [lookup_key] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [recurring] => Array
+                                                        (
+                                                            [aggregate_usage] => 
+                                                            [interval] => day
+                                                            [interval_count] => 1
+                                                            [trial_period_days] => 
+                                                            [usage_type] => licensed
+                                                        )
+
+                                                    [tiers_mode] => 
+                                                    [transform_quantity] => 
+                                                    [type] => recurring
+                                                    [unit_amount] => 200
+                                                    [unit_amount_decimal] => 200
+                                                )
+
+                                            [proration] => 
+                                            [quantity] => 1
+                                            [subscription] => sub_JDnyX3W1FI5n2e
+                                            [subscription_item] => si_JDnyeLEInnMVQ0
+                                            [tax_amounts] => Array
+                                                (
+                                                )
+
+                                            [tax_rates] => Array
+                                                (
+                                                )
+
+                                            [type] => subscription
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/invoices/in_1IbMMLCRN4o1Cr35Cv63jTpx/lines
+                        )
+
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_payment_attempt] => 
+                    [number] => DD94352D-0040
+                    [on_behalf_of] => 
+                    [paid] => 1
+                    [payment_intent] => pi_1IbMMLCRN4o1Cr353199Va0f
+                    [payment_settings] => Array
+                        (
+                            [payment_method_options] => 
+                            [payment_method_types] => 
+                        )
+
+                    [period_end] => 1617267517
+                    [period_start] => 1617267517
+                    [post_payment_credit_notes_amount] => 0
+                    [pre_payment_credit_notes_amount] => 0
+                    [receipt_number] => 
+                    [starting_balance] => 0
+                    [statement_descriptor] => 
+                    [status] => paid
+                    [status_transitions] => Array
+                        (
+                            [finalized_at] => 1617267517
+                            [marked_uncollectible_at] => 
+                            [paid_at] => 1617267517
+                            [voided_at] => 
+                        )
+
+                    [subscription] => sub_JDnyX3W1FI5n2e
+                    [subtotal] => 200
+                    [tax] => 
+                    [total] => 200
+                    [total_discount_amounts] => Array
+                        (
+                        )
+
+                    [total_tax_amounts] => Array
+                        (
+                        )
+
+                    [transfer_data] => 
+                    [webhooks_delivered_at] => 
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => req_1DuZEGn9o6K3gp
+            [idempotency_key] => 
+        )
+
+    [type] => invoice.created
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 08-58-39 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbMMNCRN4o1Cr35i6IRKMhy
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617267518
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => in_1IbMMLCRN4o1Cr35Cv63jTpx
+                    [object] => invoice
+                    [account_country] => GB
+                    [account_name] => All Things Wales
+                    [account_tax_ids] => 
+                    [amount_due] => 200
+                    [amount_paid] => 200
+                    [amount_remaining] => 0
+                    [application_fee_amount] => 
+                    [attempt_count] => 1
+                    [attempted] => 1
+                    [auto_advance] => 
+                    [billing_reason] => subscription_create
+                    [charge] => ch_1IbMMLCRN4o1Cr35wk2VHFW6
+                    [collection_method] => charge_automatically
+                    [created] => 1617267517
+                    [currency] => gbp
+                    [custom_fields] => 
+                    [customer] => cus_JDnybDhAsqmGqH
+                    [customer_address] => 
+                    [customer_email] => test123@gmail.com
+                    [customer_name] => test 123
+                    [customer_phone] => 
+                    [customer_shipping] => 
+                    [customer_tax_exempt] => none
+                    [customer_tax_ids] => Array
+                        (
+                        )
+
+                    [default_payment_method] => 
+                    [default_source] => 
+                    [default_tax_rates] => Array
+                        (
+                        )
+
+                    [description] => 
+                    [discount] => 
+                    [discounts] => Array
+                        (
+                        )
+
+                    [due_date] => 
+                    [ending_balance] => 0
+                    [footer] => 
+                    [hosted_invoice_url] => https://invoice.stripe.com/i/acct_1IRcAqCRN4o1Cr35/invst_JDny9K6LFUbmqUlZxAPcoPGrywqYhut
+                    [invoice_pdf] => https://pay.stripe.com/invoice/acct_1IRcAqCRN4o1Cr35/invst_JDny9K6LFUbmqUlZxAPcoPGrywqYhut/pdf
+                    [last_finalization_error] => 
+                    [lines] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => il_1IbMMLCRN4o1Cr35Gs2ylj82
+                                            [object] => line_item
+                                            [amount] => 200
+                                            [currency] => gbp
+                                            [description] => 1 × Just a test (at £2.00 / day)
+                                            [discount_amounts] => Array
+                                                (
+                                                )
+
+                                            [discountable] => 1
+                                            [discounts] => Array
+                                                (
+                                                )
+
+                                            [livemode] => 
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [period] => Array
+                                                (
+                                                    [end] => 1617353917
+                                                    [start] => 1617267517
+                                                )
+
+                                            [plan] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => plan
+                                                    [active] => 1
+                                                    [aggregate_usage] => 
+                                                    [amount] => 200
+                                                    [amount_decimal] => 200
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [interval] => day
+                                                    [interval_count] => 1
+                                                    [livemode] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [tiers_mode] => 
+                                                    [transform_usage] => 
+                                                    [trial_period_days] => 
+                                                    [usage_type] => licensed
+                                                )
+
+                                            [price] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => price
+                                                    [active] => 1
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [livemode] => 
+                                                    [lookup_key] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [recurring] => Array
+                                                        (
+                                                            [aggregate_usage] => 
+                                                            [interval] => day
+                                                            [interval_count] => 1
+                                                            [trial_period_days] => 
+                                                            [usage_type] => licensed
+                                                        )
+
+                                                    [tiers_mode] => 
+                                                    [transform_quantity] => 
+                                                    [type] => recurring
+                                                    [unit_amount] => 200
+                                                    [unit_amount_decimal] => 200
+                                                )
+
+                                            [proration] => 
+                                            [quantity] => 1
+                                            [subscription] => sub_JDnyX3W1FI5n2e
+                                            [subscription_item] => si_JDnyeLEInnMVQ0
+                                            [tax_amounts] => Array
+                                                (
+                                                )
+
+                                            [tax_rates] => Array
+                                                (
+                                                )
+
+                                            [type] => subscription
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/invoices/in_1IbMMLCRN4o1Cr35Cv63jTpx/lines
+                        )
+
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_payment_attempt] => 
+                    [number] => DD94352D-0040
+                    [on_behalf_of] => 
+                    [paid] => 1
+                    [payment_intent] => pi_1IbMMLCRN4o1Cr353199Va0f
+                    [payment_settings] => Array
+                        (
+                            [payment_method_options] => 
+                            [payment_method_types] => 
+                        )
+
+                    [period_end] => 1617267517
+                    [period_start] => 1617267517
+                    [post_payment_credit_notes_amount] => 0
+                    [pre_payment_credit_notes_amount] => 0
+                    [receipt_number] => 
+                    [starting_balance] => 0
+                    [statement_descriptor] => 
+                    [status] => paid
+                    [status_transitions] => Array
+                        (
+                            [finalized_at] => 1617267517
+                            [marked_uncollectible_at] => 
+                            [paid_at] => 1617267517
+                            [voided_at] => 
+                        )
+
+                    [subscription] => sub_JDnyX3W1FI5n2e
+                    [subtotal] => 200
+                    [tax] => 
+                    [total] => 200
+                    [total_discount_amounts] => Array
+                        (
+                        )
+
+                    [total_tax_amounts] => Array
+                        (
+                        )
+
+                    [transfer_data] => 
+                    [webhooks_delivered_at] => 
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => req_1DuZEGn9o6K3gp
+            [idempotency_key] => 
+        )
+
+    [type] => invoice.paid
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 08-58-40 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbMMNCRN4o1Cr355T8W1GiC
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617267518
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => in_1IbMMLCRN4o1Cr35Cv63jTpx
+                    [object] => invoice
+                    [account_country] => GB
+                    [account_name] => All Things Wales
+                    [account_tax_ids] => 
+                    [amount_due] => 200
+                    [amount_paid] => 200
+                    [amount_remaining] => 0
+                    [application_fee_amount] => 
+                    [attempt_count] => 1
+                    [attempted] => 1
+                    [auto_advance] => 
+                    [billing_reason] => subscription_create
+                    [charge] => ch_1IbMMLCRN4o1Cr35wk2VHFW6
+                    [collection_method] => charge_automatically
+                    [created] => 1617267517
+                    [currency] => gbp
+                    [custom_fields] => 
+                    [customer] => cus_JDnybDhAsqmGqH
+                    [customer_address] => 
+                    [customer_email] => test123@gmail.com
+                    [customer_name] => test 123
+                    [customer_phone] => 
+                    [customer_shipping] => 
+                    [customer_tax_exempt] => none
+                    [customer_tax_ids] => Array
+                        (
+                        )
+
+                    [default_payment_method] => 
+                    [default_source] => 
+                    [default_tax_rates] => Array
+                        (
+                        )
+
+                    [description] => 
+                    [discount] => 
+                    [discounts] => Array
+                        (
+                        )
+
+                    [due_date] => 
+                    [ending_balance] => 0
+                    [footer] => 
+                    [hosted_invoice_url] => https://invoice.stripe.com/i/acct_1IRcAqCRN4o1Cr35/invst_JDny9K6LFUbmqUlZxAPcoPGrywqYhut
+                    [invoice_pdf] => https://pay.stripe.com/invoice/acct_1IRcAqCRN4o1Cr35/invst_JDny9K6LFUbmqUlZxAPcoPGrywqYhut/pdf
+                    [last_finalization_error] => 
+                    [lines] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => il_1IbMMLCRN4o1Cr35Gs2ylj82
+                                            [object] => line_item
+                                            [amount] => 200
+                                            [currency] => gbp
+                                            [description] => 1 × Just a test (at £2.00 / day)
+                                            [discount_amounts] => Array
+                                                (
+                                                )
+
+                                            [discountable] => 1
+                                            [discounts] => Array
+                                                (
+                                                )
+
+                                            [livemode] => 
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [period] => Array
+                                                (
+                                                    [end] => 1617353917
+                                                    [start] => 1617267517
+                                                )
+
+                                            [plan] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => plan
+                                                    [active] => 1
+                                                    [aggregate_usage] => 
+                                                    [amount] => 200
+                                                    [amount_decimal] => 200
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [interval] => day
+                                                    [interval_count] => 1
+                                                    [livemode] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [tiers_mode] => 
+                                                    [transform_usage] => 
+                                                    [trial_period_days] => 
+                                                    [usage_type] => licensed
+                                                )
+
+                                            [price] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => price
+                                                    [active] => 1
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [livemode] => 
+                                                    [lookup_key] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [recurring] => Array
+                                                        (
+                                                            [aggregate_usage] => 
+                                                            [interval] => day
+                                                            [interval_count] => 1
+                                                            [trial_period_days] => 
+                                                            [usage_type] => licensed
+                                                        )
+
+                                                    [tiers_mode] => 
+                                                    [transform_quantity] => 
+                                                    [type] => recurring
+                                                    [unit_amount] => 200
+                                                    [unit_amount_decimal] => 200
+                                                )
+
+                                            [proration] => 
+                                            [quantity] => 1
+                                            [subscription] => sub_JDnyX3W1FI5n2e
+                                            [subscription_item] => si_JDnyeLEInnMVQ0
+                                            [tax_amounts] => Array
+                                                (
+                                                )
+
+                                            [tax_rates] => Array
+                                                (
+                                                )
+
+                                            [type] => subscription
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/invoices/in_1IbMMLCRN4o1Cr35Cv63jTpx/lines
+                        )
+
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_payment_attempt] => 
+                    [number] => DD94352D-0040
+                    [on_behalf_of] => 
+                    [paid] => 1
+                    [payment_intent] => pi_1IbMMLCRN4o1Cr353199Va0f
+                    [payment_settings] => Array
+                        (
+                            [payment_method_options] => 
+                            [payment_method_types] => 
+                        )
+
+                    [period_end] => 1617267517
+                    [period_start] => 1617267517
+                    [post_payment_credit_notes_amount] => 0
+                    [pre_payment_credit_notes_amount] => 0
+                    [receipt_number] => 
+                    [starting_balance] => 0
+                    [statement_descriptor] => 
+                    [status] => paid
+                    [status_transitions] => Array
+                        (
+                            [finalized_at] => 1617267517
+                            [marked_uncollectible_at] => 
+                            [paid_at] => 1617267517
+                            [voided_at] => 
+                        )
+
+                    [subscription] => sub_JDnyX3W1FI5n2e
+                    [subtotal] => 200
+                    [tax] => 
+                    [total] => 200
+                    [total_discount_amounts] => Array
+                        (
+                        )
+
+                    [total_tax_amounts] => Array
+                        (
+                        )
+
+                    [transfer_data] => 
+                    [webhooks_delivered_at] => 
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => req_1DuZEGn9o6K3gp
+            [idempotency_key] => 
+        )
+
+    [type] => invoice.payment_succeeded
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 08-58-40 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbMMNCRN4o1Cr35sMNfbd22
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617267518
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => pi_1IbMMLCRN4o1Cr353199Va0f
+                    [object] => payment_intent
+                    [amount] => 200
+                    [amount_capturable] => 0
+                    [amount_received] => 200
+                    [application] => 
+                    [application_fee_amount] => 
+                    [canceled_at] => 
+                    [cancellation_reason] => 
+                    [capture_method] => automatic
+                    [charges] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => ch_1IbMMLCRN4o1Cr35wk2VHFW6
+                                            [object] => charge
+                                            [amount] => 200
+                                            [amount_captured] => 200
+                                            [amount_refunded] => 0
+                                            [application] => 
+                                            [application_fee] => 
+                                            [application_fee_amount] => 
+                                            [balance_transaction] => txn_1IbMMMCRN4o1Cr35wyfoK4Df
+                                            [billing_details] => Array
+                                                (
+                                                    [address] => Array
+                                                        (
+                                                            [city] => 
+                                                            [country] => 
+                                                            [line1] => 
+                                                            [line2] => 
+                                                            [postal_code] => 
+                                                            [state] => 
+                                                        )
+
+                                                    [email] => 
+                                                    [name] => 
+                                                    [phone] => 
+                                                )
+
+                                            [calculated_statement_descriptor] => Stripe
+                                            [captured] => 1
+                                            [created] => 1617267517
+                                            [currency] => gbp
+                                            [customer] => cus_JDnybDhAsqmGqH
+                                            [description] => Subscription creation
+                                            [destination] => 
+                                            [dispute] => 
+                                            [disputed] => 
+                                            [failure_code] => 
+                                            [failure_message] => 
+                                            [fraud_details] => Array
+                                                (
+                                                )
+
+                                            [invoice] => in_1IbMMLCRN4o1Cr35Cv63jTpx
+                                            [livemode] => 
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [on_behalf_of] => 
+                                            [order] => 
+                                            [outcome] => Array
+                                                (
+                                                    [network_status] => approved_by_network
+                                                    [reason] => 
+                                                    [risk_level] => normal
+                                                    [risk_score] => 49
+                                                    [seller_message] => Payment complete.
+                                                    [type] => authorized
+                                                )
+
+                                            [paid] => 1
+                                            [payment_intent] => pi_1IbMMLCRN4o1Cr353199Va0f
+                                            [payment_method] => pm_1IbMMJCRN4o1Cr359dv8V9N9
+                                            [payment_method_details] => Array
+                                                (
+                                                    [card] => Array
+                                                        (
+                                                            [brand] => visa
+                                                            [checks] => Array
+                                                                (
+                                                                    [address_line1_check] => 
+                                                                    [address_postal_code_check] => 
+                                                                    [cvc_check] => pass
+                                                                )
+
+                                                            [country] => US
+                                                            [exp_month] => 2
+                                                            [exp_year] => 2022
+                                                            [fingerprint] => sXMM2kXrY7c890Pj
+                                                            [funding] => credit
+                                                            [installments] => 
+                                                            [last4] => 4242
+                                                            [network] => visa
+                                                            [three_d_secure] => 
+                                                            [wallet] => 
+                                                        )
+
+                                                    [type] => card
+                                                )
+
+                                            [receipt_email] => 
+                                            [receipt_number] => 
+                                            [receipt_url] => https://pay.stripe.com/receipts/acct_1IRcAqCRN4o1Cr35/ch_1IbMMLCRN4o1Cr35wk2VHFW6/rcpt_JDnyVW1oO7uFAuag4ReHDZJ1JYMLmDK
+                                            [refunded] => 
+                                            [refunds] => Array
+                                                (
+                                                    [object] => list
+                                                    [data] => Array
+                                                        (
+                                                        )
+
+                                                    [has_more] => 
+                                                    [total_count] => 0
+                                                    [url] => /v1/charges/ch_1IbMMLCRN4o1Cr35wk2VHFW6/refunds
+                                                )
+
+                                            [review] => 
+                                            [shipping] => 
+                                            [source] => 
+                                            [source_transfer] => 
+                                            [statement_descriptor] => 
+                                            [statement_descriptor_suffix] => 
+                                            [status] => succeeded
+                                            [transfer_data] => 
+                                            [transfer_group] => 
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/charges?payment_intent=pi_1IbMMLCRN4o1Cr353199Va0f
+                        )
+
+                    [client_secret] => pi_1IbMMLCRN4o1Cr353199Va0f_secret_YdpX70L4SLgCMvWJAtJqwKmWb
+                    [confirmation_method] => automatic
+                    [created] => 1617267517
+                    [currency] => gbp
+                    [customer] => cus_JDnybDhAsqmGqH
+                    [description] => Subscription creation
+                    [invoice] => in_1IbMMLCRN4o1Cr35Cv63jTpx
+                    [last_payment_error] => 
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_action] => 
+                    [on_behalf_of] => 
+                    [payment_method] => pm_1IbMMJCRN4o1Cr359dv8V9N9
+                    [payment_method_options] => Array
+                        (
+                            [card] => Array
+                                (
+                                    [installments] => 
+                                    [network] => 
+                                    [request_three_d_secure] => automatic
+                                )
+
+                        )
+
+                    [payment_method_types] => Array
+                        (
+                            [0] => card
+                        )
+
+                    [receipt_email] => 
+                    [review] => 
+                    [setup_future_usage] => off_session
+                    [shipping] => 
+                    [source] => 
+                    [statement_descriptor] => 
+                    [statement_descriptor_suffix] => 
+                    [status] => succeeded
+                    [transfer_data] => 
+                    [transfer_group] => 
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => req_1DuZEGn9o6K3gp
+            [idempotency_key] => 
+        )
+
+    [type] => payment_intent.succeeded
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-04-55 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbMSQCRN4o1Cr35eq6Ec4HQ
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617267894
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => sub_JDnyX3W1FI5n2e
+                    [object] => subscription
+                    [application_fee_percent] => 
+                    [billing_cycle_anchor] => 1617267517
+                    [billing_thresholds] => 
+                    [cancel_at] => 
+                    [cancel_at_period_end] => 
+                    [canceled_at] => 1617267894
+                    [collection_method] => charge_automatically
+                    [created] => 1617267517
+                    [current_period_end] => 1617353917
+                    [current_period_start] => 1617267517
+                    [customer] => cus_JDnybDhAsqmGqH
+                    [days_until_due] => 
+                    [default_payment_method] => 
+                    [default_source] => 
+                    [default_tax_rates] => Array
+                        (
+                        )
+
+                    [discount] => 
+                    [ended_at] => 1617267894
+                    [items] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => si_JDnyeLEInnMVQ0
+                                            [object] => subscription_item
+                                            [billing_thresholds] => 
+                                            [created] => 1617267517
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [plan] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => plan
+                                                    [active] => 1
+                                                    [aggregate_usage] => 
+                                                    [amount] => 200
+                                                    [amount_decimal] => 200
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [interval] => day
+                                                    [interval_count] => 1
+                                                    [livemode] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [tiers_mode] => 
+                                                    [transform_usage] => 
+                                                    [trial_period_days] => 
+                                                    [usage_type] => licensed
+                                                )
+
+                                            [price] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => price
+                                                    [active] => 1
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [livemode] => 
+                                                    [lookup_key] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [recurring] => Array
+                                                        (
+                                                            [aggregate_usage] => 
+                                                            [interval] => day
+                                                            [interval_count] => 1
+                                                            [trial_period_days] => 
+                                                            [usage_type] => licensed
+                                                        )
+
+                                                    [tiers_mode] => 
+                                                    [transform_quantity] => 
+                                                    [type] => recurring
+                                                    [unit_amount] => 200
+                                                    [unit_amount_decimal] => 200
+                                                )
+
+                                            [quantity] => 1
+                                            [subscription] => sub_JDnyX3W1FI5n2e
+                                            [tax_rates] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/subscription_items?subscription=sub_JDnyX3W1FI5n2e
+                        )
+
+                    [latest_invoice] => in_1IbMMLCRN4o1Cr35Cv63jTpx
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_pending_invoice_item_invoice] => 
+                    [pause_collection] => 
+                    [pending_invoice_item_interval] => 
+                    [pending_setup_intent] => 
+                    [pending_update] => 
+                    [plan] => Array
+                        (
+                            [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                            [object] => plan
+                            [active] => 1
+                            [aggregate_usage] => 
+                            [amount] => 200
+                            [amount_decimal] => 200
+                            [billing_scheme] => per_unit
+                            [created] => 1617030413
+                            [currency] => gbp
+                            [interval] => day
+                            [interval_count] => 1
+                            [livemode] => 
+                            [metadata] => Array
+                                (
+                                )
+
+                            [nickname] => 
+                            [product] => prod_JCmEXrvhAfdMwF
+                            [tiers_mode] => 
+                            [transform_usage] => 
+                            [trial_period_days] => 
+                            [usage_type] => licensed
+                        )
+
+                    [quantity] => 1
+                    [schedule] => 
+                    [start_date] => 1617267517
+                    [status] => canceled
+                    [transfer_data] => 
+                    [trial_end] => 
+                    [trial_start] => 
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => req_PDoNQOUJ30Xz0A
+            [idempotency_key] => 
+        )
+
+    [type] => customer.subscription.deleted
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-04-55 //
+/////////////////////////
+
+Array
+(
+    [to] => test123@gmail.com
+    [subject] => Subscrition Canceled
+    [message] => <h2>Subscription Canceled.</h2><p>Sorry to see you go, your subscription will end on April 2, 2021</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: All Things Wales <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-33-02 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-33-02 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-33-02 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [All Things Wales] New User Registration
+    [message] => New user registration on your site All Things Wales:
+
+Username: newtest
+
+Email: rjrenolo14@gmail.com
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-35-47 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => [All Things Wales] Login Details
+    [message] => Username: newtest
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/stripetest/wp-login.php?action=rp&key=99kEG0hENtNwhYyVm8p6&login=newtest
+
+https://www.another-demo.com/stripetest/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-39-06 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-39-06 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-39-06 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [All Things Wales] New User Registration
+    [message] => New user registration on your site All Things Wales:
+
+Username: rjrenolo
+
+Email: rjrenolo14@gmail.com
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-39-11 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => [All Things Wales] Login Details
+    [message] => Username: rjrenolo
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/stripetest/wp-login.php?action=rp&key=IH5dcMyKInKxu3aGkXQg&login=rjrenolo
+
+https://www.another-demo.com/stripetest/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-43-44 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-43-44 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-43-44 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [All Things Wales] New User Registration
+    [message] => New user registration on your site All Things Wales:
+
+Username: test100
+
+Email: hello@getdead.co.uk
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-43-48 //
+/////////////////////////
+
+Array
+(
+    [to] => hello@getdead.co.uk
+    [subject] => [All Things Wales] Login Details
+    [message] => Username: test100
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/stripetest/wp-login.php?action=rp&key=mTHXA2YD7icAVnOfALog&login=test100
+
+https://www.another-demo.com/stripetest/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-44-34 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-44-43 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-44-43 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-44-43 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [All Things Wales] New User Registration
+    [message] => New user registration on your site All Things Wales:
+
+Username: test1001
+
+Email: chris@origin8.biz
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-44-47 //
+/////////////////////////
+
+Array
+(
+    [to] => chris@origin8.biz
+    [subject] => [All Things Wales] Login Details
+    [message] => Username: test1001
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/stripetest/wp-login.php?action=rp&key=BhgUdsFC2z1trM0gqhef&login=test1001
+
+https://www.another-demo.com/stripetest/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-45-23 //
+/////////////////////////
+
+Array
+(
+    [to] => chris@origin8.biz
+    [subject] => [All Things Wales] Password Reset
+    [message] => Someone has requested a password reset for the following account:
+
+Site Name: All Things Wales
+
+Username: test1001
+
+If this was a mistake, ignore this email and nothing will happen.
+
+To reset your password, visit the following address:
+
+https://www.another-demo.com/stripetest/wp-login.php?action=rp&key=DM6KPgCHpIMH0gvKRfLv&login=test1001
+
+This password reset request originated from the IP address 80.95.197.177.
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-45-25 //
+/////////////////////////
+
+Array
+(
+    [to] => chris@origin8.biz
+    [subject] => [All Things Wales] Password Reset
+    [message] => Someone has requested a password reset for the following account:
+
+Site Name: All Things Wales
+
+Username: test1001
+
+If this was a mistake, ignore this email and nothing will happen.
+
+To reset your password, visit the following address:
+
+https://www.another-demo.com/stripetest/wp-login.php?action=rp&key=S6FoWbBJjavKojnTvQu7&login=test1001
+
+This password reset request originated from the IP address 80.95.197.177.
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 09-46-30 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [All Things Wales] Password Changed
+    [message] => Password changed for user: test1001
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 10-34-41 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbNrICRN4o1Cr35RcUHrKMF
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617273280
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => in_1IbNrICRN4o1Cr35rkhfxK0Y
+                    [object] => invoice
+                    [account_country] => GB
+                    [account_name] => All Things Wales
+                    [account_tax_ids] => 
+                    [amount_due] => 200
+                    [amount_paid] => 0
+                    [amount_remaining] => 200
+                    [application_fee_amount] => 
+                    [attempt_count] => 0
+                    [attempted] => 
+                    [auto_advance] => 1
+                    [billing_reason] => subscription_cycle
+                    [charge] => 
+                    [collection_method] => charge_automatically
+                    [created] => 1617273280
+                    [currency] => gbp
+                    [custom_fields] => 
+                    [customer] => cus_JD54lxkveTScKH
+                    [customer_address] => 
+                    [customer_email] => rjrenolo14@gmail.com
+                    [customer_name] => rj renolo
+                    [customer_phone] => 
+                    [customer_shipping] => 
+                    [customer_tax_exempt] => none
+                    [customer_tax_ids] => Array
+                        (
+                        )
+
+                    [default_payment_method] => 
+                    [default_source] => 
+                    [default_tax_rates] => Array
+                        (
+                        )
+
+                    [description] => 
+                    [discount] => 
+                    [discounts] => Array
+                        (
+                        )
+
+                    [due_date] => 
+                    [ending_balance] => 
+                    [footer] => 
+                    [hosted_invoice_url] => 
+                    [invoice_pdf] => 
+                    [last_finalization_error] => 
+                    [lines] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => il_1IbNrICRN4o1Cr359B7Me5g1
+                                            [object] => line_item
+                                            [amount] => 200
+                                            [currency] => gbp
+                                            [description] => 1 × Just a test (at £2.00 / day)
+                                            [discount_amounts] => Array
+                                                (
+                                                )
+
+                                            [discountable] => 1
+                                            [discounts] => Array
+                                                (
+                                                )
+
+                                            [livemode] => 
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [period] => Array
+                                                (
+                                                    [end] => 1617359666
+                                                    [start] => 1617273266
+                                                )
+
+                                            [plan] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => plan
+                                                    [active] => 1
+                                                    [aggregate_usage] => 
+                                                    [amount] => 200
+                                                    [amount_decimal] => 200
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [interval] => day
+                                                    [interval_count] => 1
+                                                    [livemode] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [tiers_mode] => 
+                                                    [transform_usage] => 
+                                                    [trial_period_days] => 
+                                                    [usage_type] => licensed
+                                                )
+
+                                            [price] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => price
+                                                    [active] => 1
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [livemode] => 
+                                                    [lookup_key] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [recurring] => Array
+                                                        (
+                                                            [aggregate_usage] => 
+                                                            [interval] => day
+                                                            [interval_count] => 1
+                                                            [trial_period_days] => 
+                                                            [usage_type] => licensed
+                                                        )
+
+                                                    [tiers_mode] => 
+                                                    [transform_quantity] => 
+                                                    [type] => recurring
+                                                    [unit_amount] => 200
+                                                    [unit_amount_decimal] => 200
+                                                )
+
+                                            [proration] => 
+                                            [quantity] => 1
+                                            [subscription] => sub_JD54plJXlC2QHo
+                                            [subscription_item] => si_JD54d5FfdfDtvY
+                                            [tax_amounts] => Array
+                                                (
+                                                )
+
+                                            [tax_rates] => Array
+                                                (
+                                                )
+
+                                            [type] => subscription
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/invoices/in_1IbNrICRN4o1Cr35rkhfxK0Y/lines
+                        )
+
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_payment_attempt] => 1617276880
+                    [number] => 
+                    [on_behalf_of] => 
+                    [paid] => 
+                    [payment_intent] => 
+                    [payment_settings] => Array
+                        (
+                            [payment_method_options] => 
+                            [payment_method_types] => 
+                        )
+
+                    [period_end] => 1617273266
+                    [period_start] => 1617186866
+                    [post_payment_credit_notes_amount] => 0
+                    [pre_payment_credit_notes_amount] => 0
+                    [receipt_number] => 
+                    [starting_balance] => 0
+                    [statement_descriptor] => 
+                    [status] => draft
+                    [status_transitions] => Array
+                        (
+                            [finalized_at] => 
+                            [marked_uncollectible_at] => 
+                            [paid_at] => 
+                            [voided_at] => 
+                        )
+
+                    [subscription] => sub_JD54plJXlC2QHo
+                    [subtotal] => 200
+                    [tax] => 
+                    [total] => 200
+                    [total_discount_amounts] => Array
+                        (
+                        )
+
+                    [total_tax_amounts] => Array
+                        (
+                        )
+
+                    [transfer_data] => 
+                    [webhooks_delivered_at] => 
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => 
+            [idempotency_key] => 
+        )
+
+    [type] => invoice.created
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 10-34-41 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbNrICRN4o1Cr35KMHXze1q
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617273280
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => sub_JD54plJXlC2QHo
+                    [object] => subscription
+                    [application_fee_percent] => 
+                    [billing_cycle_anchor] => 1617100466
+                    [billing_thresholds] => 
+                    [cancel_at] => 
+                    [cancel_at_period_end] => 
+                    [canceled_at] => 
+                    [collection_method] => charge_automatically
+                    [created] => 1617100466
+                    [current_period_end] => 1617359666
+                    [current_period_start] => 1617273266
+                    [customer] => cus_JD54lxkveTScKH
+                    [days_until_due] => 
+                    [default_payment_method] => 
+                    [default_source] => 
+                    [default_tax_rates] => Array
+                        (
+                        )
+
+                    [discount] => 
+                    [ended_at] => 
+                    [items] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => si_JD54d5FfdfDtvY
+                                            [object] => subscription_item
+                                            [billing_thresholds] => 
+                                            [created] => 1617100466
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [plan] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => plan
+                                                    [active] => 1
+                                                    [aggregate_usage] => 
+                                                    [amount] => 200
+                                                    [amount_decimal] => 200
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [interval] => day
+                                                    [interval_count] => 1
+                                                    [livemode] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [tiers_mode] => 
+                                                    [transform_usage] => 
+                                                    [trial_period_days] => 
+                                                    [usage_type] => licensed
+                                                )
+
+                                            [price] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => price
+                                                    [active] => 1
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [livemode] => 
+                                                    [lookup_key] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [recurring] => Array
+                                                        (
+                                                            [aggregate_usage] => 
+                                                            [interval] => day
+                                                            [interval_count] => 1
+                                                            [trial_period_days] => 
+                                                            [usage_type] => licensed
+                                                        )
+
+                                                    [tiers_mode] => 
+                                                    [transform_quantity] => 
+                                                    [type] => recurring
+                                                    [unit_amount] => 200
+                                                    [unit_amount_decimal] => 200
+                                                )
+
+                                            [quantity] => 1
+                                            [subscription] => sub_JD54plJXlC2QHo
+                                            [tax_rates] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/subscription_items?subscription=sub_JD54plJXlC2QHo
+                        )
+
+                    [latest_invoice] => in_1IbNrICRN4o1Cr35rkhfxK0Y
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_pending_invoice_item_invoice] => 
+                    [pause_collection] => 
+                    [pending_invoice_item_interval] => 
+                    [pending_setup_intent] => 
+                    [pending_update] => 
+                    [plan] => Array
+                        (
+                            [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                            [object] => plan
+                            [active] => 1
+                            [aggregate_usage] => 
+                            [amount] => 200
+                            [amount_decimal] => 200
+                            [billing_scheme] => per_unit
+                            [created] => 1617030413
+                            [currency] => gbp
+                            [interval] => day
+                            [interval_count] => 1
+                            [livemode] => 
+                            [metadata] => Array
+                                (
+                                )
+
+                            [nickname] => 
+                            [product] => prod_JCmEXrvhAfdMwF
+                            [tiers_mode] => 
+                            [transform_usage] => 
+                            [trial_period_days] => 
+                            [usage_type] => licensed
+                        )
+
+                    [quantity] => 1
+                    [schedule] => 
+                    [start_date] => 1617100466
+                    [status] => active
+                    [transfer_data] => 
+                    [trial_end] => 
+                    [trial_start] => 
+                )
+
+            [previous_attributes] => Array
+                (
+                    [current_period_end] => 1617273266
+                    [current_period_start] => 1617186866
+                    [latest_invoice] => in_1Ib1NuCRN4o1Cr35CyRAOIeE
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => 
+            [idempotency_key] => 
+        )
+
+    [type] => customer.subscription.updated
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 11-36-31 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbOp8CRN4o1Cr35Myi47W6t
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617276990
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => pi_1IbOp7CRN4o1Cr35IRHw8qNT
+                    [object] => payment_intent
+                    [amount] => 200
+                    [amount_capturable] => 0
+                    [amount_received] => 200
+                    [application] => 
+                    [application_fee_amount] => 
+                    [canceled_at] => 
+                    [cancellation_reason] => 
+                    [capture_method] => automatic
+                    [charges] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => ch_1IbOp7CRN4o1Cr35zAjqX1fi
+                                            [object] => charge
+                                            [amount] => 200
+                                            [amount_captured] => 200
+                                            [amount_refunded] => 0
+                                            [application] => 
+                                            [application_fee] => 
+                                            [application_fee_amount] => 
+                                            [balance_transaction] => txn_1IbOp8CRN4o1Cr35bRBywuKJ
+                                            [billing_details] => Array
+                                                (
+                                                    [address] => Array
+                                                        (
+                                                            [city] => 
+                                                            [country] => 
+                                                            [line1] => 
+                                                            [line2] => 
+                                                            [postal_code] => 
+                                                            [state] => 
+                                                        )
+
+                                                    [email] => 
+                                                    [name] => 
+                                                    [phone] => 
+                                                )
+
+                                            [calculated_statement_descriptor] => Stripe
+                                            [captured] => 1
+                                            [created] => 1617276989
+                                            [currency] => gbp
+                                            [customer] => cus_JD54lxkveTScKH
+                                            [description] => Subscription update
+                                            [destination] => 
+                                            [dispute] => 
+                                            [disputed] => 
+                                            [failure_code] => 
+                                            [failure_message] => 
+                                            [fraud_details] => Array
+                                                (
+                                                )
+
+                                            [invoice] => in_1IbNrICRN4o1Cr35rkhfxK0Y
+                                            [livemode] => 
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [on_behalf_of] => 
+                                            [order] => 
+                                            [outcome] => Array
+                                                (
+                                                    [network_status] => approved_by_network
+                                                    [reason] => 
+                                                    [risk_level] => normal
+                                                    [risk_score] => 38
+                                                    [seller_message] => Payment complete.
+                                                    [type] => authorized
+                                                )
+
+                                            [paid] => 1
+                                            [payment_intent] => pi_1IbOp7CRN4o1Cr35IRHw8qNT
+                                            [payment_method] => pm_1IaetxCRN4o1Cr357YubGmNO
+                                            [payment_method_details] => Array
+                                                (
+                                                    [card] => Array
+                                                        (
+                                                            [brand] => visa
+                                                            [checks] => Array
+                                                                (
+                                                                    [address_line1_check] => 
+                                                                    [address_postal_code_check] => 
+                                                                    [cvc_check] => 
+                                                                )
+
+                                                            [country] => US
+                                                            [exp_month] => 2
+                                                            [exp_year] => 2024
+                                                            [fingerprint] => sXMM2kXrY7c890Pj
+                                                            [funding] => credit
+                                                            [installments] => 
+                                                            [last4] => 4242
+                                                            [network] => visa
+                                                            [three_d_secure] => 
+                                                            [wallet] => 
+                                                        )
+
+                                                    [type] => card
+                                                )
+
+                                            [receipt_email] => 
+                                            [receipt_number] => 
+                                            [receipt_url] => https://pay.stripe.com/receipts/acct_1IRcAqCRN4o1Cr35/ch_1IbOp7CRN4o1Cr35zAjqX1fi/rcpt_JDqWJtR34UDE9JdlFJZ3dTbAvdP3ds7
+                                            [refunded] => 
+                                            [refunds] => Array
+                                                (
+                                                    [object] => list
+                                                    [data] => Array
+                                                        (
+                                                        )
+
+                                                    [has_more] => 
+                                                    [total_count] => 0
+                                                    [url] => /v1/charges/ch_1IbOp7CRN4o1Cr35zAjqX1fi/refunds
+                                                )
+
+                                            [review] => 
+                                            [shipping] => 
+                                            [source] => 
+                                            [source_transfer] => 
+                                            [statement_descriptor] => 
+                                            [statement_descriptor_suffix] => 
+                                            [status] => succeeded
+                                            [transfer_data] => 
+                                            [transfer_group] => 
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/charges?payment_intent=pi_1IbOp7CRN4o1Cr35IRHw8qNT
+                        )
+
+                    [client_secret] => pi_1IbOp7CRN4o1Cr35IRHw8qNT_secret_iqYaQYpOtkQxdnPbdwVZTtSsJ
+                    [confirmation_method] => automatic
+                    [created] => 1617276989
+                    [currency] => gbp
+                    [customer] => cus_JD54lxkveTScKH
+                    [description] => Subscription update
+                    [invoice] => in_1IbNrICRN4o1Cr35rkhfxK0Y
+                    [last_payment_error] => 
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_action] => 
+                    [on_behalf_of] => 
+                    [payment_method] => pm_1IaetxCRN4o1Cr357YubGmNO
+                    [payment_method_options] => Array
+                        (
+                            [card] => Array
+                                (
+                                    [installments] => 
+                                    [network] => 
+                                    [request_three_d_secure] => automatic
+                                )
+
+                        )
+
+                    [payment_method_types] => Array
+                        (
+                            [0] => card
+                        )
+
+                    [receipt_email] => 
+                    [review] => 
+                    [setup_future_usage] => 
+                    [shipping] => 
+                    [source] => 
+                    [statement_descriptor] => 
+                    [statement_descriptor_suffix] => 
+                    [status] => succeeded
+                    [transfer_data] => 
+                    [transfer_group] => 
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => 
+            [idempotency_key] => in_1IbNrICRN4o1Cr35rkhfxK0Y-initial_attempt-6ea333e38ad29b2ba
+        )
+
+    [type] => payment_intent.succeeded
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 11-36-31 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbOp9CRN4o1Cr35wiM3BA2t
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617276991
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => in_1IbNrICRN4o1Cr35rkhfxK0Y
+                    [object] => invoice
+                    [account_country] => GB
+                    [account_name] => All Things Wales
+                    [account_tax_ids] => 
+                    [amount_due] => 200
+                    [amount_paid] => 200
+                    [amount_remaining] => 0
+                    [application_fee_amount] => 
+                    [attempt_count] => 1
+                    [attempted] => 1
+                    [auto_advance] => 
+                    [billing_reason] => subscription_cycle
+                    [charge] => ch_1IbOp7CRN4o1Cr35zAjqX1fi
+                    [collection_method] => charge_automatically
+                    [created] => 1617273280
+                    [currency] => gbp
+                    [custom_fields] => 
+                    [customer] => cus_JD54lxkveTScKH
+                    [customer_address] => 
+                    [customer_email] => rjrenolo14@gmail.com
+                    [customer_name] => rj renolo
+                    [customer_phone] => 
+                    [customer_shipping] => 
+                    [customer_tax_exempt] => none
+                    [customer_tax_ids] => Array
+                        (
+                        )
+
+                    [default_payment_method] => 
+                    [default_source] => 
+                    [default_tax_rates] => Array
+                        (
+                        )
+
+                    [description] => 
+                    [discount] => 
+                    [discounts] => Array
+                        (
+                        )
+
+                    [due_date] => 
+                    [ending_balance] => 0
+                    [footer] => 
+                    [hosted_invoice_url] => https://invoice.stripe.com/i/acct_1IRcAqCRN4o1Cr35/invst_JDpWMubn23tJC1ePMkh8UiZbXhrdbhd
+                    [invoice_pdf] => https://pay.stripe.com/invoice/acct_1IRcAqCRN4o1Cr35/invst_JDpWMubn23tJC1ePMkh8UiZbXhrdbhd/pdf
+                    [last_finalization_error] => 
+                    [lines] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => il_1IbNrICRN4o1Cr359B7Me5g1
+                                            [object] => line_item
+                                            [amount] => 200
+                                            [currency] => gbp
+                                            [description] => 1 × Just a test (at £2.00 / day)
+                                            [discount_amounts] => Array
+                                                (
+                                                )
+
+                                            [discountable] => 1
+                                            [discounts] => Array
+                                                (
+                                                )
+
+                                            [livemode] => 
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [period] => Array
+                                                (
+                                                    [end] => 1617359666
+                                                    [start] => 1617273266
+                                                )
+
+                                            [plan] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => plan
+                                                    [active] => 1
+                                                    [aggregate_usage] => 
+                                                    [amount] => 200
+                                                    [amount_decimal] => 200
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [interval] => day
+                                                    [interval_count] => 1
+                                                    [livemode] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [tiers_mode] => 
+                                                    [transform_usage] => 
+                                                    [trial_period_days] => 
+                                                    [usage_type] => licensed
+                                                )
+
+                                            [price] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => price
+                                                    [active] => 1
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [livemode] => 
+                                                    [lookup_key] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [recurring] => Array
+                                                        (
+                                                            [aggregate_usage] => 
+                                                            [interval] => day
+                                                            [interval_count] => 1
+                                                            [trial_period_days] => 
+                                                            [usage_type] => licensed
+                                                        )
+
+                                                    [tiers_mode] => 
+                                                    [transform_quantity] => 
+                                                    [type] => recurring
+                                                    [unit_amount] => 200
+                                                    [unit_amount_decimal] => 200
+                                                )
+
+                                            [proration] => 
+                                            [quantity] => 1
+                                            [subscription] => sub_JD54plJXlC2QHo
+                                            [subscription_item] => si_JD54d5FfdfDtvY
+                                            [tax_amounts] => Array
+                                                (
+                                                )
+
+                                            [tax_rates] => Array
+                                                (
+                                                )
+
+                                            [type] => subscription
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/invoices/in_1IbNrICRN4o1Cr35rkhfxK0Y/lines
+                        )
+
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_payment_attempt] => 
+                    [number] => DD94352D-0041
+                    [on_behalf_of] => 
+                    [paid] => 1
+                    [payment_intent] => pi_1IbOp7CRN4o1Cr35IRHw8qNT
+                    [payment_settings] => Array
+                        (
+                            [payment_method_options] => 
+                            [payment_method_types] => 
+                        )
+
+                    [period_end] => 1617273266
+                    [period_start] => 1617186866
+                    [post_payment_credit_notes_amount] => 0
+                    [pre_payment_credit_notes_amount] => 0
+                    [receipt_number] => 
+                    [starting_balance] => 0
+                    [statement_descriptor] => 
+                    [status] => paid
+                    [status_transitions] => Array
+                        (
+                            [finalized_at] => 1617276988
+                            [marked_uncollectible_at] => 
+                            [paid_at] => 1617276988
+                            [voided_at] => 
+                        )
+
+                    [subscription] => sub_JD54plJXlC2QHo
+                    [subtotal] => 200
+                    [tax] => 
+                    [total] => 200
+                    [total_discount_amounts] => Array
+                        (
+                        )
+
+                    [total_tax_amounts] => Array
+                        (
+                        )
+
+                    [transfer_data] => 
+                    [webhooks_delivered_at] => 1617273281
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => 
+            [idempotency_key] => 
+        )
+
+    [type] => invoice.paid
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 11-36-31 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbOp9CRN4o1Cr35wN3gf3kO
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617276991
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => in_1IbNrICRN4o1Cr35rkhfxK0Y
+                    [object] => invoice
+                    [account_country] => GB
+                    [account_name] => All Things Wales
+                    [account_tax_ids] => 
+                    [amount_due] => 200
+                    [amount_paid] => 200
+                    [amount_remaining] => 0
+                    [application_fee_amount] => 
+                    [attempt_count] => 1
+                    [attempted] => 1
+                    [auto_advance] => 
+                    [billing_reason] => subscription_cycle
+                    [charge] => ch_1IbOp7CRN4o1Cr35zAjqX1fi
+                    [collection_method] => charge_automatically
+                    [created] => 1617273280
+                    [currency] => gbp
+                    [custom_fields] => 
+                    [customer] => cus_JD54lxkveTScKH
+                    [customer_address] => 
+                    [customer_email] => rjrenolo14@gmail.com
+                    [customer_name] => rj renolo
+                    [customer_phone] => 
+                    [customer_shipping] => 
+                    [customer_tax_exempt] => none
+                    [customer_tax_ids] => Array
+                        (
+                        )
+
+                    [default_payment_method] => 
+                    [default_source] => 
+                    [default_tax_rates] => Array
+                        (
+                        )
+
+                    [description] => 
+                    [discount] => 
+                    [discounts] => Array
+                        (
+                        )
+
+                    [due_date] => 
+                    [ending_balance] => 0
+                    [footer] => 
+                    [hosted_invoice_url] => https://invoice.stripe.com/i/acct_1IRcAqCRN4o1Cr35/invst_JDpWMubn23tJC1ePMkh8UiZbXhrdbhd
+                    [invoice_pdf] => https://pay.stripe.com/invoice/acct_1IRcAqCRN4o1Cr35/invst_JDpWMubn23tJC1ePMkh8UiZbXhrdbhd/pdf
+                    [last_finalization_error] => 
+                    [lines] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => il_1IbNrICRN4o1Cr359B7Me5g1
+                                            [object] => line_item
+                                            [amount] => 200
+                                            [currency] => gbp
+                                            [description] => 1 × Just a test (at £2.00 / day)
+                                            [discount_amounts] => Array
+                                                (
+                                                )
+
+                                            [discountable] => 1
+                                            [discounts] => Array
+                                                (
+                                                )
+
+                                            [livemode] => 
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [period] => Array
+                                                (
+                                                    [end] => 1617359666
+                                                    [start] => 1617273266
+                                                )
+
+                                            [plan] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => plan
+                                                    [active] => 1
+                                                    [aggregate_usage] => 
+                                                    [amount] => 200
+                                                    [amount_decimal] => 200
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [interval] => day
+                                                    [interval_count] => 1
+                                                    [livemode] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [tiers_mode] => 
+                                                    [transform_usage] => 
+                                                    [trial_period_days] => 
+                                                    [usage_type] => licensed
+                                                )
+
+                                            [price] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => price
+                                                    [active] => 1
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [livemode] => 
+                                                    [lookup_key] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [recurring] => Array
+                                                        (
+                                                            [aggregate_usage] => 
+                                                            [interval] => day
+                                                            [interval_count] => 1
+                                                            [trial_period_days] => 
+                                                            [usage_type] => licensed
+                                                        )
+
+                                                    [tiers_mode] => 
+                                                    [transform_quantity] => 
+                                                    [type] => recurring
+                                                    [unit_amount] => 200
+                                                    [unit_amount_decimal] => 200
+                                                )
+
+                                            [proration] => 
+                                            [quantity] => 1
+                                            [subscription] => sub_JD54plJXlC2QHo
+                                            [subscription_item] => si_JD54d5FfdfDtvY
+                                            [tax_amounts] => Array
+                                                (
+                                                )
+
+                                            [tax_rates] => Array
+                                                (
+                                                )
+
+                                            [type] => subscription
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/invoices/in_1IbNrICRN4o1Cr35rkhfxK0Y/lines
+                        )
+
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_payment_attempt] => 
+                    [number] => DD94352D-0041
+                    [on_behalf_of] => 
+                    [paid] => 1
+                    [payment_intent] => pi_1IbOp7CRN4o1Cr35IRHw8qNT
+                    [payment_settings] => Array
+                        (
+                            [payment_method_options] => 
+                            [payment_method_types] => 
+                        )
+
+                    [period_end] => 1617273266
+                    [period_start] => 1617186866
+                    [post_payment_credit_notes_amount] => 0
+                    [pre_payment_credit_notes_amount] => 0
+                    [receipt_number] => 
+                    [starting_balance] => 0
+                    [statement_descriptor] => 
+                    [status] => paid
+                    [status_transitions] => Array
+                        (
+                            [finalized_at] => 1617276988
+                            [marked_uncollectible_at] => 
+                            [paid_at] => 1617276988
+                            [voided_at] => 
+                        )
+
+                    [subscription] => sub_JD54plJXlC2QHo
+                    [subtotal] => 200
+                    [tax] => 
+                    [total] => 200
+                    [total_discount_amounts] => Array
+                        (
+                        )
+
+                    [total_tax_amounts] => Array
+                        (
+                        )
+
+                    [transfer_data] => 
+                    [webhooks_delivered_at] => 1617273281
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => 
+            [idempotency_key] => 
+        )
+
+    [type] => invoice.payment_succeeded
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 17-48-42 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbUdICRN4o1Cr35lBfK1lI2
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617299320
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => sub_JDC3UwdY89H3pX
+                    [object] => subscription
+                    [application_fee_percent] => 
+                    [billing_cycle_anchor] => 1617126498
+                    [billing_thresholds] => 
+                    [cancel_at] => 
+                    [cancel_at_period_end] => 
+                    [canceled_at] => 
+                    [collection_method] => charge_automatically
+                    [created] => 1617126498
+                    [current_period_end] => 1617385698
+                    [current_period_start] => 1617299298
+                    [customer] => cus_JDC3U12oTmsUiZ
+                    [days_until_due] => 
+                    [default_payment_method] => 
+                    [default_source] => 
+                    [default_tax_rates] => Array
+                        (
+                        )
+
+                    [discount] => 
+                    [ended_at] => 
+                    [items] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => si_JDC3NWDNfbN5WR
+                                            [object] => subscription_item
+                                            [billing_thresholds] => 
+                                            [created] => 1617126498
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [plan] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => plan
+                                                    [active] => 1
+                                                    [aggregate_usage] => 
+                                                    [amount] => 200
+                                                    [amount_decimal] => 200
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [interval] => day
+                                                    [interval_count] => 1
+                                                    [livemode] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [tiers_mode] => 
+                                                    [transform_usage] => 
+                                                    [trial_period_days] => 
+                                                    [usage_type] => licensed
+                                                )
+
+                                            [price] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => price
+                                                    [active] => 1
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [livemode] => 
+                                                    [lookup_key] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [recurring] => Array
+                                                        (
+                                                            [aggregate_usage] => 
+                                                            [interval] => day
+                                                            [interval_count] => 1
+                                                            [trial_period_days] => 
+                                                            [usage_type] => licensed
+                                                        )
+
+                                                    [tiers_mode] => 
+                                                    [transform_quantity] => 
+                                                    [type] => recurring
+                                                    [unit_amount] => 200
+                                                    [unit_amount_decimal] => 200
+                                                )
+
+                                            [quantity] => 1
+                                            [subscription] => sub_JDC3UwdY89H3pX
+                                            [tax_rates] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/subscription_items?subscription=sub_JDC3UwdY89H3pX
+                        )
+
+                    [latest_invoice] => in_1IbUdICRN4o1Cr35MoUWc5N3
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_pending_invoice_item_invoice] => 
+                    [pause_collection] => 
+                    [pending_invoice_item_interval] => 
+                    [pending_setup_intent] => 
+                    [pending_update] => 
+                    [plan] => Array
+                        (
+                            [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                            [object] => plan
+                            [active] => 1
+                            [aggregate_usage] => 
+                            [amount] => 200
+                            [amount_decimal] => 200
+                            [billing_scheme] => per_unit
+                            [created] => 1617030413
+                            [currency] => gbp
+                            [interval] => day
+                            [interval_count] => 1
+                            [livemode] => 
+                            [metadata] => Array
+                                (
+                                )
+
+                            [nickname] => 
+                            [product] => prod_JCmEXrvhAfdMwF
+                            [tiers_mode] => 
+                            [transform_usage] => 
+                            [trial_period_days] => 
+                            [usage_type] => licensed
+                        )
+
+                    [quantity] => 1
+                    [schedule] => 
+                    [start_date] => 1617126498
+                    [status] => past_due
+                    [transfer_data] => 
+                    [trial_end] => 
+                    [trial_start] => 
+                )
+
+            [previous_attributes] => Array
+                (
+                    [current_period_end] => 1617299298
+                    [current_period_start] => 1617212898
+                    [latest_invoice] => in_1Ib89eCRN4o1Cr35KVLsBdMz
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => 
+            [idempotency_key] => 
+        )
+
+    [type] => customer.subscription.updated
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 17-48-43 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbUdICRN4o1Cr356YiQtTH6
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617299320
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => in_1IbUdICRN4o1Cr35MoUWc5N3
+                    [object] => invoice
+                    [account_country] => GB
+                    [account_name] => All Things Wales
+                    [account_tax_ids] => 
+                    [amount_due] => 200
+                    [amount_paid] => 0
+                    [amount_remaining] => 200
+                    [application_fee_amount] => 
+                    [attempt_count] => 0
+                    [attempted] => 
+                    [auto_advance] => 1
+                    [billing_reason] => subscription_cycle
+                    [charge] => 
+                    [collection_method] => charge_automatically
+                    [created] => 1617299320
+                    [currency] => gbp
+                    [custom_fields] => 
+                    [customer] => cus_JDC3U12oTmsUiZ
+                    [customer_address] => 
+                    [customer_email] => renoloroland11@gmail.com
+                    [customer_name] => renolo roland
+                    [customer_phone] => 
+                    [customer_shipping] => 
+                    [customer_tax_exempt] => none
+                    [customer_tax_ids] => Array
+                        (
+                        )
+
+                    [default_payment_method] => 
+                    [default_source] => 
+                    [default_tax_rates] => Array
+                        (
+                        )
+
+                    [description] => 
+                    [discount] => 
+                    [discounts] => Array
+                        (
+                        )
+
+                    [due_date] => 
+                    [ending_balance] => 
+                    [footer] => 
+                    [hosted_invoice_url] => 
+                    [invoice_pdf] => 
+                    [last_finalization_error] => 
+                    [lines] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => il_1IbUdICRN4o1Cr35wjyEgkjR
+                                            [object] => line_item
+                                            [amount] => 200
+                                            [currency] => gbp
+                                            [description] => 1 × Just a test (at £2.00 / day)
+                                            [discount_amounts] => Array
+                                                (
+                                                )
+
+                                            [discountable] => 1
+                                            [discounts] => Array
+                                                (
+                                                )
+
+                                            [livemode] => 
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [period] => Array
+                                                (
+                                                    [end] => 1617385698
+                                                    [start] => 1617299298
+                                                )
+
+                                            [plan] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => plan
+                                                    [active] => 1
+                                                    [aggregate_usage] => 
+                                                    [amount] => 200
+                                                    [amount_decimal] => 200
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [interval] => day
+                                                    [interval_count] => 1
+                                                    [livemode] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [tiers_mode] => 
+                                                    [transform_usage] => 
+                                                    [trial_period_days] => 
+                                                    [usage_type] => licensed
+                                                )
+
+                                            [price] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => price
+                                                    [active] => 1
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [livemode] => 
+                                                    [lookup_key] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [recurring] => Array
+                                                        (
+                                                            [aggregate_usage] => 
+                                                            [interval] => day
+                                                            [interval_count] => 1
+                                                            [trial_period_days] => 
+                                                            [usage_type] => licensed
+                                                        )
+
+                                                    [tiers_mode] => 
+                                                    [transform_quantity] => 
+                                                    [type] => recurring
+                                                    [unit_amount] => 200
+                                                    [unit_amount_decimal] => 200
+                                                )
+
+                                            [proration] => 
+                                            [quantity] => 1
+                                            [subscription] => sub_JDC3UwdY89H3pX
+                                            [subscription_item] => si_JDC3NWDNfbN5WR
+                                            [tax_amounts] => Array
+                                                (
+                                                )
+
+                                            [tax_rates] => Array
+                                                (
+                                                )
+
+                                            [type] => subscription
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/invoices/in_1IbUdICRN4o1Cr35MoUWc5N3/lines
+                        )
+
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_payment_attempt] => 1617302920
+                    [number] => 
+                    [on_behalf_of] => 
+                    [paid] => 
+                    [payment_intent] => 
+                    [payment_settings] => Array
+                        (
+                            [payment_method_options] => 
+                            [payment_method_types] => 
+                        )
+
+                    [period_end] => 1617299298
+                    [period_start] => 1617212898
+                    [post_payment_credit_notes_amount] => 0
+                    [pre_payment_credit_notes_amount] => 0
+                    [receipt_number] => 
+                    [starting_balance] => 0
+                    [statement_descriptor] => 
+                    [status] => draft
+                    [status_transitions] => Array
+                        (
+                            [finalized_at] => 
+                            [marked_uncollectible_at] => 
+                            [paid_at] => 
+                            [voided_at] => 
+                        )
+
+                    [subscription] => sub_JDC3UwdY89H3pX
+                    [subtotal] => 200
+                    [tax] => 
+                    [total] => 200
+                    [total_discount_amounts] => Array
+                        (
+                        )
+
+                    [total_tax_amounts] => Array
+                        (
+                        )
+
+                    [transfer_data] => 
+                    [webhooks_delivered_at] => 
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => 
+            [idempotency_key] => 
+        )
+
+    [type] => invoice.created
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-01 18-50-31 //
+/////////////////////////
+
+Array
+(
+    [id] => evt_1IbVb8CRN4o1Cr35zzCyvgM6
+    [object] => event
+    [api_version] => 2020-08-27
+    [created] => 1617303030
+    [data] => Array
+        (
+            [object] => Array
+                (
+                    [id] => in_1IbUdICRN4o1Cr35MoUWc5N3
+                    [object] => invoice
+                    [account_country] => GB
+                    [account_name] => All Things Wales
+                    [account_tax_ids] => 
+                    [amount_due] => 200
+                    [amount_paid] => 0
+                    [amount_remaining] => 200
+                    [application_fee_amount] => 
+                    [attempt_count] => 1
+                    [attempted] => 1
+                    [auto_advance] => 1
+                    [billing_reason] => subscription_cycle
+                    [charge] => 
+                    [collection_method] => charge_automatically
+                    [created] => 1617299320
+                    [currency] => gbp
+                    [custom_fields] => 
+                    [customer] => cus_JDC3U12oTmsUiZ
+                    [customer_address] => 
+                    [customer_email] => renoloroland11@gmail.com
+                    [customer_name] => renolo roland
+                    [customer_phone] => 
+                    [customer_shipping] => 
+                    [customer_tax_exempt] => none
+                    [customer_tax_ids] => Array
+                        (
+                        )
+
+                    [default_payment_method] => 
+                    [default_source] => 
+                    [default_tax_rates] => Array
+                        (
+                        )
+
+                    [description] => 
+                    [discount] => 
+                    [discounts] => Array
+                        (
+                        )
+
+                    [due_date] => 
+                    [ending_balance] => 0
+                    [footer] => 
+                    [hosted_invoice_url] => https://invoice.stripe.com/i/acct_1IRcAqCRN4o1Cr35/invst_JDwWl5W1zT3jmjHw4gbvKB3ZUjKPCth
+                    [invoice_pdf] => https://pay.stripe.com/invoice/acct_1IRcAqCRN4o1Cr35/invst_JDwWl5W1zT3jmjHw4gbvKB3ZUjKPCth/pdf
+                    [last_finalization_error] => 
+                    [lines] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => il_1IbUdICRN4o1Cr35wjyEgkjR
+                                            [object] => line_item
+                                            [amount] => 200
+                                            [currency] => gbp
+                                            [description] => 1 × Just a test (at £2.00 / day)
+                                            [discount_amounts] => Array
+                                                (
+                                                )
+
+                                            [discountable] => 1
+                                            [discounts] => Array
+                                                (
+                                                )
+
+                                            [livemode] => 
+                                            [metadata] => Array
+                                                (
+                                                )
+
+                                            [period] => Array
+                                                (
+                                                    [end] => 1617385698
+                                                    [start] => 1617299298
+                                                )
+
+                                            [plan] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => plan
+                                                    [active] => 1
+                                                    [aggregate_usage] => 
+                                                    [amount] => 200
+                                                    [amount_decimal] => 200
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [interval] => day
+                                                    [interval_count] => 1
+                                                    [livemode] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [tiers_mode] => 
+                                                    [transform_usage] => 
+                                                    [trial_period_days] => 
+                                                    [usage_type] => licensed
+                                                )
+
+                                            [price] => Array
+                                                (
+                                                    [id] => price_1IaMg5CRN4o1Cr35oqx5Y904
+                                                    [object] => price
+                                                    [active] => 1
+                                                    [billing_scheme] => per_unit
+                                                    [created] => 1617030413
+                                                    [currency] => gbp
+                                                    [livemode] => 
+                                                    [lookup_key] => 
+                                                    [metadata] => Array
+                                                        (
+                                                        )
+
+                                                    [nickname] => 
+                                                    [product] => prod_JCmEXrvhAfdMwF
+                                                    [recurring] => Array
+                                                        (
+                                                            [aggregate_usage] => 
+                                                            [interval] => day
+                                                            [interval_count] => 1
+                                                            [trial_period_days] => 
+                                                            [usage_type] => licensed
+                                                        )
+
+                                                    [tiers_mode] => 
+                                                    [transform_quantity] => 
+                                                    [type] => recurring
+                                                    [unit_amount] => 200
+                                                    [unit_amount_decimal] => 200
+                                                )
+
+                                            [proration] => 
+                                            [quantity] => 1
+                                            [subscription] => sub_JDC3UwdY89H3pX
+                                            [subscription_item] => si_JDC3NWDNfbN5WR
+                                            [tax_amounts] => Array
+                                                (
+                                                )
+
+                                            [tax_rates] => Array
+                                                (
+                                                )
+
+                                            [type] => subscription
+                                        )
+
+                                )
+
+                            [has_more] => 
+                            [total_count] => 1
+                            [url] => /v1/invoices/in_1IbUdICRN4o1Cr35MoUWc5N3/lines
+                        )
+
+                    [livemode] => 
+                    [metadata] => Array
+                        (
+                        )
+
+                    [next_payment_attempt] => 1617756561
+                    [number] => DD94352D-0042
+                    [on_behalf_of] => 
+                    [paid] => 
+                    [payment_intent] => pi_1IbVa2CRN4o1Cr35De0ecqTl
+                    [payment_settings] => Array
+                        (
+                            [payment_method_options] => 
+                            [payment_method_types] => 
+                        )
+
+                    [period_end] => 1617299298
+                    [period_start] => 1617212898
+                    [post_payment_credit_notes_amount] => 0
+                    [pre_payment_credit_notes_amount] => 0
+                    [receipt_number] => 
+                    [starting_balance] => 0
+                    [statement_descriptor] => 
+                    [status] => open
+                    [status_transitions] => Array
+                        (
+                            [finalized_at] => 1617302961
+                            [marked_uncollectible_at] => 
+                            [paid_at] => 
+                            [voided_at] => 
+                        )
+
+                    [subscription] => sub_JDC3UwdY89H3pX
+                    [subtotal] => 200
+                    [tax] => 
+                    [total] => 200
+                    [total_discount_amounts] => Array
+                        (
+                        )
+
+                    [total_tax_amounts] => Array
+                        (
+                        )
+
+                    [transfer_data] => 
+                    [webhooks_delivered_at] => 1617299323
+                )
+
+        )
+
+    [livemode] => 
+    [pending_webhooks] => 1
+    [request] => Array
+        (
+            [id] => 
+            [idempotency_key] => 
+        )
+
+    [type] => invoice.payment_failed
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-02 07-00-29 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-02 07-01-07 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-02 07-01-07 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-02 07-01-07 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [Find My Wedding] New User Registration
+    [message] => New user registration on your site Find My Wedding:
+
+Username: rjrenolo
+
+Email: rjrenolo14@gmail.com
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-02 07-01-12 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => [Find My Wedding] Login Details
+    [message] => Username: rjrenolo
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/wedding/wp-login.php?action=rp&key=n6K2edOwIDhd5UxGL4UC&login=rjrenolo
+
+https://www.another-demo.com/wedding/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-02 13-07-38 //
+/////////////////////////
+
+Array
+(
+    [paymentDetails] => Array
+        (
+            [0] => Array
+                (
+                    [name] => email
+                    [value] => rjrenolo14@gmail.com
+                )
+
+            [1] => Array
+                (
+                    [name] => first-name
+                    [value] => qwe12
+                )
+
+            [2] => Array
+                (
+                    [name] => last-name
+                    [value] => 123
+                )
+
+            [3] => Array
+                (
+                    [name] => number
+                    [value] => 4242 4242 4242 4242
+                )
+
+            [4] => Array
+                (
+                    [name] => expiry
+                    [value] => 02 / 2022
+                )
+
+            [5] => Array
+                (
+                    [name] => cvc
+                    [value] => 123
+                )
+
+            [6] => Array
+                (
+                    [name] => userId
+                    [value] => 46
+                )
+
+        )
+
+    [selectedSubscription] => bronze
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-02 13-17-25 //
+/////////////////////////
+
+price_1IbmKfHSDS5z7MRRNqiWNNhP
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-02 13-18-21 //
+/////////////////////////
+
+price_1IbmKfHSDS5z7MRRnlYLkLUb
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-02 13-23-25 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => Thank you
+    [message] => <h2>Thank you.</h2><p>Hello rjrenolo,</p><br><p>Thank you for subscribing on our service, your subscription will end on July 2, 2021</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-05 07-58-19 //
+/////////////////////////
+
+subscribe
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-05 07-58-19 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-05 07-58-20 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [Find My Wedding] New User Registration
+    [message] => New user registration on your site Find My Wedding:
+
+Username: dave
+
+Email: utcweb1@gmail.com
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-05 07-58-24 //
+/////////////////////////
+
+Array
+(
+    [to] => utcweb1@gmail.com
+    [subject] => [Find My Wedding] Login Details
+    [message] => Username: dave
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/wedding/wp-login.php?action=rp&key=JEOkPz4koxXkxbqpZi65&login=dave
+
+https://www.another-demo.com/wedding/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-05 07-59-04 //
+/////////////////////////
+
+Array
+(
+    [to] => utcweb@gmail.com
+    [subject] => Thank you
+    [message] => <h2>Thank you.</h2><p>Hello dave,</p><br><p>Thank you for subscribing on our service, your subscription will end on July 5, 2021</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-05 08-32-22 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-05 08-32-22 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [Find My Wedding] New User Registration
+    [message] => New user registration on your site Find My Wedding:
+
+Username: couple1
+
+Email: couple1@test.com
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-05 08-32-27 //
+/////////////////////////
+
+Array
+(
+    [to] => couple1@test.com
+    [subject] => [Find My Wedding] Login Details
+    [message] => Username: couple1
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/wedding/wp-login.php?action=rp&key=PxgxvLBP9ETUBDBUgH85&login=couple1
+
+https://www.another-demo.com/wedding/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-05 08-41-28 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-05 08-41-28 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [Find My Wedding] New User Registration
+    [message] => New user registration on your site Find My Wedding:
+
+Username: couple2
+
+Email: couple2@test.com
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-05 08-41-33 //
+/////////////////////////
+
+Array
+(
+    [to] => couple2@test.com
+    [subject] => [Find My Wedding] Login Details
+    [message] => Username: couple2
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/wedding/wp-login.php?action=rp&key=qrE7FvH6rYj1ZGLIZuf4&login=couple2
+
+https://www.another-demo.com/wedding/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 17-29-52 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 17-29-53 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [Find My Wedding] New User Registration
+    [message] => New user registration on your site Find My Wedding:
+
+Username: golduser
+
+Email: gold@user.com
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 17-29-57 //
+/////////////////////////
+
+Array
+(
+    [to] => gold@user.com
+    [subject] => [Find My Wedding] Login Details
+    [message] => Username: golduser
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/wedding/wp-login.php?action=rp&key=RWB27GVsLi3IcpU1u9ta&login=golduser
+
+https://www.another-demo.com/wedding/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 17-31-42 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 17-31-42 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [Find My Wedding] New User Registration
+    [message] => New user registration on your site Find My Wedding:
+
+Username: rjrenolo
+
+Email: rjrenolo14@gmail.com
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 17-31-46 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => [Find My Wedding] Login Details
+    [message] => Username: rjrenolo
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/wedding/wp-login.php?action=rp&key=kxKJYbGSjDiMl7rQJtkw&login=rjrenolo
+
+https://www.another-demo.com/wedding/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 17-35-34 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => Thank you
+    [message] => <h2>Thank you.</h2><p>Hello rjrenolo,</p><br><p>Thank you for subscribing on our service, your subscription will end on April 7, 2022</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 17-58-21 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => General Enquiryfrom Find My Wedding
+    [message] => <p>You have a General Enquiry from Find My Wedding. Log into your dashboard to respond</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 18-36-33 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 18-36-33 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [Find My Wedding] New User Registration
+    [message] => New user registration on your site Find My Wedding:
+
+Username: couple_rj
+
+Email: couple_rj@test.com
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 18-36-37 //
+/////////////////////////
+
+Array
+(
+    [to] => couple_rj@test.com
+    [subject] => [Find My Wedding] Login Details
+    [message] => Username: couple_rj
+
+To set your password, visit the following address:
+
+https://www.another-demo.com/wedding/wp-login.php?action=rp&key=ThZDhWGRX3MhX7WWNQ3B&login=couple_rj
+
+https://www.another-demo.com/wedding/wp-login.php
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 18-55-23 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => Quote Enquiry from Find My Wedding
+    [message] => <p>You have a Quote Enquiry from Find My Wedding. Log into your dashboard to respond</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 19-15-56 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => Quote Enquiry from Find My Wedding
+    [message] => <p>You have a Quote Enquiry from Find My Wedding. Log into your <a href=https://www.another-demo.com/wedding/listing-dashboard>dashboard</a> to respond</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 19-16-08 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => Quote Enquiry from Find My Wedding
+    [message] => <p>You have a Quote Enquiry from Find My Wedding. Log into your <a href=https://www.another-demo.com/wedding/listing-dashboard>dashboard</a> to respond</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 19-16-33 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => Quote Enquiry from Find My Wedding
+    [message] => <p>You have a Quote Enquiry from Find My Wedding. Log into your <a href=https://www.another-demo.com/wedding/listing-dashboard>dashboard</a> to respond</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 19-17-29 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => Quote Enquiry from Find My Wedding
+    [message] => <p>You have a Quote Enquiry from Find My Wedding. Log into your <a href=https://www.another-demo.com/wedding/listing-dashboard>dashboard</a> to respond</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 19-17-48 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => Quote Enquiry from Find My Wedding
+    [message] => <p>You have a Quote Enquiry from Find My Wedding. Log into your <a href=https://www.another-demo.com/wedding/listing-dashboard>dashboard</a> to respond</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 19-28-53 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => Quote Enquiry from Find My Wedding
+    [message] => <p>You have a Quote Enquiry from Find My Wedding. Log into your <a href=https://www.another-demo.com/wedding/listing-dashboard>dashboard</a> to respond</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 19-59-12 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => Quote Enquiry from Find My Wedding
+    [message] => <p>You have a Quote Enquiry from Find My Wedding. Log into your <a href=https://www.another-demo.com/wedding/listing-dashboard>dashboard</a> to respond</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 21-21-37 //
+/////////////////////////
+
+Array
+(
+    [to] => couple_rj@test.com
+    [subject] => [Find My Wedding] Comment: "R & J"
+    [message] => New comment on your post "R &amp; J"
+Author: webadeptuk (IP address: 120.29.68.80, 80.68.29.120-rev.convergeict.com)
+Email: support@webadept.co.uk
+URL: https://www.another-demo.com/wedding
+Comment: 
+test
+
+You can see all comments on this post here:
+https://www.another-demo.com/wedding/message/r-j/#comments
+
+Permalink: https://www.another-demo.com/wedding/message/r-j/#comment-2
+
+    [headers] => From: "webadeptuk" <wordpress@another-demo.com>
+Content-Type: text/plain; charset="UTF-8"
+Reply-To: "support@webadept.co.uk" <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 21-38-49 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => General Enquiry from Find My Wedding
+    [message] => <p>You have a General Enquiry from Find My Wedding. Log into your <a href=https://www.another-demo.com/wedding/listing-dashboard>dashboard</a> to respond</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 21-40-23 //
+/////////////////////////
+
+Array
+(
+    [to] => rjrenolo14@gmail.com
+    [subject] => General Enquiry from Find My Wedding
+    [message] => <p>You have a General Enquiry from Find My Wedding. Log into your <a href=https://www.another-demo.com/wedding/listing-dashboard>dashboard</a> to respond</p>
+    [headers] => MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: Find My Wedding <support@webadept.co.uk>
+Return-path: <support@webadept.co.uk>
+
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-04-07 22-02-32 //
+/////////////////////////
+
+Array
+(
+    [to] => support@webadept.co.uk
+    [subject] => [Find My Wedding] Please moderate: "R & J"
+    [message] => A new comment on the post "R &amp; J" is waiting for your approval
+https://www.another-demo.com/wedding/message/r-j/
+
+Author: rjrenolo (IP address: 120.29.68.80, 80.68.29.120-rev.convergeict.com)
+Email: rjrenolo14@gmail.com
+URL: 
+Comment: 
+hello
+
+Approve it: https://www.another-demo.com/wedding/wp-admin/comment.php?action=approve&c=12#wpbody-content
+Bin it: https://www.another-demo.com/wedding/wp-admin/comment.php?action=trash&c=12#wpbody-content
+Spam it: https://www.another-demo.com/wedding/wp-admin/comment.php?action=spam&c=12#wpbody-content
+Currently 1 comment is waiting for approval. Please visit the moderation panel:
+https://www.another-demo.com/wedding/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+
+    [headers] => 
+    [attachments] => Array
+        (
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+
