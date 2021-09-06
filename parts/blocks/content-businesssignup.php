@@ -60,15 +60,12 @@ $id = 'signupform-' . $block['id'];
 		<div class="login_fields">
 			<?php do_action('register_form'); ?>
 
+			<p>What is your business type?</p>
 			<div class="input-group" style="display:flex;">
-				<div class="form-group" style="display:flex; align-items:center;">
-					<input id="license-supplier" value="Supplier" type="radio" name="licenseType" id="Supplier">
-					<label for="license-supplier">Supplier</label>
-				</div>
-				<div class="form-group" style="display:flex; align-items:center;">
-					<input id="license-venue" value="Venue" type="radio" name="licenseType" id="Venue">
-					<label for="license-venue">Venue</label>
-				</div>
+				<select name="licenseType">
+					<option value="Supplier">Supplier</option>
+					<option value="Venue">Venue</option>
+				</select>
 			</div>
 
 			<input type="submit" name="user-submit" value="<?php _e('Sign up!'); ?>" class="user-submit" tabindex="103" />
