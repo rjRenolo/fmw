@@ -601,16 +601,26 @@ define('THEME_DIR', get_stylesheet_directory());
         $subscriptionType = get_user_meta( $userId, 'subscription_type' , true );
         $theType = '';
 
-        if($subscriptionType === 'bronze'){
-            $theType = 'Basic';
-        }else if($subscriptionType === 'silver'){
-            $theType = 'Penyfan';
-        }else if($subscriptionType === 'gold'){
-            $theType = 'Snowdon';
-        }else{
-            $theType = 'N/A';
+        // if($subscriptionType === 'bronze'){
+        //     $theType = 'Basic';
+        // }else if($subscriptionType === 'silver'){
+        //     $theType = 'Penyfan';
+        // }else if($subscriptionType === 'gold'){
+        //     $theType = 'Snowdon';
+        // }else{
+        //     $theType = 'N/A';
+        // }
+        // return $theType;
+        switch($subscriptionType){
+            case 'basic':
+                return "Basic";
+            case 'better':
+                return "Better";
+            case 'best':
+                return "Best";
+            deafult:
+                return 'N/A';
         }
-        return $theType;
     }
     add_filter('get_subscriptiontype', 'subscripstionTypeGetter');
 

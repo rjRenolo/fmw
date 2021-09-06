@@ -1,5 +1,4 @@
 
-
 <div id="login-register-password">
 
 	<?php global $user_ID, $user_identity; if (!$user_ID) { ?>

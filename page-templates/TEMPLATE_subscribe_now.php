@@ -45,7 +45,7 @@ Template Name: Subscription Page
             <?php if(current_user_can('business')){
                 $listingPageId = get_user_meta($userId, 'user_page_id', true);
                 $licenseType = apply_filters( 'term_getter', $listingPageId, 'listing-license' );
-                echo "<script> var currentLicense = </script>";
+                echo "<script> var currentLicense = $licenseType</script>";
             } ?>
 
             <div class="g_grid_3 has-white-background-color dashboard-sidebar">

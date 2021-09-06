@@ -1,5 +1,5 @@
 /////////////////////////
-// 2021-09-05 03-29-06 //
+// 2021-09-06 13-48-03 //
 /////////////////////////
 
 set password
@@ -7,7 +7,23 @@ set password
 
 
 /////////////////////////
-// 2021-09-05 03-29-06 //
+// 2021-09-06 13-48-03 //
+/////////////////////////
+
+just logging the error
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 13-48-03 //
+/////////////////////////
+
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 13-48-03 //
 /////////////////////////
 
 successful register
@@ -15,63 +31,7 @@ successful register
 
 
 /////////////////////////
-// 2021-09-05 03-29-06 //
-/////////////////////////
-
-Array
-(
-    [action] => register_user_front_end
-    [new_user_name] => test07
-    [new_user_email] => test07@gmail.com
-    [new_user_password] => qwe123qwe123
-    [userType] => couple
-    [name1] => test07
-    [name1status] => Bride
-    [name2] => tester
-    [name2status] => Groom
-    [userdescription] => meticulous
-    [weddingDate] => 30/09/2021
-    [listingLicenseType] => Church or religious venue
-    [ceremonyGuests] => 0-50
-    [listingVenueType] => Coastal / near the sea
-    [location] => Cardiff
-    [listingAccommodation] => Array
-        (
-            [0] => Glamping / Camping
-            [1] => Long let available
-        )
-
-    [listingFoodDrink] => Array
-        (
-            [0] => Ability to bring my own catering
-            [1] => Alcohol licence
-        )
-
-    [listingFeature] => Array
-        (
-            [0] => All inclusive wedding packages
-            [1] => Bridal changing facilities
-        )
-
-    [receptionGuests] => 51-80
-    [listingStyle] => Themed - bright, playful & relaxed
-    [category] => Array
-        (
-            [0] => Accessories
-            [1] => Bridalwear
-            [2] => Cakes and Sweet Things
-            [3] => Caterers & Mobile Bar
-            [4] => Celebrants & Toast Masters
-            [5] => Child Care Services
-        )
-
-)
-
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 03-43-55 //
+// 2021-09-06 13-50-34 //
 /////////////////////////
 
 set password
@@ -79,7 +39,7 @@ set password
 
 
 /////////////////////////
-// 2021-09-05 03-43-55 //
+// 2021-09-06 13-50-34 //
 /////////////////////////
 
 successful register
@@ -87,60 +47,7 @@ successful register
 
 
 /////////////////////////
-// 2021-09-05 03-43-55 //
-/////////////////////////
-
-Array
-(
-    [action] => register_user_front_end
-    [new_user_name] => test08
-    [new_user_email] => test08@gmail.com
-    [new_user_password] => qwe123qwe123
-    [userType] => couple
-    [name1] => test08
-    [name1status] => Bride
-    [name2] => tester
-    [name2status] => Groom
-    [userdescription] => meticulous
-    [weddingDate] => 30/09/2021
-    [listingLicenseType] => Church or religious venue
-    [ceremonyGuests] => 0-50
-    [listingVenueType] => Castle/ historic/ manor house
-    [location] => Blaenau Gwent
-    [listingAccommodation] => Array
-        (
-            [0] => Glamping / Camping
-            [1] => Long let available
-        )
-
-    [listingFoodDrink] => Array
-        (
-            [0] => Ability to bring my own catering
-            [1] => Alcohol licence
-        )
-
-    [listingFeature] => Array
-        (
-            [0] => All inclusive wedding packages
-            [1] => Bridal changing facilities
-        )
-
-    [receptionGuests] => 51-80
-    [listingStyle] => Themed - bright, playful & relaxed
-    [category] => Array
-        (
-            [0] => Accessories
-            [1] => Bridalwear
-            [2] => Cakes and Sweet Things
-        )
-
-)
-
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 03-46-30 //
+// 2021-09-06 13-52-01 //
 /////////////////////////
 
 set password
@@ -148,7 +55,7 @@ set password
 
 
 /////////////////////////
-// 2021-09-05 03-46-30 //
+// 2021-09-06 13-52-01 //
 /////////////////////////
 
 successful register
@@ -156,63 +63,7 @@ successful register
 
 
 /////////////////////////
-// 2021-09-05 03-46-30 //
-/////////////////////////
-
-Array
-(
-    [action] => register_user_front_end
-    [new_user_name] => test09
-    [new_user_email] => test09@gmail.com
-    [new_user_password] => qwe123qwe123
-    [userType] => couple
-    [name1] => test09
-    [name1status] => Bride
-    [name2] => tester
-    [name2status] => Groom
-    [userdescription] => meticulous
-    [weddingDate] => 30/09/2021
-    [listingLicenseType] => Outside ceremony
-    [ceremonyGuests] => 0-50
-    [listingVenueType] => Coastal / near the sea
-    [location] => Blaenau Gwent
-    [listingAccommodation] => Array
-        (
-            [0] => Glamping / Camping
-            [1] => Long let available
-        )
-
-    [listingFoodDrink] => Array
-        (
-            [0] => Ability to bring my own catering
-            [1] => Alcohol licence
-        )
-
-    [listingFeature] => Array
-        (
-            [0] => All inclusive wedding packages
-            [1] => Bridal changing facilities
-        )
-
-    [receptionGuests] => 51-80
-    [listingStyle] => Themed - bright, playful & relaxed
-    [category] => Array
-        (
-            [0] => Accessories
-            [1] => Bridalwear
-            [2] => Cakes and Sweet Things
-            [3] => Celebrants & Toast Masters
-            [4] => Caterers & Mobile Bar
-            [5] => Child Care Services
-        )
-
-)
-
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 05-08-18 //
+// 2021-09-06 13-54-34 //
 /////////////////////////
 
 set password
@@ -220,7 +71,7 @@ set password
 
 
 /////////////////////////
-// 2021-09-05 05-08-18 //
+// 2021-09-06 13-54-34 //
 /////////////////////////
 
 successful register
@@ -228,34 +79,7 @@ successful register
 
 
 /////////////////////////
-// 2021-09-05 05-08-18 //
-/////////////////////////
-
-Array
-(
-    [action] => register_user_front_end
-    [new_user_name] => test10
-    [new_user_email] => test10@gmail.com
-    [new_user_password] => qwe123qwe123
-    [userType] => couple
-    [name1] => test10
-    [name1status] => Bride
-    [name2] => tester
-    [name2status] => Groom
-    [userdescription] => 
-    [listingLicenseType] => Church or religious venue
-    [ceremonyGuests] => 0
-    [listingVenueType] => Castle/ historic/ manor house
-    [location] => Blaenau Gwent
-    [receptionGuests] => 0
-    [listingStyle] => 
-)
-
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 05-11-15 //
+// 2021-09-06 13-57-29 //
 /////////////////////////
 
 set password
@@ -263,550 +87,10 @@ set password
 
 
 /////////////////////////
-// 2021-09-05 05-11-15 //
+// 2021-09-06 13-57-29 //
 /////////////////////////
 
 successful register
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 05-11-15 //
-/////////////////////////
-
-Array
-(
-    [action] => register_user_front_end
-    [new_user_name] => test11
-    [new_user_email] => test11@gmail.com
-    [new_user_password] => qwe123qwe123
-    [userType] => couple
-    [name1] => test11
-    [name1status] => Bride
-    [name2] => tester
-    [name2status] => Groom
-    [userdescription] => 
-    [listingLicenseType] => Church or religious venue
-    [ceremonyGuests] => 0
-    [listingVenueType] => Castle/ historic/ manor house
-    [location] => Blaenau Gwent
-    [receptionGuests] => 0
-    [listingStyle] => 
-)
-
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 05-54-39 //
-/////////////////////////
-
-set password
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 05-54-39 //
-/////////////////////////
-
-here here
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 05-54-39 //
-/////////////////////////
-
-successful register
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 05-54-40 //
-/////////////////////////
-
-Array
-(
-    [action] => register_user_front_end
-    [new_user_name] => test12
-    [new_user_email] => test12@gmail.com
-    [new_user_password] => qwe123qwe123
-    [userType] => couple
-    [name1] => test12
-    [name1status] => Bride
-    [name2] => tester
-    [name2status] => Groom
-    [userdescription] => meticulous
-    [listingLicenseType] => Church or religious venue
-    [ceremonyGuests] => 0
-    [listingVenueType] => Castle/ historic/ manor house
-    [location] => Blaenau Gwent
-    [receptionGuests] => 0
-    [listingStyle] => 
-)
-
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 05-54-40 //
-/////////////////////////
-
-here
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 11-13-39 //
-/////////////////////////
-
-set password
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 11-13-39 //
-/////////////////////////
-
-successful register
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 11-13-39 //
-/////////////////////////
-
-Array
-(
-    [action] => register_user_front_end
-    [new_user_name] => test13
-    [new_user_email] => test13@gmail.com
-    [new_user_password] => qwe123qwe123
-    [userType] => couple
-    [name1] => test13
-    [name1status] => Bride
-    [name2] => tester
-    [name2status] => Groom
-    [userdescription] => hopelessRomantic
-    [weddingDate] => 30/09/2021
-    [listingLicenseType] => Licensed ceremony venue e.g hotel
-    [ceremonyGuests] => 0-50
-    [listingVenueType] => Coastal / near the sea
-    [location] => Blaenau Gwent
-    [listingAccommodation] => Array
-        (
-            [0] => Glamping / Camping
-            [1] => Long let available
-        )
-
-    [listingFoodDrink] => Array
-        (
-            [0] => Ability to bring my own catering
-            [1] => Alcohol licence
-        )
-
-    [listingFeature] => Array
-        (
-            [0] => All inclusive wedding packages
-            [1] => Bridal changing facilities
-        )
-
-    [receptionGuests] => 51-80
-    [listingStyle] => Big white wedding – elegant, timeless & traditional
-    [category] => Array
-        (
-            [0] => Accessories
-            [1] => Bridalwear
-            [2] => Cakes and Sweet Things
-            [3] => Caterers & Mobile Bar
-            [4] => Celebrants & Toast Masters
-            [5] => Child Care Services
-        )
-
-)
-
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 15-08-53 //
-/////////////////////////
-
-set password
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 15-08-53 //
-/////////////////////////
-
-successful register
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 15-20-28 //
-/////////////////////////
-
-http://fmw2.loc/wp-admin/users.php
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 15-20-28 //
-/////////////////////////
-
-http://fmw2.loc/wp-login.php
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 15-21-23 //
-/////////////////////////
-
-http://fmw2.loc/wp-admin/post.php
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 15-21-23 //
-/////////////////////////
-
-http://fmw2.loc/wp-login.php
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 15-51-26 //
-/////////////////////////
-
-set password
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 15-51-26 //
-/////////////////////////
-
-successful register
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 15-58-49 //
-/////////////////////////
-
-http://fmw2.loc/wp-admin/users.php
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 15-58-50 //
-/////////////////////////
-
-http://fmw2.loc/wp-login.php
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 23-24-28 //
-/////////////////////////
-
-set password
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-05 23-24-28 //
-/////////////////////////
-
-successful register
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 11-25-40 //
-/////////////////////////
-
-set password
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 11-25-40 //
-/////////////////////////
-
-successful register
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 11-25-40 //
-/////////////////////////
-
-Array
-(
-    [action] => register_user_front_end
-    [new_user_name] => test14
-    [new_user_email] => test14@gmail.com
-    [new_user_password] => qwe123qwe123
-    [userType] => couple
-    [name1] => test14
-    [name1status] => Bride
-    [name2] => tester
-    [name2status] => Groom
-    [userdescription] => lastMinute
-    [weddingDate] => 01/10/2021
-    [listingLicenseType] => Outside ceremony
-    [ceremonyGuests] => 51-80
-    [listingVenueType] => Hotel
-    [location] => Rhondda Cynon Taf
-    [listingAccommodation] => Array
-        (
-            [0] => Glamping / Camping
-            [1] => Long let available
-        )
-
-    [listingFoodDrink] => Array
-        (
-            [0] => Ability to bring my own catering
-            [1] => Alcohol licence
-        )
-
-    [listingFeature] => Array
-        (
-            [0] => All inclusive wedding packages
-            [1] => Bridal changing facilities
-        )
-
-    [receptionGuests] => 81-120
-    [listingStyle] => Romantic – delicate, fairytale & luxuriousv
-    [category] => Array
-        (
-            [0] => Accessories
-            [1] => Bridalwear
-            [2] => Cakes and Sweet Things
-            [3] => Child Care Services
-            [4] => Celebrants & Toast Masters
-            [5] => Caterers & Mobile Bar
-        )
-
-)
-
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 12-02-16 //
-/////////////////////////
-
-set password
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 12-02-16 //
-/////////////////////////
-
-successful register
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 12-02-16 //
-/////////////////////////
-
-Array
-(
-    [action] => register_user_front_end
-    [new_user_name] => test15
-    [new_user_email] => test15@gmail.com
-    [new_user_password] => qwe123qwe123
-    [userType] => couple
-    [name1] => test15
-    [name1status] => Bride
-    [name2] => tester
-    [name2status] => Groom
-    [userdescription] => lastMinute
-    [weddingDate] => 30/09/2021
-    [listingLicenseType] => Licensed ceremony venue e.g hotel
-    [ceremonyGuests] => 51-80
-    [listingVenueType] => Castle/ historic/ manor house
-    [location] => Blaenau Gwent
-    [listingAccommodation] => Array
-        (
-            [0] => Glamping / Camping
-            [1] => Long let available
-        )
-
-    [listingFoodDrink] => Array
-        (
-            [0] => Ability to bring my own catering
-            [1] => Alcohol licence
-        )
-
-    [listingFeature] => Array
-        (
-            [0] => All inclusive wedding packages
-            [1] => Bridal changing facilities
-        )
-
-    [receptionGuests] => 201+
-    [listingStyle] => Romantic – delicate, fairytale & luxuriousv
-    [category] => Array
-        (
-            [0] => Accessories
-            [1] => Bridalwear
-            [2] => Celebrants & Toast Masters
-            [3] => Caterers & Mobile Bar
-            [4] => Destination Weddings
-            [5] => Favours & Gifts
-        )
-
-)
-
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 12-11-08 //
-/////////////////////////
-
-set password
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 12-11-08 //
-/////////////////////////
-
-successful register
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 12-11-08 //
-/////////////////////////
-
-Array
-(
-    [action] => register_user_front_end
-    [new_user_name] => test16
-    [new_user_email] => test16@gmail.com
-    [new_user_password] => qwe123qwe123
-    [userType] => couple
-    [name1] => test16
-    [name1status] => Bride
-    [name2] => tester
-    [name2status] => Groom
-    [userdescription] => hopelessRomantic
-    [weddingDate] => 30/09/2021
-    [listingLicenseType] => Registry Office
-    [ceremonyGuests] => 51-80
-    [listingVenueType] => Golf & sports venues
-    [location] => Neath Port Talbot
-    [listingAccommodation] => Array
-        (
-            [0] => Glamping / Camping
-            [1] => Long let available
-        )
-
-    [listingFoodDrink] => Array
-        (
-            [0] => Ability to bring my own catering
-            [1] => Alcohol licence
-        )
-
-    [listingFeature] => Array
-        (
-            [0] => All inclusive wedding packages
-            [1] => Bridal changing facilities
-        )
-
-    [receptionGuests] => 81-120
-    [listingStyle] => Asian wedding – colourful & cultural extravaganza
-    [category] => Array
-        (
-            [0] => Accessories
-            [1] => Bridalwear
-            [2] => Caterers & Mobile Bar
-            [3] => Celebrants & Toast Masters
-            [4] => Favours & Gifts
-            [5] => Destination Weddings
-        )
-
-)
-
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 12-21-08 //
-/////////////////////////
-
-set password
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 12-21-08 //
-/////////////////////////
-
-successful register
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-06 12-21-08 //
-/////////////////////////
-
-Array
-(
-    [action] => register_user_front_end
-    [new_user_name] => test17
-    [new_user_email] => test17@gmail.com
-    [new_user_password] => qwe123qwe123
-    [userType] => couple
-    [name1] => test17
-    [name1status] => Bride
-    [name2] => test17@gmail.com
-    [name2status] => Groom
-    [userdescription] => hopelessRomantic
-    [weddingDate] => 30/09/2021
-    [listingLicenseType] => Church or religious venue
-    [ceremonyGuests] => 51-80
-    [listingVenueType] => Castle/ historic/ manor house
-    [location] => Blaenau Gwent
-    [listingAccommodation] => Array
-        (
-            [0] => Glamping / Camping
-            [1] => Long let available
-        )
-
-    [listingFoodDrink] => Array
-        (
-            [0] => Alcohol licence
-            [1] => Ability to bring my own catering
-        )
-
-    [listingFeature] => Array
-        (
-            [0] => All inclusive wedding packages
-            [1] => Bridal changing facilities
-        )
-
-    [receptionGuests] => 121-200
-    [listingStyle] => DIY – charming, handmade & personalised
-    [category] => Array
-        (
-            [0] => Music & DJs
-            [1] => Occasionwear
-            [2] => Marquees, Tipis & Tents
-            [3] => Jewellery
-        )
-
-)
-
 --------------------------------------------------------------------------------------
 
 
