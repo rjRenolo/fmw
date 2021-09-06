@@ -66,6 +66,8 @@ $coverImage = get_field('cover_image');
                 $refineVenueFeatures = [];
                 $venueDescription = [];
                 $venueType = [];
+                $refinedFoodDrink = [];
+
                 if(isset($_GET['county'])){
                     foreach($_GET['county'] as $rCounty){ $refineCounty[] = $rCounty; }
                 }
@@ -80,6 +82,9 @@ $coverImage = get_field('cover_image');
                 }
                 if(isset($_GET['venue_type'])){
                     foreach($_GET['venue_type'] as $rVType){ $venueType[] = $rVType; }
+                }
+                if(isset($_GET['fooddrink'])){
+                    foreach($_GET['fooddrink'] as $fd){ $refinedFoodDrink[] = $fd; }
                 }
                 // if(isset($_GET['venueDescription'])){
                 //     // $venueDescription = explode("fmw", $_GET['venueDescription']);
@@ -157,6 +162,17 @@ $coverImage = get_field('cover_image');
                         'operator' => 'IN' 
                     );
                     array_push($taxQuery, $venueDescTaxQuery);
+                }
+
+                if(count($refinedFoodDrink) > 0 && $refinedFoodDrink[0] !== ""){
+                    $venueFoodDrinkTaxQuery = array(
+                        'taxonomy' => 'listing-fooddrink',
+                        'field' => 'name', 
+                        'terms' => $refinedFoodDrink,
+                        'include_children' => true, 
+                        'operator' => 'IN' 
+                    );
+                    array_push($taxQuery, $venueFoodDrinkTaxQuery);
                 }
                 
                 $args = array(
