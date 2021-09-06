@@ -6,7 +6,7 @@ acf_form_head();
 ?>
 <?php Embers_Utilities::get_template_parts( array( 'parts/html-header', 'parts/header' ) ); ?>
 
-<div class="container row dashboard-container">
+<div class="row dashboard-container">
 
 	<?php 
 	if(is_user_logged_in()) { 
@@ -14,7 +14,7 @@ acf_form_head();
 
 		if(current_user_can('administrator') || current_user_can('business')) { 
 			global $current_user; 
-			wp_get_current_user();
+			get_currentuserinfo();
 			
 		 
 			if ( $current_user ) {
@@ -53,21 +53,23 @@ acf_form_head();
 					);
 					acf_form( $new_post);
 				}
+				?>
 
+				<div class="g_grid_3 has-white-background-color dashboard-sidebar">
+					<?php include THEME_DIR . '/parts/dashboard-navigation.php'; ?>
+				</div>
 		    		
 			
 				
-		    	//Check if user subscription has expired
+		    	<?php //Check if user subscription has expired
 		    	// If it has expired $user_subscription_has_expired = true;
 		    	$user_subscription_has_expired = false;
 		     
-		    	if ( ! empty( $user_page_id ) && $user_subscription_has_expired == false) { ?>
-				<div class="g_grid_3">
-					<?php include THEME_DIR . '/parts/dashboard-navigation.php'; ?>
-				</div>
+		    	if ( $user_page_id != "" && $user_subscription_has_expired == false) { ?>
+				
 
 		    		<?php //add ACF form to allow the editing of the fields of the post with id = $user_page_id ?>
-				<div class="g_grid_9">
+				<div class="g_grid_9 dashboard-content-wrap">
 
 					<img src="<?php echo get_bloginfo('template_directory');?>/images/global/messages.png" alt="To do" class="sectionIcon"/>
 					<h2>Edit Listing</h2>
