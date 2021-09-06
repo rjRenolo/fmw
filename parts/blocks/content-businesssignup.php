@@ -31,7 +31,7 @@ $id = 'signupform-' . $block['id'];
 
 	<form method="post" class="registration-form" id="business-register-form" action="<?php echo site_url('wp-login.php?action=register', 'login_post') ?>" class="wp-user-form">
 		<div class="username">
-			<label for="user_login"><?php _e('Username'); ?>: </label>
+			<label for="user_login"><?php _e('Create username'); ?>: </label>
 
 			<input type="text" name="user_login" value="" size="20" id="business-user_login" tabindex="101" required/>
 
@@ -41,7 +41,7 @@ $id = 'signupform-' . $block['id'];
 
 		</div>
 		<div class="password">
-			<label for="user_email"><?php _e('Your Email'); ?>: </label>
+			<label for="user_email"><?php _e('Your email'); ?>: </label>
 			<input type="text" name="user_email" value="" size="25" id="business-user_email" tabindex="102" required/>
 
 			<?php if(isset($_GET['email_exists'])){
@@ -60,7 +60,7 @@ $id = 'signupform-' . $block['id'];
 		<div class="login_fields">
 			<?php do_action('register_form'); ?>
 
-			<div class="input-group" style="display:flex;">
+			<!--<div class="input-group" style="display:flex;">
 				<div class="form-group" style="display:flex; align-items:center;">
 					<input id="license-supplier" value="Supplier" type="radio" name="licenseType" id="Supplier">
 					<label for="license-supplier">Supplier</label>
@@ -69,6 +69,13 @@ $id = 'signupform-' . $block['id'];
 					<input id="license-venue" value="Venue" type="radio" name="licenseType" id="Venue">
 					<label for="license-venue">Venue</label>
 				</div>
+			</div>-->
+			<p>What is your business type?</p>
+			<div class="input-group" style="display:flex;">
+				<select name="licenseType">
+					<option value="Supplier">I'm a wedding supplier</option>
+					<option value="Venue">I'm a wedding venue</option>
+				</select>
 			</div>
 
 			<input type="submit" name="user-submit" value="<?php _e('Sign up!'); ?>" class="user-submit" tabindex="103" />

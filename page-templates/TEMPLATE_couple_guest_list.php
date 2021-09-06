@@ -6,7 +6,7 @@ Template Name: Couple Guest List
 <?php acf_form_head(); ?>
 <?php Embers_Utilities::get_template_parts( array( 'parts/html-header', 'parts/header' ) ); ?>
 
-<div class="container row dashboard-container">
+<div class=" row dashboard-container">
 <?php
     global $current_user; 
     wp_get_current_user();
@@ -19,10 +19,10 @@ Template Name: Couple Guest List
         <div class="overlay">
             <div id="the-loader" class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>
-        <div class="g_grid_3">
+        <div class="g_grid_3 has-white-background-color dashboard-sidebar">
             <?php include THEME_DIR . '/parts/couple-dashboard-navigation.php'; ?>
         </div>
-        <div class="g_grid_9 row dashboardSection">
+        <div class="g_grid_9 dashboard-content-wrap">
 
         
             <div class="g_grid_8">

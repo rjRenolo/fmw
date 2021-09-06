@@ -37,7 +37,7 @@ Template Name: Subscribe Again
     }
 ?>
 
-<div class="container dashboard-container row">
+<div class="dashboard-container row">
 
 
 
@@ -47,14 +47,14 @@ Template Name: Subscribe Again
 		if(current_user_can('administrator') || current_user_can('business')) { ?>
 
 
-            <div class="g_grid_3">
+            <div class="g_grid_3 has-white-background-color dashboard-sidebar">
 
                 <?php include THEME_DIR . '/parts/dashboard-navigation.php'; ?>
 
             </div>
 
 
-		    <div class="g_grid_9">
+		    <div class="g_grid_9 dashboard-content-wrap">
 
 			 <?php if ( $current_user ) {
 
@@ -80,29 +80,64 @@ Template Name: Subscribe Again
                         <div id="the-loader" class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
                     </div>
 
-                    <div class="pricing-blocks subscription-pricing-blocks">
-                        <?php foreach($theFields['pricing_blocks'] as $pricing){ ?>
-                            <div class="pricing-block">
-                                <h2 class="has-beige-color"><?=$pricing['name']?></h2>
-                                <p class="pricing-subtitle"><?=$pricing['sub_title']?></p>
+                     <div class="benefits-table">
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th class="pop-flag"><span>Most Popular</span></th>
+                                <th class="pop-flag max-flag"><span>Maximum Exposure</span></th>
+                            </tr>
+                            <tr>
+                                <th>Features</th>
+                                <th>Basic</th>
+                                <th>Better</th>
+                                <th>Best</th>
+                            </tr>
 
-                                <p class="pricing-price has-black-color">
-                                <span class="has-pink-color"><?=$pricing['price']?></span>
-                                <span class="pricing-month"> / MONTH</span>
-                                </p>
-                                <p ><strong>INCLUDES</strong></p>
-                                <?php if(isset($pricing['features'])){ ?>
-                                    <ul class="has-black-color">
-                                        <?php foreach($pricing['features'] as $pFeatures){ ?>
-                                            <li><?=$pFeatures['feature']?></li>
-                                        <?php } ?>
-                                    </ul>
-                                <?php } ?>
-                                <!-- <p><a href="#signup" class="has-pink-background-color has-white-color">JOIN NOW</a></p> -->
-                                <button class="has-pink-background-color has-white-color" onclick="selecting('<?=$pricing['name']?>', '<?=$pricing['price']?>')">JOIN NOW</button>
+                            <?php if( have_rows('package_features','option') ):
+                                while( have_rows('package_features','option') ) : the_row();?>
 
-                            </div>    
-                        <?php } ?>
+                                    <tr>
+                                        <td><?php echo get_sub_field('feature');?></td>
+                                        <td><?php echo get_sub_field('basic');?></td>
+                                        <td><?php echo get_sub_field('better');?></td>
+                                        <td><?php echo get_sub_field('best');?></td>
+                                    </tr>
+
+                                <?php endwhile;
+                            endif;?>
+
+                            <tr>
+                                <td></td>
+                                <?php
+                                    $basicPrice; $betterPrice; $bestPrice;
+                                    $basicPriceVal; $betterPriceVal; $bestPriceVal;
+                                    if( $licenseType == "Supplier" ){
+                                        $basicPrice = get_field('supplier_basic_price','option');
+                                        $betterPrice = get_field('supplier_better_price','option');
+                                        $bestPrice = get_field('supplier_best_price','option');
+                                    }else{
+                                        $basicPrice = get_field('venue_basic_price','option');
+                                        $betterPrice = get_field('venue_better_price','option');
+                                        $bestPrice = get_field('venue_best_price','option');
+
+                                    }
+                                ?>
+                                <td>
+                                    <div class="feature-price"><?=$basicPrice?></div>
+                                    <button class="" onclick="selecting('basic', '<?=$basicPrice?>')">SUBSCRIBE NOW</button>
+                                </td>
+                                <td>
+                                    <div class="feature-price"><?=$betterPrice?></div>
+                                    <button class="" onclick="selecting('better', '<?=$betterPrice?>')">SUBSCRIBE NOW</button>
+                                </td>
+                                <td>
+                                    <div class="feature-price"><?=$bestPrice?></div>
+                                    <button class="" onclick="selecting('best', '<?=$bestPrice?>')">SUBSCRIBE NOW</button>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
 
 
@@ -223,3 +258,4 @@ Template Name: Subscribe Again
 
 </div>
 <?php Embers_Utilities::get_template_parts( array( 'parts/footer','parts/html-footer' ) ); ?>
+

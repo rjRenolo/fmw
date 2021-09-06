@@ -1108,6 +1108,52 @@ define('THEME_DIR', get_stylesheet_directory());
         return $searchableTerm;
     }
 
+    add_filter('get_all_ceremonies', 'getAllCeremonies');
+    function getAllCeremonies(){
+        $searchableTerm = [];
+
+        $allListingServiceTerm = get_terms(array(
+            'taxonomy' => 'listing-license-type'
+        ));
+
+        foreach($allListingServiceTerm as $item){
+            $searchableTerm[] = array('slug' => $item->slug, 'name' => $item->name);
+        }
+     
+        return $searchableTerm;
+    }
+
+    add_filter('get_all_accommodation', 'getAllAccommodation');
+    function getAllAccommodation(){
+        $searchableTerm = [];
+
+        $allListingServiceTerm = get_terms(array(
+            'taxonomy' => 'listing-accommodation'
+        ));
+
+        foreach($allListingServiceTerm as $item){
+            $searchableTerm[] = array('slug' => $item->slug, 'name' => $item->name);
+        }
+     
+        return $searchableTerm;
+    }
+
+    add_filter('get_all_food', 'getAllFood');
+    function getAllFood(){
+        $searchableTerm = [];
+
+        $allListingServiceTerm = get_terms(array(
+            'taxonomy' => 'listing-fooddrink'
+        ));
+
+        foreach($allListingServiceTerm as $item){
+            $searchableTerm[] = array('slug' => $item->slug, 'name' => $item->name);
+        }
+     
+        return $searchableTerm;
+    }
+
+
     add_filter('get_all_listing_type', 'getAllListingType');
     function getAllListingType(){
         $searchableTerm = [];

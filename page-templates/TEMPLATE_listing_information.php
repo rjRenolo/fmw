@@ -21,16 +21,16 @@ acf_form_head();
         <?php
             $user_subscription_expiry = get_user_meta( $current_user->ID, 'user_subscription_expiry' , true );
 
-           // if($user_subscription_expiry){
+           if($user_subscription_expiry){
 
                 include THEME_DIR . '/parts/listing-information.php';
 
-           // }else{ ?>
+            }else{ ?>
 
                 <p>Please subscribe to edit/view your listing.</p>
                 <a class="wp-block-button__link has-pink-background-color" href='/subscribe-now'>Subscribe Now</a>
 
-            <?php //} ?>
+            <?php } ?>
     </div>
 
 

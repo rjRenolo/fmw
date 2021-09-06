@@ -52,35 +52,8 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
 // print_r($listingVenueFeatures);
 // echo '</pre>';
 // die();
-
 ?>
-
 <div class="listing-information-question-container">
-
-    <!-- <div class="listing-type-question">
-        <form id="listing-type">
-            <h3>Are you a venue or supplier?</h3>
-
-            < ?php if($currentLicenseType === 'Venue'){ ?>
-                <input class="rd__listing_type" checked type="radio" name="listing-type-radio" id="listing-type-radio__yes" value="yes">
-                <label for="listing-type-radio__yes">I am a wedding venue</label><br>
-                
-                <input class="rd__listing_type" type="radio" name="listing-type-radio" id="listing-type-radio__no" value="no">
-                <label for="listing-type-radio__no">I am a wedding supplier </label><br>
-
-            < ?php }else{ ?>
-                <input class="rd__listing_type" type="radio" name="listing-type-radio" id="listing-type-radio__yes" value="yes">
-                <label for="listing-type-radio__yes">I am a wedding venue</label><br>
-                
-                <input class="rd__listing_type" checked type="radio" name="listing-type-radio" id="listing-type-radio__no" value="no">
-                <label for="listing-type-radio__no">I am a wedding supplier </label><br>
-
-            < ?php } ?>
-            
-            <input type="submit" value="Save">
-        </form>
-    </div> -->
-
 
     <div class="listing-venue-type-question">
         <form id="listing-venue-type">
@@ -126,6 +99,13 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
         <form id="county-located">
             <h3 id="county_question">Which of these counties do you provide your service in?</h3>
 
+            <?php if($userSubscriptionPackage == 'basic') { ?>
+                <p>Your basic package includes up to one county. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
+            <?php } ?>
+
+            <?php if($userSubscriptionPackage == 'basic') { ?>
+                <p>Your better package includes up to two counties. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
+            <?php } ?>
 
             <?php foreach($listingCounties as $listingC){ ?>
                 <?php if($currentCounties){ ?>
@@ -190,7 +170,8 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
 
     <div class="style-question" style="display:none;">
         <form id="style">
-            <h3>How would you describe your service style? Tick as many as relevant.</h3>
+            <h3>How would you describe your service style?</h3>
+                <p><small>Tick as many as relevant.</small></p>
 
             <?php foreach($listingStyles as $lStyle){ ?>
                 <?php if($currentStyles){ ?>
@@ -230,7 +211,15 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
     <?php if($currentLicenseType == "Supplier"){ ?>
         <div class="service-description-question" style="display:none;">
             <form id="service-description">
-                <h3>Which category best describes your service</h3>
+                <h3>Which category best describes your service?</h3>
+
+                <?php if($userSubscriptionPackage == 'basic') { ?>
+                    <p>Your basic package includes up to one category. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
+                <?php } ?>
+
+                <?php if($userSubscriptionPackage == 'basic') { ?>
+                    <p>Your better package includes up to two categories. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
+                <?php } ?>
     
                 <?php foreach($listingCategories as $lCategories){ ?>
                     <?php if($currentCategoryies){ ?>
@@ -308,43 +297,7 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
 
             <?php } ?>
 
-            <!-- <input class="rd__venue_description" type="radio" name="venue_description" id="venue_description_Hotel" value="Hotel">
-            <label for="venue_description_Hotel">Hotel</label><br>
-
-            <input class="rd__venue_description" type="radio" name="venue_description" id="venue_description_Marquee" value="Marquee / outdoor in established venue">
-            <label for="venue_description_Marquee">Marquee / outdoor in established venue</label><br>
-
-            <input class="rd__venue_description" type="radio" name="venue_description" id="venue_description_Castle" value="Castle/ historic/ manor house">
-            <label for="venue_description_Castle">Castle/ historic/ manor house</label><br>
-
-            <input class="rd__venue_description" type="radio" name="venue_description" id="venue_description_sports" value="Golf & sports venues">
-            <label for="venue_description_sports">Golf & sports venues</label><br>
-
-            <input class="rd__venue_description" type="radio" name="venue_description" id="venue_description_coastal" value="Coastal / near the sea">
-            <label for="venue_description_coastal">Coastal / near the sea</label><br>
-
-            <input class="rd__venue_description" type="radio" name="venue_description" id="venue_description_country" value="Country/ barn">
-            <label for="venue_description_country">Country/ barn</label><br>
-
-            <input class="rd__venue_description" type="radio" name="venue_description" id="venue_description_quirky" value="Quirky/ unusual">
-            <label for="venue_description_quirky">Quirky/ unusual</label><br>
-
-            <input class="rd__venue_description" type="radio" name="venue_description" id="venue_description_Village" value="Village & town halls">
-            <label for="venue_description_Village">Village & town halls</label><br>
-
-            <input class="rd__venue_description" type="radio" name="venue_description" id="venue_description_Pub" value="Pub/ restaurant">
-            <label for="venue_description_Pub">Pub/ restaurant</label><br>
-
-            <input class="rd__venue_description" type="radio" name="venue_description" id="venue_description_Pub" value="Pub/ restaurant">
-            <label for="venue_description_Pub">Pub/ restaurant</label><br>
-
-            <div class="form-group" style="display:flex; align-items: center;">
-                <input class="rd__venue_description" type="radio" style="margin-bottom:14px;" name="venue_description" id="venue_description_Pub" value="Other:">
-                <div class="form-group__inner" style="display:flex;">
-                    <label for="venue_description_Pub">Other:</label>
-                    <input type="text" name="venue_description-input" id="venue_description-input">
-                </div>
-            </div> -->
+            
 
             <input type="submit" value="Save">
 
@@ -385,84 +338,6 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
                 
             <?php } ?>
 
-            <!-- <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresSleeping_arrangements" value="Sleeping arrangements">
-            <label for="venue_featuresSleeping_arrangements">Sleeping arrangements</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresOnSite" value="On-site accommodation">
-            <label for="venue_featuresOnSite">On-site accommodation</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresCamping" value="Glamping / Camping">
-            <label for="venue_featuresCamping">Glamping / Camping</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresLong_let_available" value="Long let available">
-            <label for="venue_featuresLong_let_available">Long let available</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresFood_drink" value="Food & drink">
-            <label for="venue_featuresFood_drink">Food & drink</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresCatering_included" value="Catering included">
-            <label for="venue_featuresCatering_included">Catering included</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresAbility_to_bring_my_own_catering" value="Ability to bring my own catering.">
-            <label for="venue_featuresAbility_to_bring_my_own_catering">Ability to bring my own catering.</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresAlcohol_licence" value="Alcohol licence">
-            <label for="venue_featuresAlcohol_licence">Alcohol licence</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresFine_dining" value="Fine dining">
-            <label for="venue_featuresFine_dining">Fine dining</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresCorkage_charge" value="Corkage charge for own alcohol">
-            <label for="venue_featuresCorkage_charge">Corkage charge for own alcohol</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresEvening_hog" value="Evening hog roasts / BBQ’s">
-            <label for="venue_featuresEvening_hog">Evening hog roasts / BBQ’s</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresExclusive_use" value="Civil ceremony in the same venue">
-            <label for="venue_featuresExclusive_use">Civil ceremony in the same venue</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresExclusive_use" value="Exclusive use">
-            <label for="venue_featuresExclusive_use">Exclusive use</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresWedding_co_ordinator_included" value="Wedding co-ordinator included">
-            <label for="venue_featuresWedding_co_ordinator_included">Wedding co-ordinator included</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresPet_friendly" value="Pet friendly">
-            <label for="venue_featuresPet_friendly">Pet friendly</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresDisabled_access" value="Disabled access">
-            <label for="venue_featuresDisabled_access">Disabled access</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresLandscaped_gardens" value="Landscaped gardens / outdoor space">
-            <label for="venue_featuresLandscaped_gardens">Landscaped gardens / outdoor space</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresBridal_changing" value="Bridal changing facilities">
-            <label for="venue_featuresBridal_changing">Bridal changing facilities</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresparking" value="On-site parking">
-            <label for="venue_featuresparking">On-site parking</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresMarquee_permitted" value="Marquee permitted">
-            <label for="venue_featuresMarquee_permitted">Marquee permitted</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresopportunities" value="Photo opportunities">
-            <label for="venue_featuresopportunities">Photo opportunities</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresinclusive" value="All inclusive wedding packages">
-            <label for="venue_featuresinclusive">All inclusive wedding packages</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresConfetti" value="Confetti permitted">
-            <label for="venue_featuresConfetti">Confetti permitted</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresSpa" value="Spa on-site">
-            <label for="venue_featuresSpa">Spa on-site</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresSound_system" value="Sound system available for speeches.">
-            <label for="venue_featuresSound_system">Sound system available for speeches.</label><br>
-
-            <input class="cb__venue_features" type="checkbox" name="venue_features" id="venue_featuresDancefloor" value="Dancefloor available">
-            <label for="venue_featuresDancefloor">Dancefloor available</label><br> -->
-
             <input type="submit" value="Save">
 
 
@@ -471,35 +346,35 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
 </div>
 
 <div class="listing-show-information" style="display:none;">
-    <div class="listing-venue-type-show">
+    <div class="listing-venue-type-show listing-final">
         <h4>Select which of the following applies to you:</h4>
         <ul id="list-venue-type">
         </ul>
     </div>
 
 
-    <div class="county-located-show">
+    <div class="county-located-show listing-final">
         <h4 id="county_question">Which of these counties do you provide your service in?</h4>
         <ul id="list-county">
         </ul>
     </div>
 
 
-    <div class="accommodation-show">
+    <div class="accommodation-show listing-final">
         <h4>How many guests can you accommodate?</h4>
         <p id="accommodation-count"></p>
     </div>
 
 
-    <div class="style-show">
-        <h4>How would you describe your service style? Tick as many as relevant.</h4>
+    <div class="style-show listing-final">
+        <h4>How would you describe your service style?</h4>
         <ul id="list-of-style">
         </ul>
     </div>
 
 
     <?php if($currentLicenseType == "Supplier"){ ?>
-        <div class="service-description-show">
+        <div class="service-description-show listing-final">
             <h4>Which category best describes your service</h4>
             <ul id="list-of-category">
             </ul>
@@ -508,7 +383,7 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
 
 
     <?php if($currentLicenseType == "Venue"){ ?>
-        <div class="venue-description-show">
+        <div class="venue-description-show listing-final">
             <h4>How would you describe your venue?</h4>
             <ul id="list-venue-description">
             </ul>
@@ -516,7 +391,7 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
     <?php } ?>
 
     <?php if($currentLicenseType == "Venue"){ ?>
-        <div class="venue-features-show">
+        <div class="venue-features-show listing-final">
             <h4>Which of the following features is true of your venue:</h4>
             <ul id="list-features">
             </ul>
@@ -585,26 +460,6 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
     jQuery(document).ready(() => {
 
 
-        // done steps
-        
-        // console.log(selectedBusinessType)
-        // toShowAll.map(item => {
-        //     jQuery(item).show();
-        // })
-
-        // add marker to business license
-        // if(selectedBusinessType){
-        //     if(selectedBusinessType == 'Venue'){
-        //         jQuery('#listing-type-radio__yes').attr('checked', true)
-        //     }else{
-        //         jQuery('#listing-type-radio__no').attr('checked', true)
-        //     }
-        // }
-
-
-
-
-
 
         var userSubscriptionPackage = '<?=$userSubscriptionPackage?>'
         
@@ -642,13 +497,13 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
             if(e.currentTarget.checked){
                 countyCounter++
                 switch(userSubscriptionPackage){
-                    case 'gold':
+                    case 'best':
                         if(countyCounter == 9999){
                             // disable all
                             jQuery(".cb__county:not(:checked)").attr("disabled", true);
                         }
                         break;
-                    case 'silver':
+                    case 'better':
                         if(countyCounter == 2){
                             // disable all
                             jQuery(".cb__county:not(:checked)").attr("disabled", true);
@@ -664,13 +519,13 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
             }else{
                 countyCounter--
                 switch(userSubscriptionPackage){
-                    case 'gold':
+                    case 'best':
                         if(countyCounter < 99999){
                             // enable all
                             jQuery(".cb__county:not(:checked)").removeAttr("disabled");
                         }
                         break;
-                    case 'silver':
+                    case 'better':
                         if(countyCounter < 3){
                             // enable all
                             jQuery(".cb__county:not(:checked)").removeAttr("disabled");
