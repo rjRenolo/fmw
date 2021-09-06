@@ -37,7 +37,7 @@ Template Name: Subscribe Again
     }
 ?>
 
-<div class="container dashboard-container row">
+<div class="dashboard-container row">
 
 
 
@@ -47,14 +47,14 @@ Template Name: Subscribe Again
 		if(current_user_can('administrator') || current_user_can('business')) { ?>
 
 
-            <div class="g_grid_3">
+            <div class="g_grid_3 has-white-background-color dashboard-sidebar">
 
                 <?php include THEME_DIR . '/parts/dashboard-navigation.php'; ?>
 
             </div>
 
 
-		    <div class="g_grid_9">
+		    <div class="g_grid_9 dashboard-content-wrap">
 
 			 <?php if ( $current_user ) {
 
