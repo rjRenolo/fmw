@@ -17,6 +17,9 @@
 
     <ul>
         <?php wp_nav_menu(array('theme_location'=>'coupledashboard'))?>
+        <li class="wedmatch-icon"><a href="<?php echo get_bloginfo('url');?>/wedding/<?php echo $current_user->display_name;?>" target="_blank">
+           My Personal Page</a>
+        </li>
         <?php
             $wedmatchVenue = get_the_permalink(get_field('venue_directory_page','option'));
             $wedmatchSupplier = get_the_permalink(get_field('supplier_directory_page','option'));
