@@ -524,3 +524,75 @@ successful register
 --------------------------------------------------------------------------------------
 
 
+/////////////////////////
+// 2021-09-06 11-25-40 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 11-25-40 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-06 11-25-40 //
+/////////////////////////
+
+Array
+(
+    [action] => register_user_front_end
+    [new_user_name] => test14
+    [new_user_email] => test14@gmail.com
+    [new_user_password] => qwe123qwe123
+    [userType] => couple
+    [name1] => test14
+    [name1status] => Bride
+    [name2] => tester
+    [name2status] => Groom
+    [userdescription] => lastMinute
+    [weddingDate] => 01/10/2021
+    [listingLicenseType] => Outside ceremony
+    [ceremonyGuests] => 51-80
+    [listingVenueType] => Hotel
+    [location] => Rhondda Cynon Taf
+    [listingAccommodation] => Array
+        (
+            [0] => Glamping / Camping
+            [1] => Long let available
+        )
+
+    [listingFoodDrink] => Array
+        (
+            [0] => Ability to bring my own catering
+            [1] => Alcohol licence
+        )
+
+    [listingFeature] => Array
+        (
+            [0] => All inclusive wedding packages
+            [1] => Bridal changing facilities
+        )
+
+    [receptionGuests] => 81-120
+    [listingStyle] => Romantic – delicate, fairytale & luxuriousv
+    [category] => Array
+        (
+            [0] => Accessories
+            [1] => Bridalwear
+            [2] => Cakes and Sweet Things
+            [3] => Child Care Services
+            [4] => Celebrants & Toast Masters
+            [5] => Caterers & Mobile Bar
+        )
+
+)
+
+--------------------------------------------------------------------------------------
+
+

@@ -5,6 +5,8 @@ add_action('wp_ajax_register_user_front_end', 'register_user_front_end', 0);
 add_action('wp_ajax_nopriv_register_user_front_end', 'register_user_front_end');
 function register_user_front_end() {
     
+    require_once(THEME_DIR . '/inc/todo_data.php');
+
     // $role = 'subscriber';
     // if($_POST['userType'] =="couple") {
     //     $role = "couple";
@@ -106,6 +108,16 @@ function register_user_front_end() {
                     $meta[] = $item;
                 }
                 update_user_meta($user_id, 'wedmatch_category', $meta);
+            }
+
+            // pre-populate to do
+            $todoCount = count(get_field('to_do', $userPageId)?: []);
+            foreach($todoData as $todo){
+                $row = [
+                    'to_do_name' => $todo,
+                    'done' => false
+                ];
+                update_row('to_do', ++$todoCount, $row, $userPageId);
             }
 
 

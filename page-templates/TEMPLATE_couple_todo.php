@@ -40,44 +40,46 @@ Template Name: Couple To Do List
                                 
                         <?php
                         $repeater = get_field('to_do',$userPageId);
-                        foreach( $repeater as $key => $row ) { 
-                            $column_id[ $key ] = $row['due_date'];
-                        } 
-                        // array_multisort( $column_id, SORT_ASC, $repeater );
+                        
+                        if($repeater && is_array($repeater)):
+                            foreach( $repeater as $key => $row ) { 
+                                $column_id[ $key ] = $row['due_date'];
+                            } 
+                            // array_multisort( $column_id, SORT_ASC, $repeater );
 
-                        $date =  date('Ymd');
+                            $date =  date('Ymd');
+                            foreach( $repeater as $row ) :
 
-                        foreach( $repeater as $row ) :
+                                $difference = $row['due_date'] - $date;
+                                if($difference < 7) {
+                                    $class = 'is-style-due';
+                                }
+                                if($difference > 7) {
+                                    $class = 'is-style-nearlydue';
+                                }
+                                if($difference > 14) {
+                                    $class = 'is-style-notdue';
+                                }
 
-                            $difference = $row['due_date'] - $date;
-                            if($difference < 7) {
-                                $class = 'is-style-due';
-                            }
-                            if($difference > 7) {
-                                $class = 'is-style-nearlydue';
-                            }
-                            if($difference > 14) {
-                                $class = 'is-style-notdue';
-                            }
-
-                            if($row['done']){
-                                $statusClass = 'has-green-background-color';
-                            } else {
-                                $statusClass = "";
-                            }
-                            echo '<tr class="'. $class .' ' . $statusClass . '">';
-                                    $rowNumber++;
-                                    echo '<td>'. $row['to_do_name'] .'<p>' . $row['notes'] .'</p></td>' ;
-                                    echo '<td><p>'. ($row['due_date'] =="" ? "" : DateTime::createFromFormat('Ymd', $row['due_date'])->format('d M Y')) .'</p></td>';
-                                    echo '<td>'. ($row['budget']=="" ? '' : '&pound;' . '<span class="budget">' . $row['budget']) . '</span>' .'</td>';
-                                    echo '<td class="done"><input type="checkbox" name="" id="status-'. $rowNumber .'" ' . ($row['done'] ? 'checked' : '') . '> <a id="remove-'.$rowNumber.'" onclick="removeTodo('. $rowNumber .')" class="removeItem">Remove</a></td>';
-                                    echo '</tr>';
-                        endforeach;
-                        echo "<tr class='budgetLine'>
-                            <td colspan='2' ><strong>Total : </strong></td>
-                            <td><strong id='total-budget'></strong></td>
-                            <td></td>
-                            </tr>";
+                                if($row['done']){
+                                    $statusClass = 'has-green-background-color';
+                                } else {
+                                    $statusClass = "";
+                                }
+                                echo '<tr class="'. $class .' ' . $statusClass . '">';
+                                        $rowNumber++;
+                                        echo '<td>'. $row['to_do_name'] .'<p>' . $row['notes'] .'</p></td>' ;
+                                        echo '<td><p>'. ($row['due_date'] =="" ? "" : DateTime::createFromFormat('Ymd', $row['due_date'])->format('d M Y')) .'</p></td>';
+                                        echo '<td>'. ($row['budget']=="" ? '' : '&pound;' . '<span class="budget">' . $row['budget']) . '</span>' .'</td>';
+                                        echo '<td class="done"><input type="checkbox" name="" id="status-'. $rowNumber .'" ' . ($row['done'] ? 'checked' : '') . '> <a id="remove-'.$rowNumber.'" onclick="removeTodo('. $rowNumber .')" class="removeItem">Remove</a></td>';
+                                        echo '</tr>';
+                            endforeach;
+                            echo "<tr class='budgetLine'>
+                                <td colspan='2' ><strong>Total : </strong></td>
+                                <td><strong id='total-budget'></strong></td>
+                                <td></td>
+                                </tr>";
+                        endif;
                      ?>
                     </table>
                         <script>

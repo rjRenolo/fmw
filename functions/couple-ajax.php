@@ -14,7 +14,12 @@ function addTodo(){
     $row_count = count(get_field('to_do', $weddingPageId)?: []);
 
 	// the new row that we wanna add
-	$row = ['to_do_name' => $reqBody['todoTitle'], 'notes' => $reqBody['todoNotes'], 'due_date' => $reqBody['todoDue'], 'budget' => $reqBody['todoBudget'], 'done' => false];
+	$row = [
+        'to_do_name' => $reqBody['todoTitle'], 
+        'notes' => $reqBody['todoNotes'], 
+        'due_date' => $reqBody['todoDue'], 
+        'budget' => $reqBody['todoBudget'], 
+        'done' => false];
 
 	// update it as the next index (++$row_count)
 	update_row('to_do', ++$row_count, $row, $weddingPageId);

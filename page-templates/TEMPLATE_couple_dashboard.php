@@ -110,7 +110,9 @@ Template Name: Couple Dashboard
     
                                             <div class="toDo-list-item <?php echo $class;?>">
                                                 <h3><?php echo $row['to_do_name'];?></h3>
-                                                <p><?php echo DateTime::createFromFormat('Ymd', $row['due_date'])->format('d M Y');?></p>
+                                                <?php if($row['due_date']): ?>
+                                                    <p><?php echo DateTime::createFromFormat('Ymd', $row['due_date'])->format('d M Y');?></p>
+                                                <?php endif; ?>
                                             </div>
                                              
                                             <?php $i ++;
