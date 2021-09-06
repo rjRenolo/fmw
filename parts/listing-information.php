@@ -52,11 +52,8 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
 // print_r($listingVenueFeatures);
 // echo '</pre>';
 // die();
-
 ?>
-
 <div class="listing-information-question-container">
-
 
     <div class="listing-venue-type-question">
         <form id="listing-venue-type">
@@ -102,6 +99,13 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
         <form id="county-located">
             <h3 id="county_question">Which of these counties do you provide your service in?</h3>
 
+            <?php if($userSubscriptionPackage == 'basic') { ?>
+                <p>Your basic package includes up to one county. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
+            <?php } ?>
+
+            <?php if($userSubscriptionPackage == 'basic') { ?>
+                <p>Your better package includes up to two counties. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
+            <?php } ?>
 
             <?php foreach($listingCounties as $listingC){ ?>
                 <?php if($currentCounties){ ?>
@@ -166,7 +170,8 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
 
     <div class="style-question" style="display:none;">
         <form id="style">
-            <h3>How would you describe your service style? Tick as many as relevant.</h3>
+            <h3>How would you describe your service style?</h3>
+                <p><small>Tick as many as relevant.</small></p>
 
             <?php foreach($listingStyles as $lStyle){ ?>
                 <?php if($currentStyles){ ?>
@@ -206,7 +211,15 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
     <?php if($currentLicenseType == "Supplier"){ ?>
         <div class="service-description-question" style="display:none;">
             <form id="service-description">
-                <h3>Which category best describes your service</h3>
+                <h3>Which category best describes your service?</h3>
+
+                <?php if($userSubscriptionPackage == 'basic') { ?>
+                    <p>Your basic package includes up to one category. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
+                <?php } ?>
+
+                <?php if($userSubscriptionPackage == 'basic') { ?>
+                    <p>Your better package includes up to two categories. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
+                <?php } ?>
     
                 <?php foreach($listingCategories as $lCategories){ ?>
                     <?php if($currentCategoryies){ ?>
@@ -284,6 +297,8 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
 
             <?php } ?>
 
+            
+
             <input type="submit" value="Save">
 
         </form>
@@ -323,8 +338,6 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
                 
             <?php } ?>
 
-            
-
             <input type="submit" value="Save">
 
 
@@ -354,7 +367,7 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
 
 
     <div class="style-show listing-final">
-        <h4>How would you describe your service style? Tick as many as relevant.</h4>
+        <h4>How would you describe your service style?</h4>
         <ul id="list-of-style">
         </ul>
     </div>
@@ -447,26 +460,6 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
     jQuery(document).ready(() => {
 
 
-        // done steps
-        
-        // console.log(selectedBusinessType)
-        // toShowAll.map(item => {
-        //     jQuery(item).show();
-        // })
-
-        // add marker to business license
-        // if(selectedBusinessType){
-        //     if(selectedBusinessType == 'Venue'){
-        //         jQuery('#listing-type-radio__yes').attr('checked', true)
-        //     }else{
-        //         jQuery('#listing-type-radio__no').attr('checked', true)
-        //     }
-        // }
-
-
-
-
-
 
         var userSubscriptionPackage = '<?=$userSubscriptionPackage?>'
         
@@ -504,13 +497,13 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
             if(e.currentTarget.checked){
                 countyCounter++
                 switch(userSubscriptionPackage){
-                    case 'gold':
+                    case 'best':
                         if(countyCounter == 9999){
                             // disable all
                             jQuery(".cb__county:not(:checked)").attr("disabled", true);
                         }
                         break;
-                    case 'silver':
+                    case 'better':
                         if(countyCounter == 2){
                             // disable all
                             jQuery(".cb__county:not(:checked)").attr("disabled", true);
@@ -526,13 +519,13 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
             }else{
                 countyCounter--
                 switch(userSubscriptionPackage){
-                    case 'gold':
+                    case 'best':
                         if(countyCounter < 99999){
                             // enable all
                             jQuery(".cb__county:not(:checked)").removeAttr("disabled");
                         }
                         break;
-                    case 'silver':
+                    case 'better':
                         if(countyCounter < 3){
                             // enable all
                             jQuery(".cb__county:not(:checked)").removeAttr("disabled");
