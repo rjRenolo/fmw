@@ -1164,8 +1164,8 @@ COUPLES DASHBOARD --------------------------------------------------------------
 .subscriptionStatus { padding-bottom: 10px; }
 
 .dashboard-todo { padding-top: 30px;padding-bottom: 10px; }
-.toDo-list-item {border-left-width: 3px;border-left-style: solid; padding: 5px 10px; margin-bottom: 10px;border-bottom: solid 1px #fafafa;}
-.toDo-list-item h3 { line-height: 1.1em;font-size: 18px; }
+.toDo-list-item {padding: 5px 10px; margin-bottom: 10px;border-bottom: solid 1px #fafafa;}
+.toDo-list-item h3 { line-height: 1.1em;font-size: 14px; }
 .toDo-list-item p { font-size: 12px; color:#555 }
 .is-style-due {}
 .is-style-nearlydue {}
@@ -1179,6 +1179,7 @@ COUPLES DASHBOARD --------------------------------------------------------------
 
 .acf-form-submit input[type="submit"] { background:var(--pink); color:#fff; border:0 }
 
+
 .toDoTable input { vertical-align: middle; }
 .removeItem { display: inline-block;background:url(images/global/bin.svg) no-repeat;background-size: 100%;width:15px; height:15px; vertical-align: middle;text-indent: -9999px;margin-left: 10px}
 .editItem { display: inline-block;background:url(images/global/pencil.svg) no-repeat;background-size: 100%;width:15px; height:15px; vertical-align: middle;text-indent: -9999px;}
@@ -1187,6 +1188,7 @@ table tr.budgetLine { background-color: #fff;border-top:solid 1px #e8e8e8 }
 table.toDoTable { margin-top: 40px; }
 table.toDoTable tr.has-green-background-color { text-decoration: line-through; }
 table.toDoTable td { padding:15px;  }
+table.toDoTable td.done {width: 80px}
 form#add-todo, 
 form#add-guest { margin:0; border:solid 1px #ccc; padding:20px }
 form#add-todo input[type="submit"], 
