@@ -1,4 +1,4 @@
- <!-- <form method="GET" id="refineform" action="< ?php echo get_the_permalink(get_field('supplier_directory_page','option'));?>"> -->
+
  <?php
  global $wp;
  $showsupplier = "";
@@ -37,6 +37,20 @@ $refinedTypes = [];
 if(isset($_GET['venue_type'])){
    foreach($_GET['venue_type'] as $rType){
        $refinedTypes[] = $rType;
+   }
+}
+
+$refinedCeremonies = [];
+if(isset($_GET['ceremonies'])){
+   foreach($_GET['ceremonies'] as $rCeremony){
+       $refinedCeremonies[] = $rCeremony;
+   }
+}
+
+$refinedAccommodation = [];
+if(isset($_GET['accommodation'])){
+   foreach($_GET['accommodation'] as $rAccommodation){
+       $refinedAccommodation[] = $rAccommodation;
    }
 }
 
@@ -179,6 +193,42 @@ if(isset($_GET['venue_category'])){
                         </div>  
                     </div><!-- Capacity -->
 
+                <?php if($searchtype == 'venue') { ?>
+
+                    <div class="capacity-filter filter-box">
+                        <div class="filter-title">
+                            <h3>Ceremonies</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                        <div id="capacity-filters" class="filter-options" <?php echo count($refinedCeremonies) > 0 ? "style='display:block;'" : ""?>>
+
+                            <?php
+                            $availableTerms = apply_filters( 'get_all_ceremonies', $id );         
+                            foreach($availableTerms as $item){?>
+
+                                <?php if(in_array($item['name'], $refinedCeremonies)){ ?>
+
+                                    <div class="cb-group">
+                                        <input checked class="cb__ceremonies" type="checkbox" name="ceremonies[]" id="ceremonies_<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <label for="ceremonies_<?=$item['slug']?>"><?=$item['name']?></label>
+                                    </div>
+
+                                <?php }else{ ?>
+                                    <div class="cb-group">
+                                        <input class="cb__ceremonies" type="checkbox" name="ceremonies[]" id="ceremonies<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <label for="ceremonies<?=$item['slug']?>"><?=$item['name']?></label>
+                                    </div>
+                                <?php } ?>
+
+
+                            <?php } ?>
+                            
+                        </div>  
+                    </div><!-- Capacity -->
+
+                <?php } ?>
 
                 <?php if($searchtype == 'venue') { ?>
                     <div class="venutype-filter filter-box">
@@ -215,7 +265,7 @@ if(isset($_GET['venue_category'])){
                 <?php if($searchtype == 'venue') { ?>
                     <div class="features-filter filter-box">
                         <div class="filter-title">
-                            <h3>Features </h3>
+                            <h3><?php echo ($searchtype == 'venue' ? 'Venue' : 'Supplier');?> Features </h3>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                             </svg>
@@ -227,12 +277,12 @@ if(isset($_GET['venue_category'])){
                             foreach($availableTerms as $item){?>
                                 <?php if(in_array($item['name'], $refinedFeatures)){ ?>
                                     <div class="cb-group">
-                                        <input checked class="cb__accommodation" type="checkbox" name="venue_features[]" id="venue_features<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <input checked class="cb__features" type="checkbox" name="venue_features[]" id="venue_features<?=$item['slug']?>" value="<?=$item['name']?>">
                                         <label for="venue_features<?=$item['slug']?>"><?=$item['name']?></label>
                                     </div>
                                 <?php }else{ ?>
                                     <div class="cb-group">
-                                        <input class="cb__accommodation" type="checkbox" name="venue_features[]" id="venue_features<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <input class="cb__features" type="checkbox" name="venue_features[]" id="venue_features<?=$item['slug']?>" value="<?=$item['name']?>">
                                         <label for="venue_features<?=$item['slug']?>"><?=$item['name']?></label>
                                     </div>
                                 <?php } ?>
@@ -243,13 +293,78 @@ if(isset($_GET['venue_category'])){
                     </div><!-- Features -->
                 <?php } ?>
 
+                <?php if($searchtype == 'venue') { ?>
+                    <div class="sleeping-filter filter-box">
+                        <div class="filter-title">
+                            <h3>Sleeping Arrangements</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                        <div id="accommodation-filters" class="filter-options" <?php echo count($refinedAccommodation) > 0 ? "style='display:block;'" : ""?>>
+                            
+                            <?php
+                            $availableTerms = apply_filters( 'get_all_accommodation', $id );         
+                            foreach($availableTerms as $item){?>
+
+                                <?php if(in_array($item['name'], $refinedAccommodation)){ ?>
+                                    <div class="cb-group">
+                                        <input checked class="cb__accommodation" type="checkbox" name="accommodation[]" id="accommodation<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <label for="accommodation<?=$item['slug']?>"><?=$item['name']?></label>
+                                    </div>
+                                <?php }else{ ?>
+                                    <div class="cb-group">
+                                        <input class="cb__accommodation" type="checkbox" name="accommodation[]" id="accommodation<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <label for="accommodation<?=$item['slug']?>"><?=$item['name']?></label>
+                                    </div>
+                                <?php } ?>
+
+                            <?php } ?>
+                        
+                        </div>  
+                    </div><!-- sleeping -->
+                <?php } ?>
+
+
+                <?php if($searchtype == 'venue') { ?>
+                    <div class="sleeping-filter filter-box">
+                        <div class="filter-title">
+                            <h3>Food and Drink</h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                        <div id="accommodation-filters" class="filter-options" <?php echo count($refinedFood) > 0 ? "style='display:block;'" : ""?>>
+                            
+                            <?php
+                            $availableTerms = apply_filters( 'get_all_food', $id );         
+                            foreach($availableTerms as $item){?>
+
+                                <?php if(in_array($item['name'], $refinedFood)){ ?>
+                                    <div class="cb-group">
+                                        <input checked class="cb__food" type="checkbox" name="food[]" id="food<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <label for="food<?=$item['slug']?>"><?=$item['name']?></label>
+                                    </div>
+                                <?php }else{ ?>
+                                    <div class="cb-group">
+                                        <input class="cb__food" type="checkbox" name="food[]" id="food<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <label for="food<?=$item['slug']?>"><?=$item['name']?></label>
+                                    </div>
+                                <?php } ?>
+
+                            <?php } ?>
+                        
+                        </div>  
+                    </div><!-- fooddrink -->
+                <?php } ?>
+
 
                 
 
 
                 <div class="category-filter filter-box">
                     <div class="filter-title">
-                        <h3>Style </h3>
+                        <h3>My Wedding Style </h3>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
                         </svg>
