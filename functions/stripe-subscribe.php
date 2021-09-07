@@ -192,6 +192,10 @@ function subscribeNow(WP_REST_Request $request){
         update_user_meta($userId, 'customer_id', $stripeSubscription->customer);
         update_user_meta($userId, 'customer_default_payment', $stripePaymentMethod->id);
         update_user_meta($userId, 'subscription_status', $stripeSubscription->status);
+
+        $listingPageId = get_user_meta($userId, 'user_page_id', true);
+        add_post_meta($listingPageId, 'expiration_date', $stripeSubscription->current_period_end, true);
+
         if($selectedSubscription === 'basic'){
             update_user_meta($userId, 'subscription_type', 'basic');
         }else if($selectedSubscription === 'better'){
