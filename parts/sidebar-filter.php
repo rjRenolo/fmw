@@ -48,8 +48,8 @@ if(isset($_GET['ceremonies'])){
 }
 
 $refinedAccommodation = [];
-if(isset($_GET['accommodation'])){
-   foreach($_GET['accommodation'] as $rAccommodation){
+if(isset($_GET['sleeping'])){
+   foreach($_GET['sleeping'] as $rAccommodation){
        $refinedAccommodation[] = $rAccommodation;
    }
 }
@@ -62,6 +62,13 @@ if(isset($_GET['venue_category'])){
     }
 }
 
+
+$refinedFood = [];
+if(isset($_GET['fooddrink'])){
+    foreach($_GET['fooddrink'] as $item){
+        $refinedFood[] = $item;
+    }
+}
 
 
  
@@ -309,12 +316,12 @@ if(isset($_GET['venue_category'])){
 
                                 <?php if(in_array($item['name'], $refinedAccommodation)){ ?>
                                     <div class="cb-group">
-                                        <input checked class="cb__accommodation" type="checkbox" name="accommodation[]" id="accommodation<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <input checked class="cb__accommodation" type="checkbox" name="sleeping[]" id="accommodation<?=$item['slug']?>" value="<?=$item['name']?>">
                                         <label for="accommodation<?=$item['slug']?>"><?=$item['name']?></label>
                                     </div>
                                 <?php }else{ ?>
                                     <div class="cb-group">
-                                        <input class="cb__accommodation" type="checkbox" name="accommodation[]" id="accommodation<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <input class="cb__accommodation" type="checkbox" name="sleeping[]" id="accommodation<?=$item['slug']?>" value="<?=$item['name']?>">
                                         <label for="accommodation<?=$item['slug']?>"><?=$item['name']?></label>
                                     </div>
                                 <?php } ?>
@@ -342,12 +349,12 @@ if(isset($_GET['venue_category'])){
 
                                 <?php if(in_array($item['name'], $refinedFood)){ ?>
                                     <div class="cb-group">
-                                        <input checked class="cb__food" type="checkbox" name="food[]" id="food<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <input checked class="cb__food" type="checkbox" name="fooddrink[]" id="food<?=$item['slug']?>" value="<?=$item['name']?>">
                                         <label for="food<?=$item['slug']?>"><?=$item['name']?></label>
                                     </div>
                                 <?php }else{ ?>
                                     <div class="cb-group">
-                                        <input class="cb__food" type="checkbox" name="food[]" id="food<?=$item['slug']?>" value="<?=$item['name']?>">
+                                        <input class="cb__food" type="checkbox" name="fooddrink[]" id="food<?=$item['slug']?>" value="<?=$item['name']?>">
                                         <label for="food<?=$item['slug']?>"><?=$item['name']?></label>
                                     </div>
                                 <?php } ?>

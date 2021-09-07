@@ -15,6 +15,9 @@ function listingInfoUpdate(){
     $listingVenueDescriptions = get_terms(array('taxonomy' => 'listing-venue-type', 'hide_empty' => false));
     $listingVenueFeatures = get_terms(array('taxonomy' => 'listing-features', 'hide_empty' => false));
 
+    $listingFoodDrink = get_terms(array( 'taxonomy' => 'listing-fooddrink', 'hide_empty' => false ));
+    $listingSleeping = get_terms(array( 'taxonomy' => 'listing-accommodation', 'hide_empty' => false ));
+
 
     switch($_REQUEST['data']['type']){
         case 'listingType':
@@ -76,6 +79,23 @@ function listingInfoUpdate(){
                 term_insertion($val, 'listing-features', $listingPageId, true);
             }
             break;
+        case 'foodDrink':
+            foreach($listingFoodDrink as $lFoodDrink){
+                wp_remove_object_terms( $listingPageId, $lFoodDrink->name, 'listing-fooddrink' );
+            }
+            foreach($_REQUEST['data']['value'] as $val){
+                term_insertion($val, 'listing-fooddrink', $listingPageId, true);
+            }
+            break;
+        case 'sleeping':
+            foreach($listingSleeping as $lSleeping){
+                wp_remove_object_terms( $listingPageId, $lSleeping->name, 'listing-accommodation' );
+            }
+            foreach($_REQUEST['data']['value'] as $val){
+                term_insertion($val, 'listing-accommodation', $listingPageId, true);
+            }
+            break;
+
         default:
             break;
     }
