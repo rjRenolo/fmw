@@ -49,7 +49,9 @@ function register_user_front_end() {
             
             if($_POST['weddingDate']){
                 update_user_meta( $user_id, 'wedmatch_weddingdate', $_POST['weddingDate'] );
-                update_field( 'wedding_date', $_POST['weddingDate'], $userPageId );
+                $exploded = explode("/", $_POST['weddingDate']);
+                $formatedDate = $exploded[2] . $exploded[1] . $exploded[0];
+                update_field( 'wedding_date', $formatedDate, $userPageId );
             }
             
             update_user_meta( $user_id, 'wedmatch_listinglicensetype', $_POST['listingLicenseType'] );
@@ -599,16 +601,26 @@ define('THEME_DIR', get_stylesheet_directory());
         $subscriptionType = get_user_meta( $userId, 'subscription_type' , true );
         $theType = '';
 
-        if($subscriptionType === 'bronze'){
-            $theType = 'Basic';
-        }else if($subscriptionType === 'silver'){
-            $theType = 'Penyfan';
-        }else if($subscriptionType === 'gold'){
-            $theType = 'Snowdon';
-        }else{
-            $theType = 'N/A';
+        // if($subscriptionType === 'bronze'){
+        //     $theType = 'Basic';
+        // }else if($subscriptionType === 'silver'){
+        //     $theType = 'Penyfan';
+        // }else if($subscriptionType === 'gold'){
+        //     $theType = 'Snowdon';
+        // }else{
+        //     $theType = 'N/A';
+        // }
+        // return $theType;
+        switch($subscriptionType){
+            case 'basic':
+                return "Basic";
+            case 'better':
+                return "Better";
+            case 'best':
+                return "Best";
+            deafult:
+                return 'N/A';
         }
-        return $theType;
     }
     add_filter('get_subscriptiontype', 'subscripstionTypeGetter');
 

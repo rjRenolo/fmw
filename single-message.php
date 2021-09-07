@@ -8,7 +8,7 @@
     
     ?>
 
-<article class="container dashboard-container row">
+<article class="dashboard-container row">
     <?php $listingOwnerEmail; $coupleId ?>
 
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); 
@@ -34,8 +34,8 @@
                             $canAccess = $coupleEmailToCompare == $coupleEmail;
                         } ?>
 
-                <div class="row">
-                    <div class="g_grid_3">
+         
+                    <div class="g_grid_3 has-white-background-color dashboard-sidebar">
                         <?php 
                         if(current_user_can('business') || current_user_can('administrator')){ 
 
@@ -47,7 +47,7 @@
 
                         } ?>
                     </div>
-                    <div class="g_grid_9">
+                    <div class="g_grid_9 dashboard-content-wrap">
                         <?php
 
                         if(isset($_GET['new'])){update_post_meta( get_the_ID(), 'new_message', 0, true); }
@@ -72,7 +72,7 @@
 
                             <?php if(is_single()) comments_template(); ?>
                     </div>
-                </div>
+   
 
                 <script>
                     jQuery('input[type="submit').click(function() {

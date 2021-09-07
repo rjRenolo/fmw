@@ -1,9 +1,9 @@
 <div class="dashboard-navigation">
 
     <?php $current_user = wp_get_current_user();?>
-
     <div class="couples-avatar">
-    <p><?php echo $current_user->user_nicename;?></p>
+    <!-- <p>< ?php echo $current_user->user_nicename;?></p> -->
+    <p><?php echo $current_user->display_name;?></p>
         <?php
         acf_form(array(
             'post_id'   => $userPageId,
@@ -59,6 +59,27 @@
                 foreach($categs as $categ){
                     $urlencoded = urlencode($categ);
                     $wedmatchSupplier .= "&venue_category%5B%5D=$urlencoded";
+                }
+            }
+
+            $ceremony = get_user_meta($current_user->ID, 'wedmatch_listinglicensetype', true);
+            if($ceremony && $ceremony !== ""){
+                $urlencoded = urlencode($ceremony);
+                $wedmatchVenue .= "&ceremonies%5B%5D=$urlencoded";
+            }
+
+            $foodDrink = get_user_meta($current_user->ID, 'wedmatch_listingFoodDrink', true);
+            if($foodDrink && is_array($foodDrink) && count($foodDrink) > 0){
+                foreach($foodDrink as $item){
+                    $urlencoded = urlencode($item);
+                    $wedmatchVenue .= "&fooddrink%5B%5D=$urlencoded";
+                }
+            }
+            $sleeping = get_user_meta($current_user->ID, 'wedmatch_listingaccommodation', true);
+            if($sleeping && is_array($sleeping) && count($sleeping) > 0){
+                foreach($sleeping as $item){
+                    $urlencoded = urlencode($item);
+                    $wedmatchVenue .= "&sleeping%5B%5D=$urlencoded";
                 }
             }
 

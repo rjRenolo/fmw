@@ -30,6 +30,9 @@ $currentLicenseTypes = apply_filters( 'term_getter', $listingPageId, 'listing-li
 $currentListingVenueDescs = apply_filters( 'term_getter', $listingPageId, 'listing-venue-type', 'array' );
 $currentListingVenueFeatures = apply_filters( 'term_getter', $listingPageId, 'listing-features', 'array' );
 
+$currentListingFoodDrink = apply_filters( 'term_getter', $listingPageId, 'listing-fooddrink', 'array' );
+$currentListingSleeping = apply_filters( 'term_getter', $listingPageId, 'listing-accommodation', 'array' );
+
 // echo '<pre>';
 // var_dump($currentListingVenueFeatures);
 // echo '</pre>';
@@ -46,6 +49,9 @@ $listingStyles = get_terms(             array( 'taxonomy' => 'listing-style'    
 $listingLicenseTypes = get_terms(       array( 'taxonomy' => 'listing-license-type' , 'hide_empty' => false));
 $listingVenueDescriptions = get_terms(  array( 'taxonomy' => 'listing-venue-type'   , 'hide_empty' => false));
 $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features'     , 'hide_empty' => false));
+
+$listingFoodDrink = get_terms(          array( 'taxonomy' => 'listing-fooddrink'    , 'hide_empty' => false));
+$listingSleeping = get_terms(          array( 'taxonomy' => 'listing-accommodation'    , 'hide_empty' => false));
 
 
 // echo '<pre>';
@@ -103,7 +109,7 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
                 <p>Your basic package includes up to one county. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
             <?php } ?>
 
-            <?php if($userSubscriptionPackage == 'basic') { ?>
+            <?php if($userSubscriptionPackage == 'better') { ?>
                 <p>Your better package includes up to two counties. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
             <?php } ?>
 
@@ -217,7 +223,7 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
                     <p>Your basic package includes up to one category. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
                 <?php } ?>
 
-                <?php if($userSubscriptionPackage == 'basic') { ?>
+                <?php if($userSubscriptionPackage == 'better') { ?>
                     <p>Your better package includes up to two categories. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
                 <?php } ?>
     
@@ -339,10 +345,77 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
             <?php } ?>
 
             <input type="submit" value="Save">
-
-
         </form>
     </div>
+
+
+    <?php if($currentLicenseType === "Venue"){ ?>
+        <div class="venue-fooddrink-question" style="display:none;">
+            <form id="venue-fooddrink">
+                <h3>What food and drink options do you provide?</h3>
+                <?php foreach($listingFoodDrink as $lFoodDrink){ ?>
+                    <?php if($currentListingFoodDrink){?>
+                        <?php 
+                            $currentListingFoodDrinkHaystack = [];    
+                            foreach($currentListingFoodDrink as $item){
+                                $currentListingFoodDrinkHaystack[] = $item->name;
+                            }
+                        ?>
+                        <?php if(in_array($lFoodDrink->name, $currentListingFoodDrinkHaystack)){ ?>
+                            <input checked class="cb__venue_fooddrink" type="checkbox" name="venue_fooddrink" id="venue_fooddrink<?=$lFoodDrink->slug?>" value="<?=$lFoodDrink->name?>">
+                            <label for="venue_fooddrink<?=$lFoodDrink->slug?>"><?=$lFoodDrink->name?></label><br>
+    
+                        <?php }else{ ?>
+                            <input class="cb__venue_fooddrink" type="checkbox" name="venue_fooddrink" id="venue_fooddrink<?=$lFoodDrink->slug?>" value="<?=$lFoodDrink->name?>">
+                            <label for="venue_fooddrink<?=$lFoodDrink->slug?>"><?=$lFoodDrink->name?></label><br>
+    
+                        <?php  } ?>
+                        <!-- < ?php foreach($currentListingVenueFeatures as $cListingVenueFeat){ ?>
+                        < ?php } ?> -->
+                    <?php }else{ ?>
+                        <input class="cb__venue_fooddrink" type="checkbox" name="venue_fooddrink" id="venue_fooddrink<?=$lFoodDrink->slug?>" value="<?=$lFoodDrink->name?>">
+                        <label for="venue_fooddrink<?=$lFoodDrink->slug?>"><?=$lFoodDrink->name?></label><br>
+                    <?php } ?>
+                <?php } ?>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+    <?php } ?>
+
+    <?php if($currentLicenseType === "Venue"){ ?>
+        <div class="venue-sleeping-question" style="display:none;">
+            <form id="venue-sleeping">
+                <h3>What accommodation options do you provide?</h3>
+                <?php foreach($listingSleeping as $lSleeping){ ?>
+                    <?php if($currentListingSleeping){?>
+                        <?php 
+                            $currentListingSleepingHaystack = [];    
+                            foreach($currentListingSleeping as $item){
+                                $currentListingSleepingHaystack[] = $item->name;
+                            }
+                        ?>
+                        <?php if(in_array($lSleeping->name, $currentListingSleepingHaystack)){ ?>
+                            <input checked class="cb__venue_sleeping" type="checkbox" name="venue_sleeping" id="venue_sleeping<?=$lSleeping->slug?>" value="<?=$lSleeping->name?>">
+                            <label for="venue_sleeping<?=$lSleeping->slug?>"><?=$lSleeping->name?></label><br>
+    
+                        <?php }else{ ?>
+                            <input class="cb__venue_sleeping" type="checkbox" name="venue_sleeping" id="venue_sleeping<?=$lSleeping->slug?>" value="<?=$lSleeping->name?>">
+                            <label for="venue_sleeping<?=$lSleeping->slug?>"><?=$lSleeping->name?></label><br>
+    
+                        <?php  } ?>
+                        <!-- < ?php foreach($currentListingVenueFeatures as $cListingVenueFeat){ ?>
+                        < ?php } ?> -->
+                    <?php }else{ ?>
+                        <input class="cb__venue_sleeping" type="checkbox" name="venue_sleeping" id="venue_sleeping<?=$lSleeping->slug?>" value="<?=$lSleeping->name?>">
+                        <label for="venue_sleeping<?=$lSleeping->slug?>"><?=$lSleeping->name?></label><br>
+                    <?php } ?>
+                <?php } ?>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+    <?php } ?>
+
+
 </div>
 
 <div class="listing-show-information" style="display:none;">
@@ -397,6 +470,22 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
             </ul>
         </div>
     <?php } ?>
+
+    <?php if($currentLicenseType == "Venue"){ ?>
+        <div class="venue-fooddrink-show listing-final">
+            <h4>What food and drink options do you provide?</h4>
+            <ul id="list-fooddrink">
+            </ul>
+        </div>
+    <?php } ?>
+
+    <?php if($currentLicenseType == "Venue"){ ?>
+        <div class="venue-sleeping-show listing-final">
+            <h4>What accommodation options do you provide?</h4>
+            <ul id="list-sleeping">
+            </ul>
+        </div>
+    <?php } ?>
 </div>
 
 <script>
@@ -410,7 +499,7 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
     // venue-features-question          venueSpecific
     // var selectedBusinessType;
     // var venueQuestionList = ['.service-description-question', '.listing-venue-type-question', '.county-located-question', '.accommodation-question', '.style-question ', '.venue-description-question', '.venue-features-question'];
-    var venueQuestionList = ['.listing-venue-type-question', '.county-located-question', '.accommodation-question', '.style-question ', '.venue-description-question', '.venue-features-question'];
+    var venueQuestionList = ['.listing-venue-type-question', '.county-located-question', '.accommodation-question', '.style-question ', '.venue-description-question', '.venue-features-question', '.venue-fooddrink-question', '.venue-sleeping-question'];
 
     var supplierQuestionList = ['.service-description-question', '.county-located-question', '.accommodation-question', '.style-question '];
     var toShowAll = ['.listing-type-question'];
@@ -732,6 +821,50 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
                         jQuery(`<li>${item}</li>`).appendTo('#list-features')
                     })
                     questionSwitcher('.venue-features-question')
+                }
+            })
+        })
+
+        jQuery('#venue-fooddrink').on('submit', (e) => {
+            e.preventDefault();
+
+            var foodDrinkList = [];
+            var i = 0;
+            jQuery('.cb__venue_fooddrink:checked').each(function () {
+                foodDrinkList[i++] = jQuery(this).val();
+            }); ;
+            jQuery.ajax({
+                url: fmw_ajax.ajaxurl,
+                method: 'POST',
+                data: {action: 'listingInfoUpdate', data: {value: foodDrinkList, type: 'foodDrink', done: '.venue-fooddrink-question'}},
+                success: function(response){
+                    console.log(response)
+                    foodDrinkList.map(item => {
+                        jQuery(`<li>${item}</li>`).appendTo('#list-fooddrink')
+                    })
+                    questionSwitcher('.venue-fooddrink-question')
+                }
+            })
+        })
+
+        jQuery('#venue-sleeping').on('submit', (e) => {
+            e.preventDefault();
+
+            var foodDrinkList = [];
+            var i = 0;
+            jQuery('.cb__venue_sleeping:checked').each(function () {
+                foodDrinkList[i++] = jQuery(this).val();
+            }); ;
+            jQuery.ajax({
+                url: fmw_ajax.ajaxurl,
+                method: 'POST',
+                data: {action: 'listingInfoUpdate', data: {value: foodDrinkList, type: 'sleeping', done: '.venue-sleeping-question'}},
+                success: function(response){
+                    console.log(response)
+                    foodDrinkList.map(item => {
+                        jQuery(`<li>${item}</li>`).appendTo('#list-sleeping')
+                    })
+                    questionSwitcher('.venue-sleeping-question')
                 }
             })
         })

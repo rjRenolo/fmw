@@ -114,8 +114,6 @@ function atw_user_register( $user_id ) {
         $user->set_role('business');
     }
 
-    $redirect_url = get_the_permalink(get_field('login_page','option'));
-    //wp_redirect( $redirect_url );
 
     do_action('custom_logger', 'successful register');
 

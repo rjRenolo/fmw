@@ -16,6 +16,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 		<?php wp_head(); ?>
+
+		<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=613720d0ee93c8001206f403&product=inline-share-buttons" async="async"></script>
 	</head>
 
 	<body <?php body_class(); ?>>

@@ -80,7 +80,8 @@ $id = 'signupform-' . $block['id'];
 
 			<input type="submit" name="user-submit" value="<?php _e('Sign up!'); ?>" class="user-submit" tabindex="103" />
 
-			<input type="hidden" name="redirect_to" value="<?php echo $_SERVER['REQUEST_URI']; ?>?register=true" />
+			<!-- <input type="hidden" name="redirect_to" value="< ?php echo $_SERVER['REQUEST_URI']; ?>?register=true" /> -->
+			<input type="hidden" name="redirect_to" value="<?php echo get_the_permalink(get_field('login_page','option'));?>" />
 			<input type="hidden" name="user-cookie" value="1" />
 
 		</div>

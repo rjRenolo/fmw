@@ -20,7 +20,7 @@ CONTENTS:
 07 Breakpoints
 ===========================
 */
-
+/*updates 01*/
 /* ---------------------------------------------------------------------------------------------------------- 
 01 SENSIBLE DEFAULTS ----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
@@ -374,11 +374,11 @@ input.has-pink-background-color { color:#fff; border:0 }
 .primary-btn span{margin-left: .5em; margin-right: .5em;}
 
 .btn-disabled{
-  background-color: #bfbfbf;
-  color: #999;
-  border-color: #999;
+  background-color: #e8e8e8;
+  color: #ccc;
+  border-color: #ccc;
 }
-
+.btn-disabled img { opacity: .2; }
 
 /* ---------------------------------------------------------------------------------------------------------- 
 HEADER --------------------------------------------------------------------------------------------
@@ -1202,8 +1202,10 @@ form#add-guest input[type="checkbox"]{display: inline-block;}
 
 .listing-information-question-container input[type="submit"] { margin-top: 30px; background: var(--pink); color: #fff}
 
-.couple-page {display: flex;align-items: stretch;justify-content: flex-end;align-content: center;}
-.couple-page-info {width: 600px;padding: 60px 60px 60px 0}
+.couple-page-bg { background-size: cover; background-repeat: no-repeat;background-position: center; }
+
+.couple-page {display: flex;align-items: stretch;justify-content: center;align-content: center;}
+.couple-page-info {padding: 60px ; background: rgba(0, 0, 0, .4);width: 100%;text-align: center; color: #fff}
 .couple-page-image {width: 50%; min-height: calc(100vh - 430px)}
 
 .couple-page-image { background-size:cover; background-position: center center; }
@@ -1212,10 +1214,12 @@ form#add-guest input[type="checkbox"]{display: inline-block;}
 
 .wereGettingMarried { font-size: 28px; color: var(--pink)}
 
-.date-counter { text-align: center; padding: 40px;box-shadow: 12px 12px 24px #ccc; margin-top: 30px;border-radius: 5px;border: solid 1px #e8e8e8;color: #999;background: rgb(250,250,250);background: linear-gradient(140deg, rgba(250,250,250,1) 28%, rgba(255,255,255,1) 29%, rgba(232,232,232,1) 61%);}
-.date-count-day {font-size: 8vw;font-weight: bold;line-height: 1em;color: #222}
+.date-counter { text-align: center;color: #fff;font-size: 22px;padding-bottom: 40px;}
+.date-count-day {font-size: 12vw;font-weight:900;line-height: 1em;color: #fff;}
 
 .acf-button { background-color: var(--pink); color: white; padding: 8px 15px; margin-top: 5px;}
+
+
 /* ---------------------------------------------------------------------------------------------------------- 
 SUBSCRIPTION --------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------- */
@@ -1371,7 +1375,6 @@ BREAKPOINTS --------------------------------------------------------------------
   .mainNav ul ul li:hover a { background-color: transparent; }
   .mainNav ul ul li a:before { content:'\221F'; position: absolute;left:30px; color: #999}
 
-  .couple-page-info {width: 50%;padding: 60px}
 
 
 }
