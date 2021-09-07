@@ -56,8 +56,8 @@ if(isset($_GET['sleeping'])){
 
 
 $refinedCategories = [];
-if(isset($_GET['venue_category'])){
-    foreach($_GET['venue_category'] as $rCategs){
+if(isset($_GET['supplier_category'])){
+    foreach($_GET['supplier_category'] as $rCategs){
         $refinedCategories[] = $rCategs;
     }
 }
@@ -139,18 +139,19 @@ if(isset($_GET['fooddrink'])){
                         <div id="style-filters" class="filter-options" <?php echo count($refinedCategories) > 0 ? "style='display:block;'" : ""?>>
 
                             <?php
-                            $availableTerms = apply_filters( 'get_all_listing_type', $id );         
+                            // $availableTerms = apply_filters( 'get_all_listing_type', $id );         
+                            $availableTerms = apply_filters( 'get_all_listing_services', $id );         
                             foreach($availableTerms as $item){?>
 
                             <?php if( in_array( str_replace('&amp;', '&', $item['name']), $refinedCategories ) ) { ?>
                                 <div class="cb-group">
-                                    <input checked class="cb__venue_category" type="checkbox" name="venue_category[]" id="venue_category_<?=$item['slug']?>" value="<?=$item['name']?>">
-                                    <label for="venue_category_<?=$item['slug']?>"><?=$item['name']?></label>
+                                    <input checked class="cb__supplier_category" type="checkbox" name="supplier_category[]" id="supplier_category_<?=$item['slug']?>" value="<?=$item['name']?>">
+                                    <label for="supplier_category_<?=$item['slug']?>"><?=$item['name']?></label>
                                 </div>
                             <?php }else{ ?>
                                 <div class="cb-group">
-                                    <input class="cb__venue_category" type="checkbox" name="venue_category[]" id="venue_category_<?=$item['slug']?>" value="<?=$item['name']?>">
-                                    <label for="venue_category_<?=$item['slug']?>"><?=$item['name']?></label>
+                                    <input class="cb__supplier_category" type="checkbox" name="supplier_category[]" id="supplier_category_<?=$item['slug']?>" value="<?=$item['name']?>">
+                                    <label for="supplier_category_<?=$item['slug']?>"><?=$item['name']?></label>
                                 </div>
                             <?php } ?>
 
