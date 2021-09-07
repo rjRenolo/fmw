@@ -103,7 +103,7 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
                 <p>Your basic package includes up to one county. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
             <?php } ?>
 
-            <?php if($userSubscriptionPackage == 'basic') { ?>
+            <?php if($userSubscriptionPackage == 'better') { ?>
                 <p>Your better package includes up to two counties. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
             <?php } ?>
 
@@ -217,7 +217,7 @@ $listingVenueFeatures = get_terms(      array( 'taxonomy' => 'listing-features' 
                     <p>Your basic package includes up to one category. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
                 <?php } ?>
 
-                <?php if($userSubscriptionPackage == 'basic') { ?>
+                <?php if($userSubscriptionPackage == 'better') { ?>
                     <p>Your better package includes up to two categories. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
                 <?php } ?>
     

@@ -112,7 +112,7 @@ acf_form_head();
 									'updated_message' => 'Saved!'
 								);
 								acf_form( $new_post);
-							}else if($subscription_type === 'Penyfan'){
+							}else if($subscription_type === 'Better'){
 								$fieldsForPenyfan = array(
 									'address',
 									'town',
@@ -141,7 +141,7 @@ acf_form_head();
 								acf_form( $new_post);
 
 							}else{
-								echo "snowdon";
+							
 								$fieldsForPenyfan = array(
 									'address',
 									'town',
