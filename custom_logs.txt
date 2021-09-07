@@ -3501,3 +3501,1547 @@ https://findmywedding.webadepthost.co.uk/wp-login.php
 
 =======
 >>>>>>> 97481acf5f4ff492454a36af3cf92b8c6c86506c
+/////////////////////////
+// 2021-09-07 11-13-06 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 11-13-06 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 11-14-32 //
+/////////////////////////
+
+Stripe\Subscription Object
+(
+    [id] => sub_KBP48uuJzq86x2
+    [object] => subscription
+    [application_fee_percent] => 
+    [automatic_tax] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+        )
+
+    [billing_cycle_anchor] => 1631013269
+    [billing_thresholds] => 
+    [cancel_at] => 
+    [cancel_at_period_end] => 
+    [canceled_at] => 
+    [collection_method] => charge_automatically
+    [created] => 1631013269
+    [current_period_end] => 1633605269
+    [current_period_start] => 1631013269
+    [customer] => cus_KBP47xkrgRW6qW
+    [days_until_due] => 
+    [default_payment_method] => 
+    [default_source] => 
+    [default_tax_rates] => Array
+        (
+        )
+
+    [discount] => 
+    [ended_at] => 
+    [items] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                    [0] => Stripe\SubscriptionItem Object
+                        (
+                            [id] => si_KBP4EpF7eolc0q
+                            [object] => subscription_item
+                            [billing_thresholds] => 
+                            [created] => 1631013269
+                            [metadata] => Stripe\StripeObject Object
+                                (
+                                )
+
+                            [plan] => Stripe\Plan Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+                                    [object] => plan
+                                    [active] => 1
+                                    [aggregate_usage] => 
+                                    [amount] => 3100
+                                    [amount_decimal] => 3100
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [interval] => month
+                                    [interval_count] => 1
+                                    [livemode] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [tiers_mode] => 
+                                    [transform_usage] => 
+                                    [trial_period_days] => 
+                                    [usage_type] => licensed
+                                )
+
+                            [price] => Stripe\Price Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+                                    [object] => price
+                                    [active] => 1
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [livemode] => 
+                                    [lookup_key] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [recurring] => Stripe\StripeObject Object
+                                        (
+                                            [aggregate_usage] => 
+                                            [interval] => month
+                                            [interval_count] => 1
+                                            [trial_period_days] => 
+                                            [usage_type] => licensed
+                                        )
+
+                                    [tax_behavior] => unspecified
+                                    [tiers_mode] => 
+                                    [transform_quantity] => 
+                                    [type] => recurring
+                                    [unit_amount] => 3100
+                                    [unit_amount_decimal] => 3100
+                                )
+
+                            [quantity] => 1
+                            [subscription] => sub_KBP48uuJzq86x2
+                            [tax_rates] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [has_more] => 
+            [total_count] => 1
+            [url] => /v1/subscription_items?subscription=sub_KBP48uuJzq86x2
+        )
+
+    [latest_invoice] => in_1JX2G1HSDS5z7MRR7MHWc66x
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+        )
+
+    [next_pending_invoice_item_invoice] => 
+    [pause_collection] => 
+    [payment_settings] => Stripe\StripeObject Object
+        (
+            [payment_method_options] => 
+            [payment_method_types] => 
+        )
+
+    [pending_invoice_item_interval] => 
+    [pending_setup_intent] => 
+    [pending_update] => 
+    [plan] => Stripe\Plan Object
+        (
+            [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+            [object] => plan
+            [active] => 1
+            [aggregate_usage] => 
+            [amount] => 3100
+            [amount_decimal] => 3100
+            [billing_scheme] => per_unit
+            [created] => 1630931472
+            [currency] => usd
+            [interval] => month
+            [interval_count] => 1
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                )
+
+            [nickname] => 
+            [product] => prod_KB34vcHazIve5h
+            [tiers_mode] => 
+            [transform_usage] => 
+            [trial_period_days] => 
+            [usage_type] => licensed
+        )
+
+    [quantity] => 1
+    [schedule] => 
+    [start_date] => 1631013269
+    [status] => active
+    [transfer_data] => 
+    [trial_end] => 
+    [trial_start] => 
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 11-17-03 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 11-17-03 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 11-18-00 //
+/////////////////////////
+
+Stripe\Subscription Object
+(
+    [id] => sub_KBP720K59oNndl
+    [object] => subscription
+    [application_fee_percent] => 
+    [automatic_tax] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+        )
+
+    [billing_cycle_anchor] => 1631013477
+    [billing_thresholds] => 
+    [cancel_at] => 
+    [cancel_at_period_end] => 
+    [canceled_at] => 
+    [collection_method] => charge_automatically
+    [created] => 1631013477
+    [current_period_end] => 1633605477
+    [current_period_start] => 1631013477
+    [customer] => cus_KBP7qrYE2KJinc
+    [days_until_due] => 
+    [default_payment_method] => 
+    [default_source] => 
+    [default_tax_rates] => Array
+        (
+        )
+
+    [discount] => 
+    [ended_at] => 
+    [items] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                    [0] => Stripe\SubscriptionItem Object
+                        (
+                            [id] => si_KBP7c93Oh6NgOd
+                            [object] => subscription_item
+                            [billing_thresholds] => 
+                            [created] => 1631013477
+                            [metadata] => Stripe\StripeObject Object
+                                (
+                                )
+
+                            [plan] => Stripe\Plan Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRFHMe4FPa
+                                    [object] => plan
+                                    [active] => 1
+                                    [aggregate_usage] => 
+                                    [amount] => 2100
+                                    [amount_decimal] => 2100
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [interval] => month
+                                    [interval_count] => 1
+                                    [livemode] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [tiers_mode] => 
+                                    [transform_usage] => 
+                                    [trial_period_days] => 
+                                    [usage_type] => licensed
+                                )
+
+                            [price] => Stripe\Price Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRFHMe4FPa
+                                    [object] => price
+                                    [active] => 1
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [livemode] => 
+                                    [lookup_key] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [recurring] => Stripe\StripeObject Object
+                                        (
+                                            [aggregate_usage] => 
+                                            [interval] => month
+                                            [interval_count] => 1
+                                            [trial_period_days] => 
+                                            [usage_type] => licensed
+                                        )
+
+                                    [tax_behavior] => unspecified
+                                    [tiers_mode] => 
+                                    [transform_quantity] => 
+                                    [type] => recurring
+                                    [unit_amount] => 2100
+                                    [unit_amount_decimal] => 2100
+                                )
+
+                            [quantity] => 1
+                            [subscription] => sub_KBP720K59oNndl
+                            [tax_rates] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [has_more] => 
+            [total_count] => 1
+            [url] => /v1/subscription_items?subscription=sub_KBP720K59oNndl
+        )
+
+    [latest_invoice] => in_1JX2JNHSDS5z7MRRRgR1xruQ
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+        )
+
+    [next_pending_invoice_item_invoice] => 
+    [pause_collection] => 
+    [payment_settings] => Stripe\StripeObject Object
+        (
+            [payment_method_options] => 
+            [payment_method_types] => 
+        )
+
+    [pending_invoice_item_interval] => 
+    [pending_setup_intent] => 
+    [pending_update] => 
+    [plan] => Stripe\Plan Object
+        (
+            [id] => price_1JWgyiHSDS5z7MRRFHMe4FPa
+            [object] => plan
+            [active] => 1
+            [aggregate_usage] => 
+            [amount] => 2100
+            [amount_decimal] => 2100
+            [billing_scheme] => per_unit
+            [created] => 1630931472
+            [currency] => usd
+            [interval] => month
+            [interval_count] => 1
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                )
+
+            [nickname] => 
+            [product] => prod_KB34vcHazIve5h
+            [tiers_mode] => 
+            [transform_usage] => 
+            [trial_period_days] => 
+            [usage_type] => licensed
+        )
+
+    [quantity] => 1
+    [schedule] => 
+    [start_date] => 1631013477
+    [status] => active
+    [transfer_data] => 
+    [trial_end] => 
+    [trial_start] => 
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 12-36-32 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 12-36-32 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 12-37-26 //
+/////////////////////////
+
+Stripe\Subscription Object
+(
+    [id] => sub_KBQPKLVJ6nEWMQ
+    [object] => subscription
+    [application_fee_percent] => 
+    [automatic_tax] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+        )
+
+    [billing_cycle_anchor] => 1631018243
+    [billing_thresholds] => 
+    [cancel_at] => 
+    [cancel_at_period_end] => 
+    [canceled_at] => 
+    [collection_method] => charge_automatically
+    [created] => 1631018243
+    [current_period_end] => 1633610243
+    [current_period_start] => 1631018243
+    [customer] => cus_KBQPD2f6hOMbhX
+    [days_until_due] => 
+    [default_payment_method] => 
+    [default_source] => 
+    [default_tax_rates] => Array
+        (
+        )
+
+    [discount] => 
+    [ended_at] => 
+    [items] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                    [0] => Stripe\SubscriptionItem Object
+                        (
+                            [id] => si_KBQPRrbCx1VJOD
+                            [object] => subscription_item
+                            [billing_thresholds] => 
+                            [created] => 1631018243
+                            [metadata] => Stripe\StripeObject Object
+                                (
+                                )
+
+                            [plan] => Stripe\Plan Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRR1JCkHVFK
+                                    [object] => plan
+                                    [active] => 1
+                                    [aggregate_usage] => 
+                                    [amount] => 1100
+                                    [amount_decimal] => 1100
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [interval] => month
+                                    [interval_count] => 1
+                                    [livemode] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [tiers_mode] => 
+                                    [transform_usage] => 
+                                    [trial_period_days] => 
+                                    [usage_type] => licensed
+                                )
+
+                            [price] => Stripe\Price Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRR1JCkHVFK
+                                    [object] => price
+                                    [active] => 1
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [livemode] => 
+                                    [lookup_key] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [recurring] => Stripe\StripeObject Object
+                                        (
+                                            [aggregate_usage] => 
+                                            [interval] => month
+                                            [interval_count] => 1
+                                            [trial_period_days] => 
+                                            [usage_type] => licensed
+                                        )
+
+                                    [tax_behavior] => unspecified
+                                    [tiers_mode] => 
+                                    [transform_quantity] => 
+                                    [type] => recurring
+                                    [unit_amount] => 1100
+                                    [unit_amount_decimal] => 1100
+                                )
+
+                            [quantity] => 1
+                            [subscription] => sub_KBQPKLVJ6nEWMQ
+                            [tax_rates] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [has_more] => 
+            [total_count] => 1
+            [url] => /v1/subscription_items?subscription=sub_KBQPKLVJ6nEWMQ
+        )
+
+    [latest_invoice] => in_1JX3YFHSDS5z7MRRp6a5mqd1
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+        )
+
+    [next_pending_invoice_item_invoice] => 
+    [pause_collection] => 
+    [payment_settings] => Stripe\StripeObject Object
+        (
+            [payment_method_options] => 
+            [payment_method_types] => 
+        )
+
+    [pending_invoice_item_interval] => 
+    [pending_setup_intent] => 
+    [pending_update] => 
+    [plan] => Stripe\Plan Object
+        (
+            [id] => price_1JWgyiHSDS5z7MRR1JCkHVFK
+            [object] => plan
+            [active] => 1
+            [aggregate_usage] => 
+            [amount] => 1100
+            [amount_decimal] => 1100
+            [billing_scheme] => per_unit
+            [created] => 1630931472
+            [currency] => usd
+            [interval] => month
+            [interval_count] => 1
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                )
+
+            [nickname] => 
+            [product] => prod_KB34vcHazIve5h
+            [tiers_mode] => 
+            [transform_usage] => 
+            [trial_period_days] => 
+            [usage_type] => licensed
+        )
+
+    [quantity] => 1
+    [schedule] => 
+    [start_date] => 1631018243
+    [status] => active
+    [transfer_data] => 
+    [trial_end] => 
+    [trial_start] => 
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 12-43-57 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 12-43-57 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 12-45-48 //
+/////////////////////////
+
+Stripe\Subscription Object
+(
+    [id] => sub_KBQXeNJ6F6jkjB
+    [object] => subscription
+    [application_fee_percent] => 
+    [automatic_tax] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+        )
+
+    [billing_cycle_anchor] => 1631018744
+    [billing_thresholds] => 
+    [cancel_at] => 
+    [cancel_at_period_end] => 
+    [canceled_at] => 
+    [collection_method] => charge_automatically
+    [created] => 1631018744
+    [current_period_end] => 1633610744
+    [current_period_start] => 1631018744
+    [customer] => cus_KBQXLEuHKYr9fe
+    [days_until_due] => 
+    [default_payment_method] => 
+    [default_source] => 
+    [default_tax_rates] => Array
+        (
+        )
+
+    [discount] => 
+    [ended_at] => 
+    [items] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                    [0] => Stripe\SubscriptionItem Object
+                        (
+                            [id] => si_KBQXZI6QKaA5DA
+                            [object] => subscription_item
+                            [billing_thresholds] => 
+                            [created] => 1631018745
+                            [metadata] => Stripe\StripeObject Object
+                                (
+                                )
+
+                            [plan] => Stripe\Plan Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+                                    [object] => plan
+                                    [active] => 1
+                                    [aggregate_usage] => 
+                                    [amount] => 3100
+                                    [amount_decimal] => 3100
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [interval] => month
+                                    [interval_count] => 1
+                                    [livemode] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [tiers_mode] => 
+                                    [transform_usage] => 
+                                    [trial_period_days] => 
+                                    [usage_type] => licensed
+                                )
+
+                            [price] => Stripe\Price Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+                                    [object] => price
+                                    [active] => 1
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [livemode] => 
+                                    [lookup_key] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [recurring] => Stripe\StripeObject Object
+                                        (
+                                            [aggregate_usage] => 
+                                            [interval] => month
+                                            [interval_count] => 1
+                                            [trial_period_days] => 
+                                            [usage_type] => licensed
+                                        )
+
+                                    [tax_behavior] => unspecified
+                                    [tiers_mode] => 
+                                    [transform_quantity] => 
+                                    [type] => recurring
+                                    [unit_amount] => 3100
+                                    [unit_amount_decimal] => 3100
+                                )
+
+                            [quantity] => 1
+                            [subscription] => sub_KBQXeNJ6F6jkjB
+                            [tax_rates] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [has_more] => 
+            [total_count] => 1
+            [url] => /v1/subscription_items?subscription=sub_KBQXeNJ6F6jkjB
+        )
+
+    [latest_invoice] => in_1JX3gKHSDS5z7MRRYGIDeOqa
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+        )
+
+    [next_pending_invoice_item_invoice] => 
+    [pause_collection] => 
+    [payment_settings] => Stripe\StripeObject Object
+        (
+            [payment_method_options] => 
+            [payment_method_types] => 
+        )
+
+    [pending_invoice_item_interval] => 
+    [pending_setup_intent] => 
+    [pending_update] => 
+    [plan] => Stripe\Plan Object
+        (
+            [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+            [object] => plan
+            [active] => 1
+            [aggregate_usage] => 
+            [amount] => 3100
+            [amount_decimal] => 3100
+            [billing_scheme] => per_unit
+            [created] => 1630931472
+            [currency] => usd
+            [interval] => month
+            [interval_count] => 1
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                )
+
+            [nickname] => 
+            [product] => prod_KB34vcHazIve5h
+            [tiers_mode] => 
+            [transform_usage] => 
+            [trial_period_days] => 
+            [usage_type] => licensed
+        )
+
+    [quantity] => 1
+    [schedule] => 
+    [start_date] => 1631018744
+    [status] => active
+    [transfer_data] => 
+    [trial_end] => 
+    [trial_start] => 
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-02-16 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-02-16 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-03-53 //
+/////////////////////////
+
+Stripe\Subscription Object
+(
+    [id] => sub_KBQptgxzpMAYMq
+    [object] => subscription
+    [application_fee_percent] => 
+    [automatic_tax] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+        )
+
+    [billing_cycle_anchor] => 1631019829
+    [billing_thresholds] => 
+    [cancel_at] => 
+    [cancel_at_period_end] => 
+    [canceled_at] => 
+    [collection_method] => charge_automatically
+    [created] => 1631019829
+    [current_period_end] => 1633611829
+    [current_period_start] => 1631019829
+    [customer] => cus_KBQp1oOfYzbxY2
+    [days_until_due] => 
+    [default_payment_method] => 
+    [default_source] => 
+    [default_tax_rates] => Array
+        (
+        )
+
+    [discount] => 
+    [ended_at] => 
+    [items] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                    [0] => Stripe\SubscriptionItem Object
+                        (
+                            [id] => si_KBQpaPFYyrxCtY
+                            [object] => subscription_item
+                            [billing_thresholds] => 
+                            [created] => 1631019830
+                            [metadata] => Stripe\StripeObject Object
+                                (
+                                )
+
+                            [plan] => Stripe\Plan Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+                                    [object] => plan
+                                    [active] => 1
+                                    [aggregate_usage] => 
+                                    [amount] => 3100
+                                    [amount_decimal] => 3100
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [interval] => month
+                                    [interval_count] => 1
+                                    [livemode] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [tiers_mode] => 
+                                    [transform_usage] => 
+                                    [trial_period_days] => 
+                                    [usage_type] => licensed
+                                )
+
+                            [price] => Stripe\Price Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+                                    [object] => price
+                                    [active] => 1
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [livemode] => 
+                                    [lookup_key] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [recurring] => Stripe\StripeObject Object
+                                        (
+                                            [aggregate_usage] => 
+                                            [interval] => month
+                                            [interval_count] => 1
+                                            [trial_period_days] => 
+                                            [usage_type] => licensed
+                                        )
+
+                                    [tax_behavior] => unspecified
+                                    [tiers_mode] => 
+                                    [transform_quantity] => 
+                                    [type] => recurring
+                                    [unit_amount] => 3100
+                                    [unit_amount_decimal] => 3100
+                                )
+
+                            [quantity] => 1
+                            [subscription] => sub_KBQptgxzpMAYMq
+                            [tax_rates] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [has_more] => 
+            [total_count] => 1
+            [url] => /v1/subscription_items?subscription=sub_KBQptgxzpMAYMq
+        )
+
+    [latest_invoice] => in_1JX3xpHSDS5z7MRRJjBlXEWv
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+        )
+
+    [next_pending_invoice_item_invoice] => 
+    [pause_collection] => 
+    [payment_settings] => Stripe\StripeObject Object
+        (
+            [payment_method_options] => 
+            [payment_method_types] => 
+        )
+
+    [pending_invoice_item_interval] => 
+    [pending_setup_intent] => 
+    [pending_update] => 
+    [plan] => Stripe\Plan Object
+        (
+            [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+            [object] => plan
+            [active] => 1
+            [aggregate_usage] => 
+            [amount] => 3100
+            [amount_decimal] => 3100
+            [billing_scheme] => per_unit
+            [created] => 1630931472
+            [currency] => usd
+            [interval] => month
+            [interval_count] => 1
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                )
+
+            [nickname] => 
+            [product] => prod_KB34vcHazIve5h
+            [tiers_mode] => 
+            [transform_usage] => 
+            [trial_period_days] => 
+            [usage_type] => licensed
+        )
+
+    [quantity] => 1
+    [schedule] => 
+    [start_date] => 1631019829
+    [status] => active
+    [transfer_data] => 
+    [trial_end] => 
+    [trial_start] => 
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-14-36 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-14-36 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-15-41 //
+/////////////////////////
+
+Stripe\Subscription Object
+(
+    [id] => sub_KBR1n3jVUWY219
+    [object] => subscription
+    [application_fee_percent] => 
+    [automatic_tax] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+        )
+
+    [billing_cycle_anchor] => 1631020537
+    [billing_thresholds] => 
+    [cancel_at] => 
+    [cancel_at_period_end] => 
+    [canceled_at] => 
+    [collection_method] => charge_automatically
+    [created] => 1631020537
+    [current_period_end] => 1633612537
+    [current_period_start] => 1631020537
+    [customer] => cus_KBR1RomDBSyQ7e
+    [days_until_due] => 
+    [default_payment_method] => 
+    [default_source] => 
+    [default_tax_rates] => Array
+        (
+        )
+
+    [discount] => 
+    [ended_at] => 
+    [items] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                    [0] => Stripe\SubscriptionItem Object
+                        (
+                            [id] => si_KBR1UwDOW1Vxiq
+                            [object] => subscription_item
+                            [billing_thresholds] => 
+                            [created] => 1631020538
+                            [metadata] => Stripe\StripeObject Object
+                                (
+                                )
+
+                            [plan] => Stripe\Plan Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+                                    [object] => plan
+                                    [active] => 1
+                                    [aggregate_usage] => 
+                                    [amount] => 3100
+                                    [amount_decimal] => 3100
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [interval] => month
+                                    [interval_count] => 1
+                                    [livemode] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [tiers_mode] => 
+                                    [transform_usage] => 
+                                    [trial_period_days] => 
+                                    [usage_type] => licensed
+                                )
+
+                            [price] => Stripe\Price Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+                                    [object] => price
+                                    [active] => 1
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [livemode] => 
+                                    [lookup_key] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [recurring] => Stripe\StripeObject Object
+                                        (
+                                            [aggregate_usage] => 
+                                            [interval] => month
+                                            [interval_count] => 1
+                                            [trial_period_days] => 
+                                            [usage_type] => licensed
+                                        )
+
+                                    [tax_behavior] => unspecified
+                                    [tiers_mode] => 
+                                    [transform_quantity] => 
+                                    [type] => recurring
+                                    [unit_amount] => 3100
+                                    [unit_amount_decimal] => 3100
+                                )
+
+                            [quantity] => 1
+                            [subscription] => sub_KBR1n3jVUWY219
+                            [tax_rates] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [has_more] => 
+            [total_count] => 1
+            [url] => /v1/subscription_items?subscription=sub_KBR1n3jVUWY219
+        )
+
+    [latest_invoice] => in_1JX49FHSDS5z7MRRKiLfvdKM
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+        )
+
+    [next_pending_invoice_item_invoice] => 
+    [pause_collection] => 
+    [payment_settings] => Stripe\StripeObject Object
+        (
+            [payment_method_options] => 
+            [payment_method_types] => 
+        )
+
+    [pending_invoice_item_interval] => 
+    [pending_setup_intent] => 
+    [pending_update] => 
+    [plan] => Stripe\Plan Object
+        (
+            [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+            [object] => plan
+            [active] => 1
+            [aggregate_usage] => 
+            [amount] => 3100
+            [amount_decimal] => 3100
+            [billing_scheme] => per_unit
+            [created] => 1630931472
+            [currency] => usd
+            [interval] => month
+            [interval_count] => 1
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                )
+
+            [nickname] => 
+            [product] => prod_KB34vcHazIve5h
+            [tiers_mode] => 
+            [transform_usage] => 
+            [trial_period_days] => 
+            [usage_type] => licensed
+        )
+
+    [quantity] => 1
+    [schedule] => 
+    [start_date] => 1631020537
+    [status] => active
+    [transfer_data] => 
+    [trial_end] => 
+    [trial_start] => 
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-20-12 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-20-12 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-21-09 //
+/////////////////////////
+
+Stripe\Subscription Object
+(
+    [id] => sub_KBR6c0ybXEvLHm
+    [object] => subscription
+    [application_fee_percent] => 
+    [automatic_tax] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+        )
+
+    [billing_cycle_anchor] => 1631020866
+    [billing_thresholds] => 
+    [cancel_at] => 
+    [cancel_at_period_end] => 
+    [canceled_at] => 
+    [collection_method] => charge_automatically
+    [created] => 1631020866
+    [current_period_end] => 1633612866
+    [current_period_start] => 1631020866
+    [customer] => cus_KBR6LbvNyoECGd
+    [days_until_due] => 
+    [default_payment_method] => 
+    [default_source] => 
+    [default_tax_rates] => Array
+        (
+        )
+
+    [discount] => 
+    [ended_at] => 
+    [items] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                    [0] => Stripe\SubscriptionItem Object
+                        (
+                            [id] => si_KBR6cSSVqu6eeI
+                            [object] => subscription_item
+                            [billing_thresholds] => 
+                            [created] => 1631020866
+                            [metadata] => Stripe\StripeObject Object
+                                (
+                                )
+
+                            [plan] => Stripe\Plan Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRFHMe4FPa
+                                    [object] => plan
+                                    [active] => 1
+                                    [aggregate_usage] => 
+                                    [amount] => 2100
+                                    [amount_decimal] => 2100
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [interval] => month
+                                    [interval_count] => 1
+                                    [livemode] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [tiers_mode] => 
+                                    [transform_usage] => 
+                                    [trial_period_days] => 
+                                    [usage_type] => licensed
+                                )
+
+                            [price] => Stripe\Price Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRFHMe4FPa
+                                    [object] => price
+                                    [active] => 1
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [livemode] => 
+                                    [lookup_key] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [recurring] => Stripe\StripeObject Object
+                                        (
+                                            [aggregate_usage] => 
+                                            [interval] => month
+                                            [interval_count] => 1
+                                            [trial_period_days] => 
+                                            [usage_type] => licensed
+                                        )
+
+                                    [tax_behavior] => unspecified
+                                    [tiers_mode] => 
+                                    [transform_quantity] => 
+                                    [type] => recurring
+                                    [unit_amount] => 2100
+                                    [unit_amount_decimal] => 2100
+                                )
+
+                            [quantity] => 1
+                            [subscription] => sub_KBR6c0ybXEvLHm
+                            [tax_rates] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [has_more] => 
+            [total_count] => 1
+            [url] => /v1/subscription_items?subscription=sub_KBR6c0ybXEvLHm
+        )
+
+    [latest_invoice] => in_1JX4EYHSDS5z7MRRFXEHTarL
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+        )
+
+    [next_pending_invoice_item_invoice] => 
+    [pause_collection] => 
+    [payment_settings] => Stripe\StripeObject Object
+        (
+            [payment_method_options] => 
+            [payment_method_types] => 
+        )
+
+    [pending_invoice_item_interval] => 
+    [pending_setup_intent] => 
+    [pending_update] => 
+    [plan] => Stripe\Plan Object
+        (
+            [id] => price_1JWgyiHSDS5z7MRRFHMe4FPa
+            [object] => plan
+            [active] => 1
+            [aggregate_usage] => 
+            [amount] => 2100
+            [amount_decimal] => 2100
+            [billing_scheme] => per_unit
+            [created] => 1630931472
+            [currency] => usd
+            [interval] => month
+            [interval_count] => 1
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                )
+
+            [nickname] => 
+            [product] => prod_KB34vcHazIve5h
+            [tiers_mode] => 
+            [transform_usage] => 
+            [trial_period_days] => 
+            [usage_type] => licensed
+        )
+
+    [quantity] => 1
+    [schedule] => 
+    [start_date] => 1631020866
+    [status] => active
+    [transfer_data] => 
+    [trial_end] => 
+    [trial_start] => 
+)
+
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-29-58 //
+/////////////////////////
+
+set password
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-29-58 //
+/////////////////////////
+
+successful register
+--------------------------------------------------------------------------------------
+
+
+/////////////////////////
+// 2021-09-07 13-31-04 //
+/////////////////////////
+
+Stripe\Subscription Object
+(
+    [id] => sub_KBRGShjdbHzE3V
+    [object] => subscription
+    [application_fee_percent] => 
+    [automatic_tax] => Stripe\StripeObject Object
+        (
+            [enabled] => 
+        )
+
+    [billing_cycle_anchor] => 1631021460
+    [billing_thresholds] => 
+    [cancel_at] => 
+    [cancel_at_period_end] => 
+    [canceled_at] => 
+    [collection_method] => charge_automatically
+    [created] => 1631021460
+    [current_period_end] => 1633613460
+    [current_period_start] => 1631021460
+    [customer] => cus_KBRGdwuvuEJwDp
+    [days_until_due] => 
+    [default_payment_method] => 
+    [default_source] => 
+    [default_tax_rates] => Array
+        (
+        )
+
+    [discount] => 
+    [ended_at] => 
+    [items] => Stripe\Collection Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                    [0] => Stripe\SubscriptionItem Object
+                        (
+                            [id] => si_KBRGJLXxdZtCHG
+                            [object] => subscription_item
+                            [billing_thresholds] => 
+                            [created] => 1631021461
+                            [metadata] => Stripe\StripeObject Object
+                                (
+                                )
+
+                            [plan] => Stripe\Plan Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+                                    [object] => plan
+                                    [active] => 1
+                                    [aggregate_usage] => 
+                                    [amount] => 3100
+                                    [amount_decimal] => 3100
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [interval] => month
+                                    [interval_count] => 1
+                                    [livemode] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [tiers_mode] => 
+                                    [transform_usage] => 
+                                    [trial_period_days] => 
+                                    [usage_type] => licensed
+                                )
+
+                            [price] => Stripe\Price Object
+                                (
+                                    [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+                                    [object] => price
+                                    [active] => 1
+                                    [billing_scheme] => per_unit
+                                    [created] => 1630931472
+                                    [currency] => usd
+                                    [livemode] => 
+                                    [lookup_key] => 
+                                    [metadata] => Stripe\StripeObject Object
+                                        (
+                                        )
+
+                                    [nickname] => 
+                                    [product] => prod_KB34vcHazIve5h
+                                    [recurring] => Stripe\StripeObject Object
+                                        (
+                                            [aggregate_usage] => 
+                                            [interval] => month
+                                            [interval_count] => 1
+                                            [trial_period_days] => 
+                                            [usage_type] => licensed
+                                        )
+
+                                    [tax_behavior] => unspecified
+                                    [tiers_mode] => 
+                                    [transform_quantity] => 
+                                    [type] => recurring
+                                    [unit_amount] => 3100
+                                    [unit_amount_decimal] => 3100
+                                )
+
+                            [quantity] => 1
+                            [subscription] => sub_KBRGShjdbHzE3V
+                            [tax_rates] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [has_more] => 
+            [total_count] => 1
+            [url] => /v1/subscription_items?subscription=sub_KBRGShjdbHzE3V
+        )
+
+    [latest_invoice] => in_1JX4O8HSDS5z7MRRIA6LsU9p
+    [livemode] => 
+    [metadata] => Stripe\StripeObject Object
+        (
+        )
+
+    [next_pending_invoice_item_invoice] => 
+    [pause_collection] => 
+    [payment_settings] => Stripe\StripeObject Object
+        (
+            [payment_method_options] => 
+            [payment_method_types] => 
+        )
+
+    [pending_invoice_item_interval] => 
+    [pending_setup_intent] => 
+    [pending_update] => 
+    [plan] => Stripe\Plan Object
+        (
+            [id] => price_1JWgyiHSDS5z7MRRuwV8UPdN
+            [object] => plan
+            [active] => 1
+            [aggregate_usage] => 
+            [amount] => 3100
+            [amount_decimal] => 3100
+            [billing_scheme] => per_unit
+            [created] => 1630931472
+            [currency] => usd
+            [interval] => month
+            [interval_count] => 1
+            [livemode] => 
+            [metadata] => Stripe\StripeObject Object
+                (
+                )
+
+            [nickname] => 
+            [product] => prod_KB34vcHazIve5h
+            [tiers_mode] => 
+            [transform_usage] => 
+            [trial_period_days] => 
+            [usage_type] => licensed
+        )
+
+    [quantity] => 1
+    [schedule] => 
+    [start_date] => 1631021460
+    [status] => active
+    [transfer_data] => 
+    [trial_end] => 
+    [trial_start] => 
+)
+
+--------------------------------------------------------------------------------------
+
+

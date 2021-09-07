@@ -73,10 +73,10 @@ $coverImage = get_field('cover_image');
                 $refineCounty = [];
                 $refineStyle = [];
                 $refineAccommodation = [];
-                $refineVenueFeatures = [];
-                $venueDescription = [];
-                $venueType = [];
-                $venueCateg = [];
+                $supplierCateg = [];
+                // $refineVenueFeatures = [];
+                // $venueDescription = [];
+                // $venueType = [];
                 if(isset($_GET['county'])){
                     foreach($_GET['county'] as $rCounty){ $refineCounty[] = $rCounty; }
                 }
@@ -86,16 +86,16 @@ $coverImage = get_field('cover_image');
                 if(isset($_GET['accommodation'])){
                     foreach($_GET['accommodation'] as $rAccommodation){ $refineAccommodation[] = $rAccommodation; }
                 }
-                if(isset($_GET['venue_features'])){
-                    foreach($_GET['venue_features'] as $rFeatures){ $refineVenueFeatures[] = $rFeatures; }
+                if(isset($_GET['supplier_category'])){
+                    foreach($_GET['supplier_category'] as $rCateg){$supplierCateg[] = $rCateg; }
                 }
-                if(isset($_GET['venue_type'])){
-                    foreach($_GET['venue_type'] as $rVType){ $venueType[] = $rVType; }
-                }
+                // if(isset($_GET['venue_features'])){
+                //     foreach($_GET['venue_features'] as $rFeatures){ $refineVenueFeatures[] = $rFeatures; }
+                // }
+                // if(isset($_GET['venue_type'])){
+                //     foreach($_GET['venue_type'] as $rVType){ $venueType[] = $rVType; }
+                // }
 
-                if(isset($_GET['venue_category'])){
-                    foreach($_GET['venue_category'] as $rCateg){$venueCateg[] = $rCateg; }
-                }
                 
 
 
@@ -148,32 +148,11 @@ $coverImage = get_field('cover_image');
                     array_push($taxQuery, $accommodationTaxQuery);
                 }
 
-                if(count($refineVenueFeatures) > 0 && $refineVenueFeatures[0] !== ""){
-                    $venueFeaturesTaxQuery = array(
-                        'taxonomy' => 'listing-features',
-                        'field' => 'name', 
-                        'terms' => $refineVenueFeatures,
-                        'include_children' => true, 
-                        'operator' => 'IN' 
-                    );
-                    array_push($taxQuery, $venueFeaturesTaxQuery);
-                }
-
-                if(count($venueDescription) > 0 && $venueDescription[0] !== ""){
-                    $venueDescTaxQuery = array(
-                        'taxonomy' => 'listing-venue-type',
-                        'field' => 'name', 
-                        'terms' => $venueDescription,
-                        'include_children' => true, 
-                        'operator' => 'IN' 
-                    );
-                    array_push($taxQuery, $venueDescTaxQuery);
-                }
-                if(count($venueCateg) > 0 && $venueCateg[0] !== ""){
+                if(count($supplierCateg) > 0 && $supplierCateg[0] !== ""){
                     $listingCategory = array(
                         'taxonomy' => 'listing-category',
                         'field' => 'name', 
-                        'terms' => $listingCategory,
+                        'terms' => $supplierCateg,
                         'include_children' => true, 
                         'operator' => 'IN' 
                     );
@@ -193,14 +172,29 @@ $coverImage = get_field('cover_image');
                 );
 
                 $the_query = new WP_Query( $args );
-                $normalized = [];
-                if(isset($_GET['plaindd'])){
-                    
-                    echo '<pre>';
-                    print_r($the_query->posts);
-                    echo '</pre>';
-                    die();
-                }
+
+                // if(count($refineVenueFeatures) > 0 && $refineVenueFeatures[0] !== ""){
+                //     $venueFeaturesTaxQuery = array(
+                //         'taxonomy' => 'listing-features',
+                //         'field' => 'name', 
+                //         'terms' => $refineVenueFeatures,
+                //         'include_children' => true, 
+                //         'operator' => 'IN' 
+                //     );
+                //     array_push($taxQuery, $venueFeaturesTaxQuery);
+                // }
+
+                // if(count($venueDescription) > 0 && $venueDescription[0] !== ""){
+                //     $venueDescTaxQuery = array(
+                //         'taxonomy' => 'listing-venue-type',
+                //         'field' => 'name', 
+                //         'terms' => $venueDescription,
+                //         'include_children' => true, 
+                //         'operator' => 'IN' 
+                //     );
+                //     array_push($taxQuery, $venueDescTaxQuery);
+                // }
+
 
             ?>
             <div class="results">

@@ -61,44 +61,96 @@ $listingSleeping = get_terms(          array( 'taxonomy' => 'listing-accommodati
 ?>
 <div class="listing-information-question-container">
 
-    <div class="listing-venue-type-question">
-        <form id="listing-venue-type">
-            <h3>Select which of the following applies to you:</h3>
 
-            <?php foreach($listingLicenseTypes as $lLicenseType){ ?>
-                <?php if($currentLicenseTypes){ ?>
-                    
-                    <?php
-                        $currentLicenseTypesHaystack = [];
-                        foreach($currentLicenseTypes as $cLicenseType){
-                            $currentLicenseTypesHaystack[] = $cLicenseType->name;
-                        }
-                    ?>
-
-
-                    <?php if(in_array($lLicenseType->name, $currentLicenseTypesHaystack)){ ?>
-
-                        <input checked class="cb__listing_venue_type" type="checkbox" name="listing_venue_type" id="listing_venue_type__<?=$lLicenseType->slug?>" value="<?=$lLicenseType->name?>">
-                        <label for="listing_venue_type__<?=$lLicenseType->slug?>"><?=$lLicenseType->name?></label><br>
-
+    <?php if($currentLicenseType === "Venue"){ ?>
+        <div class="listing-venue-type-question">
+            <form id="listing-venue-type">
+                <h3>Select which of the following applies to you:</h3>
+    
+                <?php foreach($listingLicenseTypes as $lLicenseType){ ?>
+                    <?php if($currentLicenseTypes){ ?>
+                        
+                        <?php
+                            $currentLicenseTypesHaystack = [];
+                            foreach($currentLicenseTypes as $cLicenseType){
+                                $currentLicenseTypesHaystack[] = $cLicenseType->name;
+                            }
+                        ?>
+    
+    
+                        <?php if(in_array($lLicenseType->name, $currentLicenseTypesHaystack)){ ?>
+    
+                            <input checked class="cb__listing_venue_type" type="checkbox" name="listing_venue_type" id="listing_venue_type__<?=$lLicenseType->slug?>" value="<?=$lLicenseType->name?>">
+                            <label for="listing_venue_type__<?=$lLicenseType->slug?>"><?=$lLicenseType->name?></label><br>
+    
+                        <?php }else{ ?>
+    
+                            <input class="cb__listing_venue_type" type="checkbox" name="listing_venue_type" id="listing_venue_type__<?=$lLicenseType->slug?>" value="<?=$lLicenseType->name?>">
+                            <label for="listing_venue_type__<?=$lLicenseType->slug?>"><?=$lLicenseType->name?></label><br>
+    
+                        <?php } ?>
+    
                     <?php }else{ ?>
-
-                        <input class="cb__listing_venue_type" type="checkbox" name="listing_venue_type" id="listing_venue_type__<?=$lLicenseType->slug?>" value="<?=$lLicenseType->name?>">
-                        <label for="listing_venue_type__<?=$lLicenseType->slug?>"><?=$lLicenseType->name?></label><br>
-
+                            <input class="cb__listing_venue_type" type="checkbox" name="listing_venue_type" id="listing_venue_type__<?=$lLicenseType->slug?>" value="<?=$lLicenseType->name?>">
+                            <label for="listing_venue_type__<?=$lLicenseType->slug?>"><?=$lLicenseType->name?></label><br>
                     <?php } ?>
-
-                <?php }else{ ?>
-                        <input class="cb__listing_venue_type" type="checkbox" name="listing_venue_type" id="listing_venue_type__<?=$lLicenseType->slug?>" value="<?=$lLicenseType->name?>">
-                        <label for="listing_venue_type__<?=$lLicenseType->slug?>"><?=$lLicenseType->name?></label><br>
+                    
+    
                 <?php } ?>
-                
+    
+                <input type="submit" value="Save">
+            </form>
+        </div>
+    <?php } ?>
 
-            <?php } ?>
+    <?php if($currentLicenseType == "Supplier"){ ?>
+        <div class="service-description-question">
+            <form id="service-description">
+                <h3>Which category best describes your service?</h3>
 
-            <input type="submit" value="Save">
-        </form>
-    </div>
+                <?php if($userSubscriptionPackage == 'basic') { ?>
+                    <p>Your basic package includes up to one category. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
+                <?php } ?>
+
+                <?php if($userSubscriptionPackage == 'better') { ?>
+                    <p>Your better package includes up to two categories. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
+                <?php } ?>
+    
+                <?php foreach($listingCategories as $lCategories){ ?>
+                    <?php if($currentCategoryies){ ?>
+    
+                        <?php 
+                            $currentCategoryiesHaystack = [];
+                            foreach($currentCategoryies as $cCategories){
+                                $currentCategoryiesHaystack[] = $cCategories->name;
+                            }
+                        ?>
+                        <?php if(in_array($lCategories->name, $currentCategoryiesHaystack)){ ?>
+                            <input checked class="rd__service_description" type="radio" name="service_description" id="service_description_<?=$lCategories->slug?>" value="<?=$lCategories->name?>">
+                            <label for="service_description_<?=$lCategories->slug?>"><?=$lCategories->name?></label><br>
+                        <?php }else{ ?>
+                            
+                            <input class="rd__service_description" type="radio" name="service_description" id="service_description_<?=$lCategories->slug?>" value="<?=$lCategories->name?>">
+                            <label for="service_description_<?=$lCategories->slug?>"><?=$lCategories->name?></label><br>
+    
+                        <?php } ?>
+    
+                    <?php }else{ ?>
+    
+                            <input class="rd__service_description" type="radio" name="service_description" id="service_description_<?=$lCategories->slug?>" value="<?=$lCategories->name?>">
+                            <label for="service_description_<?=$lCategories->slug?>"><?=$lCategories->name?></label><br>
+    
+                    <?php } ?>
+    
+    
+                <?php } ?>
+    
+    
+                <input type="submit" value="Save">
+    
+            </form>
+        </div>
+    <?php } ?>
 
 
     <div class="county-located-question" style="display:none;">
@@ -212,56 +264,6 @@ $listingSleeping = get_terms(          array( 'taxonomy' => 'listing-accommodati
         
         </form>
     </div>
-
-
-    <?php if($currentLicenseType == "Supplier"){ ?>
-        <div class="service-description-question" style="display:none;">
-            <form id="service-description">
-                <h3>Which category best describes your service?</h3>
-
-                <?php if($userSubscriptionPackage == 'basic') { ?>
-                    <p>Your basic package includes up to one category. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
-                <?php } ?>
-
-                <?php if($userSubscriptionPackage == 'better') { ?>
-                    <p>Your better package includes up to two categories. Click <a href="<?php echo get_bloginfo('url');?>/subscribe-again">HERE</a> to upgrade</p>
-                <?php } ?>
-    
-                <?php foreach($listingCategories as $lCategories){ ?>
-                    <?php if($currentCategoryies){ ?>
-    
-                        <?php 
-                            $currentCategoryiesHaystack = [];
-                            foreach($currentCategoryies as $cCategories){
-                                $currentCategoryiesHaystack[] = $cCategories->name;
-                            }
-                        ?>
-                        <?php if(in_array($lCategories->name, $currentCategoryiesHaystack)){ ?>
-                            <input checked class="rd__service_description" type="radio" name="service_description" id="service_description_<?=$lCategories->slug?>" value="<?=$lCategories->name?>">
-                            <label for="service_description_<?=$lCategories->slug?>"><?=$lCategories->name?></label><br>
-                        <?php }else{ ?>
-                            
-                            <input class="rd__service_description" type="radio" name="service_description" id="service_description_<?=$lCategories->slug?>" value="<?=$lCategories->name?>">
-                            <label for="service_description_<?=$lCategories->slug?>"><?=$lCategories->name?></label><br>
-    
-                        <?php } ?>
-    
-                    <?php }else{ ?>
-    
-                            <input class="rd__service_description" type="radio" name="service_description" id="service_description_<?=$lCategories->slug?>" value="<?=$lCategories->name?>">
-                            <label for="service_description_<?=$lCategories->slug?>"><?=$lCategories->name?></label><br>
-    
-                    <?php } ?>
-    
-    
-                <?php } ?>
-    
-    
-                <input type="submit" value="Save">
-    
-            </form>
-        </div>
-    <?php } ?>
 
 
     <div class="venue-description-question" style="display:none;">
@@ -419,11 +421,21 @@ $listingSleeping = get_terms(          array( 'taxonomy' => 'listing-accommodati
 </div>
 
 <div class="listing-show-information" style="display:none;">
-    <div class="listing-venue-type-show listing-final">
-        <h4>Select which of the following applies to you:</h4>
-        <ul id="list-venue-type">
-        </ul>
-    </div>
+    <?php if($currentLicenseType === "Venue") { ?>
+        <div class="listing-venue-type-show listing-final">
+            <h4>Select which of the following applies to you:</h4>
+            <ul id="list-venue-type">
+            </ul>
+        </div>
+    <?php } ?>
+
+    <?php if($currentLicenseType == "Supplier"){ ?>
+        <div class="service-description-show listing-final">
+            <h4>Which category best describes your service</h4>
+            <ul id="list-of-category">
+            </ul>
+        </div>
+    <?php } ?>
 
 
     <div class="county-located-show listing-final">
@@ -444,15 +456,6 @@ $listingSleeping = get_terms(          array( 'taxonomy' => 'listing-accommodati
         <ul id="list-of-style">
         </ul>
     </div>
-
-
-    <?php if($currentLicenseType == "Supplier"){ ?>
-        <div class="service-description-show listing-final">
-            <h4>Which category best describes your service</h4>
-            <ul id="list-of-category">
-            </ul>
-        </div>
-    <?php } ?>
 
 
     <?php if($currentLicenseType == "Venue"){ ?>
@@ -499,9 +502,11 @@ $listingSleeping = get_terms(          array( 'taxonomy' => 'listing-accommodati
     // venue-features-question          venueSpecific
     // var selectedBusinessType;
     // var venueQuestionList = ['.service-description-question', '.listing-venue-type-question', '.county-located-question', '.accommodation-question', '.style-question ', '.venue-description-question', '.venue-features-question'];
-    var venueQuestionList = ['.listing-venue-type-question', '.county-located-question', '.accommodation-question', '.style-question ', '.venue-description-question', '.venue-features-question', '.venue-fooddrink-question', '.venue-sleeping-question'];
-
-    var supplierQuestionList = ['.service-description-question', '.county-located-question', '.accommodation-question', '.style-question '];
+    
+    // var venueQuestionList = ['.listing-venue-type-question', '.county-located-question', '.accommodation-question', '.style-question ', '.venue-description-question', '.venue-features-question', '.venue-fooddrink-question', '.venue-sleeping-question'];
+    // var supplierQuestionList = ['.service-description-question', '.county-located-question', '.accommodation-question', '.style-question '];
+    var venueQuestionList = ['.county-located-question', '.accommodation-question', '.style-question ', '.venue-description-question', '.venue-features-question', '.venue-fooddrink-question', '.venue-sleeping-question'];
+    var supplierQuestionList = ['.county-located-question', '.accommodation-question', '.style-question '];
     var toShowAll = ['.listing-type-question'];
 
     const questionSwitcher = (toHide) => {
