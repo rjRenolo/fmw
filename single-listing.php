@@ -280,12 +280,12 @@ Embers_Utilities::get_template_parts( array( 'parts/html-header', 'parts/header'
             </div>
         </div>
 		
-	<?php if(!get_field('listing_map')=="") { ?>
         <div class="listing_map-container">
             <div class="row">
                <?php echo get_field('listing_map');?>
             </div>
         </div>
+	<?php if(!get_field('listing_map')=="") { ?>
 	<?php } ?>
 
         <?php if($reviewcount > 0)  :?>
