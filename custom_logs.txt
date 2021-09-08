@@ -1,5 +1,5 @@
 /////////////////////////
-// 2021-09-08 10-30-39 //
+// 2021-09-08 12-01-08 //
 /////////////////////////
 
 set password
@@ -7,7 +7,7 @@ set password
 
 
 /////////////////////////
-// 2021-09-08 10-30-39 //
+// 2021-09-08 12-01-08 //
 /////////////////////////
 
 successful register
@@ -15,46 +15,22 @@ successful register
 
 
 /////////////////////////
-// 2021-09-08 10-30-39 //
+// 2021-09-08 12-01-19 //
 /////////////////////////
 
 Array
 (
-    [to] => support@webadept.co.uk
-    [subject] => [Find My Wedding] New User Registration
-    [message] => New user registration on your site Find My Wedding:
-
-Username: email01
-
-Email: email01@test.com
-
-    [headers] => 
-    [attachments] => Array
-        (
-        )
-
-)
-
---------------------------------------------------------------------------------------
-
-
-/////////////////////////
-// 2021-09-08 10-30-52 //
-/////////////////////////
-
-Array
-(
-    [to] => email01@test.com
+    [to] => email04@gmail.com
     [subject] => [Find My Wedding] Login Details
-    [message] => Username: email01
+    [message] => Username: email04
 
 To set your password, visit the following address:
 
-http://fmw2.loc/wp-login.php?action=rp&key=FbDeEs2DqmYJsHkfjUHb&login=email01
+http://fmw2.loc/wp-login.php?action=rp&key=keT3NqI8BgusDV29TD1T&login=email04
 
 http://fmw2.loc/wp-login.php
 
-    [headers] => 
+    [headers] => Content-Type: text/html; charset=UTF-8
     [attachments] => Array
         (
         )

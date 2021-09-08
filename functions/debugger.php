@@ -185,7 +185,7 @@ function see_user_details(){
     }
 }
 
-add_action('wp_head', 'testget');
+// add_action('wp_head', 'testget');
 function testget(){
     $user = get_user_by( 'email', 'test01@gmail.com');
     

@@ -669,13 +669,13 @@ define('THEME_DIR', get_stylesheet_directory());
     function check_the_mail_content($args){
         // do_action('custom_logger', $args);
         if($args['subject'] === '[Find My Wedding] Login Details'){ 
-            $user = get_user_by( 'email', $to);
+            $user = get_user_by( 'email', $args['to']);
             $userRole = $user->roles[0];
 
-            $headers = [];
-
-            $headers[] = 'Content-Type: text/html; charset=UTF-8';
-            $headers[] = 'From: Find My Wedding <donotreply@findmywedding.com>';
+            // $headers = [];
+            $args['headers'] = [];
+            $args['headers'][] = 'Content-Type: text/html; charset=UTF-8';
+            $args['headers'][] = 'From: Find My Wedding <donotreply@findmywedding.com>';
 
             if($userRole === "business"){
                 $args['subject'] = get_field('business_email_subject', 'option');
@@ -693,6 +693,7 @@ define('THEME_DIR', get_stylesheet_directory());
 
             }
 
+            // do_action('custom_logger', $args);
         }
         return $args;
     }
