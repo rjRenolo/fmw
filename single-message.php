@@ -70,7 +70,8 @@
 
                             <p><strong><?php the_content(); ?></strong></p>
 
-                            <?php if(is_single()) comments_template(); ?>
+                            <?php comments_template(); ?>
+                            <!-- < ?php if(is_single()) comments_template(); ?> -->
                     </div>
    
 
