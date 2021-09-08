@@ -669,14 +669,30 @@ define('THEME_DIR', get_stylesheet_directory());
     function check_the_mail_content($args){
         // do_action('custom_logger', $args);
         if($args['subject'] === '[Find My Wedding] Login Details'){ 
+            $user = get_user_by( 'email', $to);
+            $userRole = $user->roles[0];
 
-            $args['subject'] = 'Welcome to Find My Wedding!';
+            $headers = [];
 
-            $args["message"] = '<h3>Welcome to Find My Wedding!</h3>';
+            $headers[] = 'Content-Type: text/html; charset=UTF-8';
+            $headers[] = 'From: Find My Wedding <donotreply@findmywedding.com>';
 
-            $args["message"] .= "<p>We look forward to helping you plan your dream day.<br />Head to your Find My Wedding dashboard to find out all the handy planning tools available to you.<br />Find out from others about their experiences in the blog.</p><p>Why not follow us on social - <a href='https://twitter.com/FindMyWeddingUK' target='_blank'>twitter</a> / <a href='https://www.facebook.com/findmywedding.co.uk' target='_blank'>facebook</a> / <a href='https://www.instagram.com/findmywedding.co.uk/' target='_blank'>instagram</a></p>";
+            if($userRole === "business"){
+                $args['subject'] = get_field('business_email_subject', 'option');
+                $args["message"] = get_field('business_email_message', 'option');
+                // $args["message"] .= "<p>We look forward to helping you plan your dream day.<br />Head to your Find My Wedding dashboard to find out all the handy planning tools available to you.<br />Find out from others about their experiences in the blog.</p><p>Why not follow us on social - <a href='https://twitter.com/FindMyWeddingUK' target='_blank'>twitter</a> / <a href='https://www.facebook.com/findmywedding.co.uk' target='_blank'>facebook</a> / <a href='https://www.instagram.com/findmywedding.co.uk/' target='_blank'>instagram</a></p>";
+                // $args["message"] .= '<p>Log in to your account - <a href="' . get_the_permalink(get_field('login_page','option')) . '">Log in</a><p>';
 
-            $args["message"] .= '<p>Log in to your account - <a href="' . get_the_permalink(get_field('login_page','option')) . '">Log in</a><p>';
+            }else if($userRole === "couple"){
+                $args['subject'] = get_field('couple_welcome_subject', 'option');
+                $args["message"] = get_field('couple_welcome_email_message', 'option');
+                // $args['subject'] = 'Welcome to Find My Wedding!';
+                // $args["message"] = '<h3>Welcome to Find My Wedding!</h3>';
+                // $args["message"] .= "<p>We look forward to helping you plan your dream day.<br />Head to your Find My Wedding dashboard to find out all the handy planning tools available to you.<br />Find out from others about their experiences in the blog.</p><p>Why not follow us on social - <a href='https://twitter.com/FindMyWeddingUK' target='_blank'>twitter</a> / <a href='https://www.facebook.com/findmywedding.co.uk' target='_blank'>facebook</a> / <a href='https://www.instagram.com/findmywedding.co.uk/' target='_blank'>instagram</a></p>";
+                // $args["message"] .= '<p>Log in to your account - <a href="' . get_the_permalink(get_field('login_page','option')) . '">Log in</a><p>';
+
+            }
+
         }
         return $args;
     }

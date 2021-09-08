@@ -187,5 +187,10 @@ function see_user_details(){
 
 add_action('wp_head', 'testget');
 function testget(){
+    $user = get_user_by( 'email', 'test01@gmail.com');
     
+    echo '<pre>';
+    print_r($user->roles[0]);
+    echo '</pre>';
+    die();
 }
